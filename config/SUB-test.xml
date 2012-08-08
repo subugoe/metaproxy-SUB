@@ -1,0 +1,38 @@
+<!--
+	Test setup file.
+	Content from http://lists.indexdata.dk/pipermail/yazlist/2012-May/003480.html
+-->
+<metaproxy xmlns="http://indexdata.com/metaproxy" version="1.0">
+
+	<start route="start"/>
+
+	<filters></filters>
+
+	<routes>
+		<route id="start">
+			<filter type="frontend_net">
+				<threads>10</threads>
+				<port>@:9000</port>
+				<message>FN</message>
+			</filter>
+			<filter type="zoom">
+				<torus>
+					<records>
+						<!-- sru local connector -->
+						<record>
+							<piggyback>1</piggyback>
+							<queryEncoding>UTF-8</queryEncoding>
+							<udb>sru-local</udb>
+							<sru>get</sru>
+							<sruVersion>1.1</sruVersion>
+							<zurl>sru.gbv.de/opac-de-7</zurl>
+						</record>
+					</records>
+				</torus>
+				<log apdu="false"/>
+				<zoom timeout="20"/>
+			</filter>
+		</route>
+	</routes>
+
+</metaproxy>
