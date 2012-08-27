@@ -46,14 +46,18 @@
 
 
 		<filter id="backend" type="zoom">
-			<torus url="http://usi.indexdata.com/torus2/searchable.%realm/records/?query=%query">
-				<!-- these records are examples only -->
+			<torus
+				xsldir="../xsl"
+				element_transform="custom"
+				element_raw="raw"
+			>
+
 				<records>
 
 					<!-- Solr SSGFI1 -->
 					<record>
 						<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/digreg/</zurl>
-						<udb>math-digreg</udb>
+						<udb>ssgfi/math-digreg</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -65,7 +69,7 @@
 
 					<record>
 						<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/jfm/</zurl>
-						<udb>jfm</udb>
+						<udb>ssgfi/jfm</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -79,7 +83,7 @@
 
 					<record>
 						<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/math/</zurl>
-						<udb>math-guide</udb>
+						<udb>ssgfi/math-guide</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -88,12 +92,13 @@
 						<cclmap_su>1=Keywords s=pw t=r</cclmap_su>
 						<cclmap_bkl>1=BK t=r</cclmap_bkl>
 						<cclmap_msc>1=MSC t=r</cclmap_msc>
+						<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
 						<cclmap_id>1=Number</cclmap_id>
 					</record>
 
 					<record>
 						<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/geo/</zurl>
-						<udb>geo-guide</udb>
+						<udb>ssgfi/geo-guide</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -104,12 +109,13 @@
 						<cclmap_bkl>1=BK t=r</cclmap_bkl>
 						<cclmap_ddc>1=DDC t=r</cclmap_ddc>
 						<cclmap_gok>1=GOK s=pw t=r</cclmap_gok>
+						<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
 						<cclmap_id>1=Number</cclmap_id>
 					</record>
 
 					<record>
-						<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/his/</zurl>
-						<udb>history-guide</udb>
+						<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/hist/</zurl>
+						<udb>ssgfi/history-guide</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -120,12 +126,13 @@
 						<cclmap_bkl>1=BK t=r</cclmap_bkl>
 						<cclmap_ddc>1=DDC t=r</cclmap_ddc>
 						<cclmap_gok>1=GOK s=pw t=r</cclmap_gok>
+						<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
 						<cclmap_id>1=Number</cclmap_id>
 					</record>
 
 					<record>
 						<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/lit/</zurl>
-						<udb>literature-guide</udb>
+						<udb>ssgfi/literature-guide</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -136,12 +143,13 @@
 						<cclmap_bkl>1=BK t=r</cclmap_bkl>
 						<cclmap_ddc>1=DDC t=r</cclmap_ddc>
 						<cclmap_gok>1=GOK s=pw t=r</cclmap_gok>
+						<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
 						<cclmap_id>1=Number</cclmap_id>
 					</record>
 
 					<record>
 						<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/forst/</zurl>
-						<udb>forestry-guide</udb>
+						<udb>ssgfi/forestry-guide</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -158,7 +166,7 @@
 					<!-- Solr Harvest -->
 					<record>
 						<zurl>vlib.sub.uni-goettingen.de/solr/geo-leo-artikel</zurl>
-						<udb>geo-leo-artikel</udb>
+						<udb>harvest/geo-leo-artikel</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -172,7 +180,7 @@
 
 					<record>
 						<zurl>vlib.sub.uni-goettingen.de/solr/geo-leo-digitalisate</zurl>
-						<udb>geo-leo-digitalisate</udb>
+						<udb>harvest/geo-leo-digitalisate</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -185,7 +193,7 @@
 
 					<record>
 						<zurl>vlib.sub.uni-goettingen.de/solr/math-arxiv</zurl>
-						<udb>math-arxiv</udb>
+						<udb>harvest/math-arxiv</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -200,7 +208,7 @@
 
 					<record>
 						<zurl>vlib.sub.uni-goettingen.de/solr/digizeitschriften</zurl>
-						<udb>digizeitschriften</udb>
+						<udb>harvest/digizeitschriften</udb>
 						<sru>solr</sru>
 
 						<cclmap_term>s=al t=r</cclmap_term>
@@ -209,6 +217,25 @@
 						<cclmap_date>1=date</cclmap_date>
 						<cclmap_su>1=subject s=pw t=r</cclmap_su>
 						<cclmap_id>1=id</cclmap_id>
+					</record>
+
+					<!-- DSpace -->
+					<record>
+						<zurl>goedoc-dev.sub.uni-goettingen.de:9010/solr/gldocs</zurl>
+						<udb>dspace/gldocs</udb>
+						<sru>solr</sru>
+						<elementSet>*</elementSet>
+
+						<cclmap_term>s=al t=r</cclmap_term>
+						<cclmap_ti>1=dc.title s=pw t=r</cclmap_ti>
+						<cclmap_au>1=dc.contributor.author s=pw t=r</cclmap_au>
+						<cclmap_date>1=dc.date.issued.year</cclmap_date>
+						<cclmap_lang>1=dc.language.iso</cclmap_lang>
+						<cclmap_su>1=dc.subject.gokverbal s=pw t=r</cclmap_su>
+						<cclmap_bkl>1=dc.subject.gbv t=r</cclmap_bkl>
+						<cclmap_gok>1=dc.subject.gok s=pw t=r</cclmap_gok>
+						<cclmap_id>1=handle</cclmap_id>
+						<transform>../xsl/dspace-solr-to-dc.xsl</transform>
 					</record>
 
 					<!-- SRU Test -->
@@ -233,6 +260,7 @@
 						<cclmap_brk>1=pica.brk s=pw t=r</cclmap_brk>
 						<cclmap_isbn>1=pica.isb s=pw t=r</cclmap_isbn>
 						<cclmap_issn>1=pica.iss s=pw t=r</cclmap_issn>
+						<cclmap_nel>1=pica.nel s=pw t=r</cclmap_nel>
 						<cclmap_id>1=pica.ppn</cclmap_id>
 					</record>
 
@@ -258,10 +286,6 @@
 						<cclmap_issn>1=8 s=pw t=r</cclmap_issn>
 						<cclmap_id>1=12</cclmap_id>
 					</record>
-
-
-
-
 				</records>
 			</torus>
 
@@ -278,11 +302,8 @@
 			<fieldmap cql="dc.subject.brk" ccl="brk"/>
 			<fieldmap cql="bath.isbn" ccl="isbn"/>
 			<fieldmap cql="bath.issn" ccl="issn"/>
-			<cclmap>
-				<qual name="term">
-					<attr type="u" value="1016"/>
-				</qual>
-			</cclmap>
+			<fieldmap cql="dc.date.nel" ccl="nel"/>
+			<fieldmap cql="dc.identifier" ccl="id"/>
 
 			<log apdu="false"/>
 			<zoom timeout="20" proxy_timeout="1"/>
@@ -296,14 +317,15 @@
 		<route id="start">
 			<filter refid="frontend"/>
 			<filter type="sru_z3950"/>
-	<!--		<filter type="session_shared">
+			<filter type="session_shared">
 				<resultset ttl="0" restart="false"/>
 				<session ttl="60" max="100"/>
-			</filter> -->
-			<filter type="log">
+			</filter>
+<!--			<filter type="log">
 				<message>B</message>
 				<category apdu="false" session="true"/>
 			</filter>
+			-->
 			<filter refid="backend"/>
 			<filter type="bounce"/>
 		</route>
