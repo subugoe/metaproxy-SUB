@@ -19,10 +19,6 @@
 			</database>
 		</filter>
 
-		<filter id="cql" type="cql_rpn">
-			<conversion file="../metaproxy/etc/cql2pqf.txt"/>
-		</filter>
-
 		<filter id="retrieve" type="record_transform">
 			<retrievalinfo xmlns="http://indexdata.com/yaz" version="1.0">
 				<retrieval syntax="xml" name="dc" identifier="info:srw/schema/1/dc-v1.1">
@@ -47,7 +43,7 @@
 
 		<filter id="backend" type="zoom">
 			<torus
-				xsldir="../xsl"
+				xsldir="xsl"
 				element_transform="custom"
 				element_raw="raw"
 			>
@@ -235,7 +231,7 @@
 						<cclmap_bkl>1=dc.subject.gbv t=r</cclmap_bkl>
 						<cclmap_gok>1=dc.subject.gok s=pw t=r</cclmap_gok>
 						<cclmap_id>1=handle</cclmap_id>
-						<transform>../xsl/dspace-solr-to-dc.xsl</transform>
+						<transform>dspace-solr-to-dc.xsl</transform>
 					</record>
 
 					<!-- SRU Test -->
@@ -321,7 +317,7 @@
 				<resultset ttl="0" restart="false"/>
 				<session ttl="60" max="100"/>
 			</filter>
-<!--			<filter type="log">
+<!--		<filter type="log">
 				<message>B</message>
 				<category apdu="false" session="true"/>
 			</filter>
