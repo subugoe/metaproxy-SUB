@@ -1,0 +1,99 @@
+<e:explain xmlns:e="http://explain.z3950.org/dtd/2.0/" xmlns:mp="http://indexdata.com/metaproxy">
+  <e:serverInfo protocol="SRU">
+    <e:port>80</e:port>
+    <e:database>ssgfi/history-guide</e:database>
+  </e:serverInfo>
+  <e:databaseInfo>
+    <e:title xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" primary="true">History-Guide</e:title>
+    <e:description xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" lang="de" primary="true">Linksammlung zum Thema Geschichte.</e:description>
+    <e:author>Sven-S. Porst, SUB Göttingen</e:author>
+    <e:contact>porst@sub.uni-goettingen.de</e:contact>
+  </e:databaseInfo>
+  <e:indexInfo>
+    <e:set name="cql" identifier="info:srw/cql-context-set/1/cql-v1.2">
+      <e:title>CQL Standard Set</e:title>
+    </e:set>
+    <e:set name="rec" identifier="info:srw/cql-context-set/2/rec-1.1">
+      <e:title>Records Standard Set</e:title>
+    </e:set>
+    <e:set name="dc" identifier="info:srw/cql-context-set/1/dc-v1.1">
+      <e:title>Dublin Core Set with custom extensions</e:title>
+    </e:set>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>All Metadata fields</e:title>
+      <e:map>
+        <e:name set="cql">serverChoice</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Title</e:title>
+      <e:map>
+        <e:name set="dc">title</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Author, Creator</e:title>
+      <e:map>
+        <e:name set="dc">creator</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Acquisition Date</e:title>
+      <e:map>
+        <e:name set="dc">date.nel</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Language</e:title>
+      <e:map>
+        <e:name set="dc">language</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Subject</e:title>
+      <e:map>
+        <e:name set="dc">subject</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Subject: Basisklassifikation</e:title>
+      <e:map>
+        <e:name set="dc">subject.bkl</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Subject: Dewey Decimal Classification</e:title>
+      <e:map>
+        <e:name set="dc">subject.ddc</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Subject: Göttinger Online Klassifikation</e:title>
+      <e:map>
+        <e:name set="dc">subject.gok</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Acquisition Date</e:title>
+      <e:map>
+        <e:name set="dc">date.nel</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Record Identifier</e:title>
+      <e:map>
+        <e:name set="rec">identifier</e:name>
+      </e:map>
+    </e:index>
+  </e:indexInfo>
+  <e:schemaInfo>
+    <e:schema name="solr" retrieve="true">
+      <e:title>Solr</e:title>
+    </e:schema>
+  </e:schemaInfo>
+  <e:configInfo>
+    <e:default type="contextSet">cql</e:default>
+    <e:default type="index">serverChoice</e:default>
+    <e:default type="relation">=</e:default>
+  </e:configInfo>
+</e:explain>
