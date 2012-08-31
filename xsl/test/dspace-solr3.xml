@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<doc>
+  <date name="SolrIndexer.lastIndexed">2012-08-29T14:22:10.701Z</date>
+  <arr name="all_ac">
+    <str>Becker, Juliane</str>
+    <str>2010-12-12T21:58:15Z</str>
+    <str>2010-12-12T21:58:15Z</str>
+    <str>2004</str>
+    <str>Freiberg Online Geosciences; Vol. 11.2004</str>
+    <str>1434-7512</str>
+    <str>http://hdl.handle.net/11858/00-1735-0000-0001-349A-0</str>
+    <str>High resolution aerial images taken in a cost and time effective way from low-flying platforms were used to map a hydrothermal area in the Yellowstone National Park. The
+mapping area called Ragged Hills is located in the Norris Geyser Basin, a major hydrothermal basin of the Park famous for its great diversity and number of thermal features. Because of an increasing thermal activity since the early 1990s numerous hydrothermal features of different
+sizes developed in Ragged Hills. Various changes in size and chemistry of the thermal
+features were observed during sporadic ground surveys. No detailed maps of the thermal
+inventory existed because of the difficulties in mapping this rapidly changing area by standard ground survey methods. Mapping the features in a short time to get a status quo of the feature&#x2019;s form and size was the goal of the present work.
+Two different low-flying platforms were used during this project &#x2013; a helium filled balloon and a single engine airplane (Cessna 172). To be able to georeference the aerial photos later a grid of ground control points was laid out and the points were surveyed by differential GPS as well as by theodolite. Deviations between both methods were on average 37 cm (Northing) and 61 cm (Easting). The overflights with the airplane were more cost intensive, requiring aircraft rental and trained pilots. Because the obtained images were in most cases blurred, they were served as overview only. Nevertheless the pixel resolution was quiet good with an average of
+6 cm. Besides the true color images taken by a digital camera, also thermal pictures were
+taken from the airplane with a spatial resolution of 1.2 m. The balloon survey provided a costeffective and easy-to-handle alternative. Major restrictions are only the transport of the helium bottles to the study site, and the requirements for calm wind conditions. From an altitude of 50 to 80 m sharp and high resolution images were obtained. About 45 pictures were used to
+create a mosaic of the whole study area with a pixel resolution of 2.5 cm. No high-resolution thermal pictures could be taken from the balloon because the weight of the camera (3.9 kg) exceeded the balloon&#x2019;s lifting capacity (1.5 kg). The created high-resolution aerial overview was included in a digital atlas together with topography and geological maps, older lowresolution
+aerial pictures, and hydrochemical data.
+The following diploma thesis gives an overview about available low-flying platforms and their individual advantages and disadvantages, describes the methods used in detail and evaluates them regarding expenditure and time it took to realize the individual working steps.
+Furthermore an interpretation of mapping and hydrochemical data is presented.</str>
+    <str>F&#xF6;rderkreis Freiberger Geologie e.V.</str>
+    <str>application/pdf</str>
+    <str>eng</str>
+    <str>Geologisches Institut &lt;Freiberg&gt;</str>
+    <str>Yellowstone National Park</str>
+    <str>geothermal fields</str>
+    <str>geothermal phenomena</str>
+    <str>geothermal systems</str>
+    <str>geothermal surveys</str>
+    <str>aerial photography</str>
+    <str>mapping</str>
+    <str>TQF 000</str>
+    <str>TOO 000</str>
+    <str>VAD 500</str>
+    <str>VEV 270</str>
+    <str>QBD 100</str>
+    <str>High resolution aerial and field mapping of thermal features in Ragged Hills, Yellowstone National Park</str>
+    <str>article</str>
+    <str>Geothermische Verfahren {Geophysik}</str>
+    <str>Geothermik {Geophysik}</str>
+    <str>Exhalationen und postvulkanische Erscheinungen {Geologie}</str>
+    <str>Westliche Gebirgsstaaten {Geologie}</str>
+    <str>Feld- und Gel&#xE4;ndearbeit {Geographie}</str>
+    <str>11</str>
+    <str>publishedVersion</str>
+    <str>Freiberg Online Geosciences; Vol. 11.2004</str>
+  </arr>
+  <arr name="dc.bibliographicCitation.volume">
+    <str>11</str>
+  </arr>
+  <arr name="dc.bibliographicCitation.volume.en">
+    <str>11</str>
+  </arr>
+  <arr name="dc.contributor.author">
+    <str>becker, juliane</str>
+  </arr>
+  <arr name="dc.contributor.author.de">
+    <str>Becker, Juliane</str>
+  </arr>
+  <arr name="dc.contributor.author_ac">
+    <str>Becker, Juliane</str>
+  </arr>
+  <arr name="dc.contributor.author_filter">
+    <str>becker, juliane|||Becker, Juliane</str>
+  </arr>
+  <arr name="dc.date.accessioned">
+    <str>2010-12-12t21:58:15z</str>
+  </arr>
+  <arr name="dc.date.available">
+    <str>2010-12-12t21:58:15z</str>
+  </arr>
+  <arr name="dc.date.issued.year">
+    <int>2004</int>
+  </arr>
+  <date name="dc.date.issued_dt">2004-01-01T00:00:00Z</date>
+  <str name="dc.date.issued_dt_sort">2004-01-01T00:00:00Z</str>
+  <arr name="dc.description.abstract">
+    <str>high resolution aerial images taken in a cost and time effective way from low-flying platforms were used to map a hydrothermal area in the yellowstone national park. the
+mapping area called ragged hills is located in the norris geyser basin, a major hydrothermal basin of the park famous for its great diversity and number of thermal features. because of an increasing thermal activity since the early 1990s numerous hydrothermal features of different
+sizes developed in ragged hills. various changes in size and chemistry of the thermal
+features were observed during sporadic ground surveys. no detailed maps of the thermal
+inventory existed because of the difficulties in mapping this rapidly changing area by standard ground survey methods. mapping the features in a short time to get a status quo of the feature&#x2019;s form and size was the goal of the present work.
+two different low-flying platforms were used during this project &#x2013; a helium filled balloon and a single engine airplane (cessna 172). to be able to georeference the aerial photos later a grid of ground control points was laid out and the points were surveyed by differential gps as well as by theodolite. deviations between both methods were on average 37 cm (northing) and 61 cm (easting). the overflights with the airplane were more cost intensive, requiring aircraft rental and trained pilots. because the obtained images were in most cases blurred, they were served as overview only. nevertheless the pixel resolution was quiet good with an average of
+6 cm. besides the true color images taken by a digital camera, also thermal pictures were
+taken from the airplane with a spatial resolution of 1.2 m. the balloon survey provided a costeffective and easy-to-handle alternative. major restrictions are only the transport of the helium bottles to the study site, and the requirements for calm wind conditions. from an altitude of 50 to 80 m sharp and high resolution images were obtained. about 45 pictures were used to
+create a mosaic of the whole study area with a pixel resolution of 2.5 cm. no high-resolution thermal pictures could be taken from the balloon because the weight of the camera (3.9 kg) exceeded the balloon&#x2019;s lifting capacity (1.5 kg). the created high-resolution aerial overview was included in a digital atlas together with topography and geological maps, older lowresolution
+aerial pictures, and hydrochemical data.
+the following diploma thesis gives an overview about available low-flying platforms and their individual advantages and disadvantages, describes the methods used in detail and evaluates them regarding expenditure and time it took to realize the individual working steps.
+furthermore an interpretation of mapping and hydrochemical data is presented.</str>
+  </arr>
+  <arr name="dc.description.abstract.de">
+    <str>High resolution aerial images taken in a cost and time effective way from low-flying platforms were used to map a hydrothermal area in the Yellowstone National Park. The
+mapping area called Ragged Hills is located in the Norris Geyser Basin, a major hydrothermal basin of the Park famous for its great diversity and number of thermal features. Because of an increasing thermal activity since the early 1990s numerous hydrothermal features of different
+sizes developed in Ragged Hills. Various changes in size and chemistry of the thermal
+features were observed during sporadic ground surveys. No detailed maps of the thermal
+inventory existed because of the difficulties in mapping this rapidly changing area by standard ground survey methods. Mapping the features in a short time to get a status quo of the feature&#x2019;s form and size was the goal of the present work.
+Two different low-flying platforms were used during this project &#x2013; a helium filled balloon and a single engine airplane (Cessna 172). To be able to georeference the aerial photos later a grid of ground control points was laid out and the points were surveyed by differential GPS as well as by theodolite. Deviations between both methods were on average 37 cm (Northing) and 61 cm (Easting). The overflights with the airplane were more cost intensive, requiring aircraft rental and trained pilots. Because the obtained images were in most cases blurred, they were served as overview only. Nevertheless the pixel resolution was quiet good with an average of
+6 cm. Besides the true color images taken by a digital camera, also thermal pictures were
+taken from the airplane with a spatial resolution of 1.2 m. The balloon survey provided a costeffective and easy-to-handle alternative. Major restrictions are only the transport of the helium bottles to the study site, and the requirements for calm wind conditions. From an altitude of 50 to 80 m sharp and high resolution images were obtained. About 45 pictures were used to
+create a mosaic of the whole study area with a pixel resolution of 2.5 cm. No high-resolution thermal pictures could be taken from the balloon because the weight of the camera (3.9 kg) exceeded the balloon&#x2019;s lifting capacity (1.5 kg). The created high-resolution aerial overview was included in a digital atlas together with topography and geological maps, older lowresolution
+aerial pictures, and hydrochemical data.
+The following diploma thesis gives an overview about available low-flying platforms and their individual advantages and disadvantages, describes the methods used in detail and evaluates them regarding expenditure and time it took to realize the individual working steps.
+Furthermore an interpretation of mapping and hydrochemical data is presented.</str>
+  </arr>
+  <arr name="dc.description.sponsorship">
+    <str>f&#xF6;rderkreis freiberger geologie e.v.</str>
+  </arr>
+  <arr name="dc.description.sponsorship.de">
+    <str>F&#xF6;rderkreis Freiberger Geologie e.V.</str>
+  </arr>
+  <arr name="dc.format.mimetype">
+    <str>application/pdf</str>
+  </arr>
+  <arr name="dc.format.mimetype.en">
+    <str>application/pdf</str>
+  </arr>
+  <arr name="dc.identifier.citation">
+    <str>freiberg online geosciences; vol. 11.2004</str>
+  </arr>
+  <arr name="dc.identifier.issn">
+    <str>1434-7512</str>
+  </arr>
+  <arr name="dc.identifier.issn.de">
+    <str>1434-7512</str>
+  </arr>
+  <arr name="dc.identifier.uri">
+    <str>http://hdl.handle.net/11858/00-1735-0000-0001-349a-0</str>
+  </arr>
+  <arr name="dc.language.iso">
+    <str>eng</str>
+  </arr>
+  <arr name="dc.language.iso.de">
+    <str>eng</str>
+  </arr>
+  <arr name="dc.publisher">
+    <str>geologisches institut &lt;freiberg&gt;</str>
+  </arr>
+  <arr name="dc.publisher.de">
+    <str>Geologisches Institut &lt;Freiberg&gt;</str>
+  </arr>
+  <arr name="dc.relation.filedescription">
+    <str>large version</str>
+    <str>small version</str>
+    <str>Appandix: Digital Atlas of Ragged Hills</str>
+  </arr>
+  <arr name="dc.relation.fileurl">
+    <str>http://goedoc-dev.sub.uni-goettingen.de/bitstream/handle/11858/00-1735-0000-0001-349A-0/FOG_Vol_11_b.pdf?sequence=1</str>
+    <str>http://goedoc-dev.sub.uni-goettingen.de/bitstream/handle/11858/00-1735-0000-0001-349A-0/FOG_Vol_11_s.pdf?sequence=2</str>
+    <str>http://goedoc-dev.sub.uni-goettingen.de/bitstream/handle/11858/00-1735-0000-0001-349A-0/Ragged Hills.svgz?sequence=3</str>
+  </arr>
+  <arr name="dc.relation.volume">
+    <str>freiberg online geosciences; vol. 11.2004</str>
+  </arr>
+  <arr name="dc.subject">
+    <str>yellowstone national park</str>
+    <str>geothermal fields</str>
+    <str>geothermal phenomena</str>
+    <str>geothermal systems</str>
+    <str>geothermal surveys</str>
+    <str>aerial photography</str>
+    <str>mapping</str>
+  </arr>
+  <arr name="dc.subject.en">
+    <str>Yellowstone National Park</str>
+    <str>geothermal fields</str>
+    <str>geothermal phenomena</str>
+    <str>geothermal systems</str>
+    <str>geothermal surveys</str>
+    <str>aerial photography</str>
+    <str>mapping</str>
+  </arr>
+  <arr name="dc.subject.gok">
+    <str>tqf 000</str>
+    <str>too 000</str>
+    <str>vad 500</str>
+    <str>vev 270</str>
+    <str>qbd 100</str>
+  </arr>
+  <arr name="dc.subject.gok.en">
+    <str>TQF 000</str>
+    <str>TOO 000</str>
+    <str>VAD 500</str>
+    <str>VEV 270</str>
+    <str>QBD 100</str>
+  </arr>
+  <arr name="dc.subject.gokverbal">
+    <str>geothermische verfahren {geophysik}</str>
+    <str>geothermik {geophysik}</str>
+    <str>exhalationen und postvulkanische erscheinungen {geologie}</str>
+    <str>westliche gebirgsstaaten {geologie}</str>
+    <str>feld- und gel&#xE4;ndearbeit {geographie}</str>
+  </arr>
+  <arr name="dc.subject.gokverbal.de">
+    <str>Geothermische Verfahren {Geophysik}</str>
+    <str>Geothermik {Geophysik}</str>
+    <str>Exhalationen und postvulkanische Erscheinungen {Geologie}</str>
+    <str>Westliche Gebirgsstaaten {Geologie}</str>
+    <str>Feld- und Gel&#xE4;ndearbeit {Geographie}</str>
+  </arr>
+  <arr name="dc.subject_ac">
+    <str>Yellowstone National Park</str>
+    <str>geothermal fields</str>
+    <str>geothermal phenomena</str>
+    <str>geothermal systems</str>
+    <str>geothermal surveys</str>
+    <str>aerial photography</str>
+    <str>mapping</str>
+  </arr>
+  <arr name="dc.subject_filter">
+    <str>yellowstone national park|||Yellowstone National Park</str>
+    <str>geothermal fields|||geothermal fields</str>
+    <str>geothermal phenomena|||geothermal phenomena</str>
+    <str>geothermal systems|||geothermal systems</str>
+    <str>geothermal surveys|||geothermal surveys</str>
+    <str>aerial photography|||aerial photography</str>
+    <str>mapping|||mapping</str>
+  </arr>
+  <arr name="dc.title">
+    <str>high resolution aerial and field mapping of thermal features in ragged hills, yellowstone national park</str>
+  </arr>
+  <arr name="dc.title.de">
+    <str>High resolution aerial and field mapping of thermal features in Ragged Hills, Yellowstone National Park</str>
+  </arr>
+  <arr name="dc.title_ac">
+    <str>High resolution aerial and field mapping of thermal features in Ragged Hills, Yellowstone National Park</str>
+  </arr>
+  <str name="dc.title_sort">High resolution aerial and field mapping of thermal features in Ragged Hills, Yellowstone National Park</str>
+  <arr name="dc.type">
+    <str>article</str>
+  </arr>
+  <arr name="dc.type.de">
+    <str>article</str>
+  </arr>
+  <arr name="dc.type.version">
+    <str>publishedversion</str>
+  </arr>
+  <arr name="dc.type.version.en">
+    <str>publishedVersion</str>
+  </arr>
+  <str name="handle">11858/00-1735-0000-0001-349A-0</str>
+  <arr name="location">
+    <str>m59</str>
+    <str>m15</str>
+    <str>l163</str>
+  </arr>
+  <arr name="location.coll">
+    <str>163</str>
+  </arr>
+  <arr name="location.comm">
+    <str>59</str>
+    <str>15</str>
+  </arr>
+  <arr name="publication_grp">
+    <str>11858/00-1735-0000-0001-349A-0</str>
+  </arr>
+  <int name="search.resourceid">3965</int>
+  <int name="search.resourcetype">2</int>
+</doc>

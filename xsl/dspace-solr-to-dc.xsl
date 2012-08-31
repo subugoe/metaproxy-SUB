@@ -25,6 +25,28 @@
 	</xsl:template>
 
 
+	<!-- Special case for dc.relation.fileurl array: create dc:relation.hasfile tags for this
+			and use the dc.relation.filedescription fields, which are in the same order, to enrich
+			these tags with a @title attribute
+	-->
+	<xsl:template match="arr[@name='dc.relation.fileurl']">
+		<xsl:for-each select="str">
+			<xsl:variable name="position" select="position()"/>
+			<xsl:variable name="description">
+				<xsl:value-of select="/doc/arr[@name='dc.relation.filedescription']/str[$position]"/>
+			</xsl:variable>
+			<dc:relation.hasfile>
+				<xsl:if test="string-length($description) &gt; 0 and $description != 'none'">
+					<xsl:attribute name="title">
+						<xsl:value-of select="$description"/>
+					</xsl:attribute>
+				</xsl:if>
+				<xsl:value-of select="."/>
+			</dc:relation.hasfile>
+		</xsl:for-each>
+	</xsl:template>
+
+
 	<!-- Process Solr all field types in the same way: determine their field name and write out their value. -->
 	<xsl:template match="str|int|date">
 		<xsl:variable name="fieldName">
@@ -65,9 +87,11 @@
 					<xsl:when test="$originalName = 'dc.date.issued.year'">
 						<xsl:text>date.issued</xsl:text>
 					</xsl:when>
+					<xsl:when test="$originalName = 'dc.relation.fileurl'">
+						<xsl:text>relation.hasfile</xsl:text>
+					</xsl:when>
 					<!-- Special cases for fields withou a '.en' version. -->
-					<xsl:when test="$originalName = 'dc.identifier.uri'
-									or $originalName = 'dc.publisher'">
+					<xsl:when test="$originalName = 'dc.identifier.uri'">
 						<xsl:value-of select="substring($originalName, 4)"/>
 					</xsl:when>
 				</xsl:choose>
