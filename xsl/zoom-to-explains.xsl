@@ -8,7 +8,7 @@
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
 
-	<xsl:param name="hosftname"/>
+	<xsl:param name="hostname"/>
 	<xsl:param name="port"/>
 
 

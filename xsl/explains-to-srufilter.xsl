@@ -21,7 +21,7 @@
 			* add explain element converted from metaproxy torus records as children
 	-->
 	<xsl:template match="/">
-		<mp:filter id="sru" type="sru_z3950">
+		<mp:filter type="sru_z3950">
 			<xsl:for-each select="records/e:explain/e:serverInfo/e:database">
 				<xsl:call-template name="databaseExplain"/>
 			</xsl:for-each>
@@ -39,9 +39,11 @@
 			<xsl:attribute name="name">
 				<xsl:value-of select="."/>
 			</xsl:attribute>
+			<!--
+			<xsl:copy-of select="document(concat('../config/explain/', translate(., '/', '_'), '.xml'))"/>
+			-->
 			<xi:include>
 				<xsl:attribute name="href">
-					<xsl:text>explain/</xsl:text>
 					<xsl:value-of select="translate(., '/', '_')"/>
 					<xsl:text>.xml</xsl:text>
 				</xsl:attribute>
