@@ -6,4 +6,4 @@
 	url = git://git.indexdata.com/yazpp.git
 [submodule "metaproxy"]
 	path = metaproxy
-	url = git://git.indexdata.com/metaproxy.git
+	url = git://github.com/ssp/metaproxy.git

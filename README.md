@@ -1,5 +1,5 @@
 # metaproxy-SUB
-metaproxy configuration for SUB Göttingen.
+Metaproxy configuration for SUB Göttingen.
 
 2012 by Sven-S. Porst, [SUB Göttingen](http://www.sub.uni-goettingen.de/) <[porst@sub.uni-goettingen.de](porst@sub.uni-goettingen.de)>.
 
