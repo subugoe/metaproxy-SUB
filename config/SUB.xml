@@ -276,7 +276,7 @@
 						<sru>solr</sru>
 						<elementSet>*</elementSet>
 
-						<cclmap_term>1=all_ac s=al t=r</cclmap_term>
+						<cclmap_term>1=metadata s=al t=r</cclmap_term>
 						<cclmap_fulltext>s=al t=r</cclmap_fulltext>
 						<cclmap_ti>1=dc.title s=pw t=r</cclmap_ti>
 						<cclmap_au>1=dc.contributor.author s=pw t=r</cclmap_au>
