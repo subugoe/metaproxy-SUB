@@ -121,7 +121,7 @@
 # Note: Special treatment of stop for LSB conformance
 NAME=metaproxy
 MP_PID=/tmp/metaproxy.pid # /var/run/metaproxy.pid would be better, but we have no write privileges
-MP_MAINPATH=/home/pazpar2/metaproxy-SUB
+MP_MAINPATH=/home/metaproxy/metaproxy-SUB
 MP_BASEPATH=$MP_MAINPATH/metaproxy/src
 MP_BIN=$MP_BASEPATH/$NAME
 MP_BIN2=$MP_BASEPATH/.libs/$NAME
@@ -185,8 +185,8 @@ case "$1" in
 	## Start daemon with startproc(8). If this fails
 	## the return value is set appropriately by startproc.
 	COMMAND="$MP_BIN -D -c $MP_CONFIG -w $MP_MAINPATH -p $MP_PID -l /var/log/metaproxy/metaproxy.log"
-	#/sbin/startproc -u pazpar2 $COMMAND
-	sudo -b -u pazpar2 $COMMAND
+	#/sbin/startproc -u metaproxy $COMMAND
+	sudo -b -u metaproxy $COMMAND
 
 	# Remember status and be verbose
 	# HACK! rc_status does not work here because metaproxy changes its binary path.
