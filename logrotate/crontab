@@ -1,0 +1,1 @@
+0 4 * * 0 /usr/sbin/logrotate /home/metaproxy/metaproxy-SUB/logrotate/metaproxy.logrotate
