@@ -6,6 +6,6 @@
 	delaycompress
 	notifempty
 	postrotate
-		/etc/init.d/metaproxy restart
+	/etc/init.d/metaproxy restart
 	endscript
 }

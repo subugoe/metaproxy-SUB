@@ -289,6 +289,22 @@
 						<transform>dspace-solr-to-dc.xsl</transform>
 					</record>
 
+
+					<!-- GBV ZDB Query -->
+					<record>
+						<zurl>sru.gbv.de/gbvcat</zurl>
+						<udb>gbvcat</udb>
+						<requestSyntax>xml</requestSyntax>
+						<piggyback>1</piggyback>
+
+						<cclmap_term>1=1016 s=al t=r</cclmap_term>
+						<cclmap_ti>1=4 s=al t=r</cclmap_ti>
+						<cclmap_mak>1=8600 s=al t=r</cclmap_mak>
+
+						<sortmap_title>title</sortmap_title>
+						<sortStrategy>z3950</sortStrategy>
+					</record>
+
 					<!-- SRU Test -->
 					<record>
 						<zurl>sru.gbv.de/opac-de-7</zurl>
