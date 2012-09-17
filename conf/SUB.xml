@@ -290,22 +290,8 @@
 					</record>
 
 
-					<!-- GBV ZDB Query -->
-					<record>
-						<zurl>sru.gbv.de/gbvcat</zurl>
-						<udb>gbvcat</udb>
-						<requestSyntax>xml</requestSyntax>
-						<piggyback>1</piggyback>
-
-						<cclmap_term>1=1016 s=al t=r</cclmap_term>
-						<cclmap_ti>1=4 s=al t=r</cclmap_ti>
-						<cclmap_mak>1=8600 s=al t=r</cclmap_mak>
-
-						<sortmap_title>title</sortmap_title>
-						<sortStrategy>z3950</sortStrategy>
-					</record>
-
 					<!-- SRU Test -->
+					<!--
 					<record>
 						<zurl>sru.gbv.de/opac-de-7</zurl>
 						<udb>opac-de-7</udb>
@@ -330,8 +316,10 @@
 						<cclmap_issn>1=pica.iss s=pw t=r</cclmap_issn>
 						<cclmap_id>1=pica.ppn</cclmap_id>
 					</record>
+					-->
 
 					<!-- Z39.50 Test -->
+					<!--
 					<record>
 						<zurl>sru.gbv.de/opac-de-7</zurl>
 						<udb>opac-de-7Z</udb>
@@ -353,6 +341,7 @@
 						<cclmap_issn>1=8 s=pw t=r</cclmap_issn>
 						<cclmap_id>1=12</cclmap_id>
 					</record>
+					-->
 				</records>
 			</torus>
 
