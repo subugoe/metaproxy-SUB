@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="xsl/doc/metaproxy-docs.xsl"?>
 <metaproxy
 		xmlns="http://indexdata.com/metaproxy"
 		xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -41,8 +42,7 @@
 			<torus
 				xsldir="xsl"
 				element_transform="custom"
-				element_raw="raw"
-			>
+				element_raw="raw">
 
 				<records>
 
@@ -410,11 +410,6 @@
 				<resultset ttl="0" restart="false"/>
 				<session ttl="60" max="100"/>
 			</filter>
-<!--		<filter type="log">
-				<message>B</message>
-				<category apdu="false" session="true"/>
-			</filter>
-			-->
 			<filter refid="backend"/>
 			<filter type="bounce"/>
 		</route>
