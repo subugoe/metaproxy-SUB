@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <doc>
+    <arr name="DATEMODIFIED"><str>20091018</str></arr>
+    <arr name="DC"><str>pressedienst.1946.1995.fes.bn.de</str></arr>
+    <arr name="DOCSTRCT"><str>Monograph</str></arr>
+    <arr name="IDDOC"><str>62688</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="LOCATION"><str>http://library.fes.de/spdpd/1951/510908.pdf</str></arr>
+    <arr name="PPN"><str>urn:zvdd.pressedienst_1946-1995.fes.bn.de:92139</str></arr>
+    <arr name="STRUCTRUN"><str>a:1:{i:0;a:6:{s:5:"IDDOC";i:62688;s:3:"PPN";s:47:"urn:zvdd.pressedienst_1946-1995.fes.bn.de:92139";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:32:"Um den Verkauf von Geiselgasteig";s:5:"DMDID";s:10:"dmd1000001";}}</str></arr>
+    <arr name="TITLE"><str>Um den Verkauf von Geiselgasteig</str></arr>
+    <arr name="YEARPUBLISH"><str>1951</str></arr>
+  </doc>
+  <doc>
+    <arr name="DATEINDEXED"><str>20100131</str></arr>
+    <arr name="DATEMODIFIED"><str>20100131</str></arr>
+    <arr name="DC"><str>dilibri.dilibri.de</str></arr>
+    <arr name="DOCSTRCT"><str>Other</str></arr>
+    <arr name="IDDOC"><str>852717</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="PLACEPUBLISH"><str>Mainz</str></arr>
+    <arr name="PPN"><str>047875720</str></arr>
+    <arr name="STRUCTRUN"><str>a:1:{i:0;a:6:{s:5:"IDDOC";i:852717;s:3:"PPN";s:9:"047875720";s:5:"depth";i:0;s:8:"DOCSTRCT";s:5:"Other";s:5:"TITLE";s:34:"Mainzer Carneval-Zeitung Narrhalla";s:5:"DMDID";s:8:"md121139";}}</str></arr>
+    <arr name="TITLE"><str>Mainzer Carneval-Zeitung Narrhalla</str></arr>
+    <arr name="YEARPUBLISH"><str>1903-1957</str></arr>
+  </doc>
+  <doc>
+    <arr name="CREATOR"><str>Blumenbach, Johann Friedrich</str></arr>
+    <arr name="CURRENTNO"><str>[Teil 1]</str></arr>
+    <arr name="DATEINDEXED"><str>20091127</str></arr>
+    <arr name="DATEMODIFIED"><str>20091127</str></arr>
+    <arr name="DC"><str>zoologica.sub.uni.goettingen.de</str></arr>
+    <arr name="DOCSTRCT"><str>Volume</str></arr>
+    <arr name="IDDOC"><str>853870</str></arr>
+    <arr name="IDPARENTDOC"><str>350198</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="PARENTCREATOR"><str>Blumenbach, Johann Friedrich</str></arr>
+    <arr name="PLACEPUBLISH"><str>Göttingen</str></arr>
+    <arr name="PPN"><str>PPN146155742</str></arr>
+    <arr name="PUBLISHER"><str>Dieterich</str></arr>
+    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"350198";s:3:"PPN";s:12:"PPN578154560";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:853870;s:3:"PPN";s:12:"PPN146155742";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:70:"Joh. Friedr. Blumenbachs ... Handbuch der Naturgeschichte  Mit Kupfern";s:5:"DMDID";s:11:"DMDLOG_0001";}}</str></arr>
+    <arr name="TITLE"><str>Joh. Friedr. Blumenbachs ... Handbuch der Naturgeschichte  Mit Kupfern</str></arr>
+    <arr name="YEARPUBLISH"><str>1779</str></arr>
+  </doc>
+  <doc>
+    <arr name="DATEINDEXED"><str>20091127</str></arr>
+    <arr name="DATEMODIFIED"><str>20091127</str></arr>
+    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
+    <arr name="DOCSTRCT"><str>Monograph</str></arr>
+    <arr name="IDDOC"><str>883204</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN240627504</str></arr>
+    <arr name="PLACEPUBLISH"><str>[Ephrata]</str></arr>
+    <arr name="PPN"><str>PPN240627504</str></arr>
+    <arr name="PUBLISHER"><str>[Mayer]</str></arr>
+    <arr name="STRUCTRUN"><str>a:1:{i:0;a:6:{s:5:"IDDOC";i:883204;s:3:"PPN";s:12:"PPN240627504";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:30:"Kurzgefaßtes Weiber-Büchlein";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
+    <arr name="TITLE"><str>Kurzgefaßtes Weiber-Büchlein</str></arr>
+    <arr name="YEARPUBLISH"><str>1798</str></arr>
+  </doc>
+  <doc>
+    <arr name="CURRENTNO"><str>Bd. 2</str></arr>
+    <arr name="DATEINDEXED"><str>20091127</str></arr>
+    <arr name="DATEMODIFIED"><str>20091127</str></arr>
+    <arr name="DC"><str>sibirica.sub.uni.goettingen.de</str></arr>
+    <arr name="DOCSTRCT"><str>Volume</str></arr>
+    <arr name="IDDOC"><str>904384</str></arr>
+    <arr name="IDPARENTDOC"><str>404465</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN246200057_Kupfer</str></arr>
+    <arr name="PPN"><str>PPN246200057_Kupfer</str></arr>
+    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"404465";s:3:"PPN";s:12:"PPN246199261";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:904384;s:3:"PPN";s:19:"PPN246200057_Kupfer";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:6:"Kupfer";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
+    <arr name="TITLE"><str>Kupfer</str></arr>
+    <arr name="YEARPUBLISH"><str>1800</str></arr>
+  </doc>
+  <doc>
+    <arr name="CREATOR"><str>Steller, Georg Wilhelm</str></arr>
+    <arr name="DATEINDEXED"><str>20091127</str></arr>
+    <arr name="DATEMODIFIED"><str>20091127</str></arr>
+    <arr name="DC"><str>sibirica.sub.uni.goettingen.de</str></arr>
+    <arr name="DOCSTRCT"><str>Monograph</str></arr>
+    <arr name="IDDOC"><str>925187</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN253686768</str></arr>
+    <arr name="PARENTCREATOR"><str>Steller, Georg Wilhelm</str></arr>
+    <arr name="PLACEPUBLISH"><str>St. Petersburg</str></arr>
+    <arr name="PPN"><str>PPN253686768</str></arr>
+    <arr name="PUBLISHER"><str>Logan</str></arr>
+    <arr name="STRUCTRUN"><str>a:1:{i:0;a:6:{s:5:"IDDOC";i:925187;s:3:"PPN";s:12:"PPN253686768";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:89:"G. W. Steller's ... Reise von Kamtschatka nach Amerika mit dem Commandeur-Capitän Bering";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
+    <arr name="TITLE"><str>G. W. Steller's ... Reise von Kamtschatka nach Amerika mit dem Commandeur-Capitän Bering</str></arr>
+    <arr name="YEARPUBLISH"><str>1793</str></arr>
+  </doc>
+  <doc>
+    <arr name="CURRENTNO"><str>T. 1</str></arr>
+    <arr name="DATEINDEXED"><str>20091127</str></arr>
+    <arr name="DATEMODIFIED"><str>20091127</str></arr>
+    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
+    <arr name="DOCSTRCT"><str>Volume</str></arr>
+    <arr name="IDDOC"><str>945216</str></arr>
+    <arr name="IDPARENTDOC"><str>487743</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN309768772</str></arr>
+    <arr name="PPN"><str>PPN309768772</str></arr>
+    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"487743";s:3:"PPN";s:12:"PPN309762677";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:945216;s:3:"PPN";s:12:"PPN309768772";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:216:"Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
+    <arr name="TITLE"><str>Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties</str></arr>
+    <arr name="YEARPUBLISH"><str>1799</str></arr>
+  </doc>
+  <doc>
+    <arr name="CURRENTNO"><str>T. 2</str></arr>
+    <arr name="DATEINDEXED"><str>20091127</str></arr>
+    <arr name="DATEMODIFIED"><str>20091127</str></arr>
+    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
+    <arr name="DOCSTRCT"><str>Volume</str></arr>
+    <arr name="IDDOC"><str>945633</str></arr>
+    <arr name="IDPARENTDOC"><str>487743</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN309776767</str></arr>
+    <arr name="PPN"><str>PPN309776767</str></arr>
+    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"487743";s:3:"PPN";s:12:"PPN309762677";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:945633;s:3:"PPN";s:12:"PPN309776767";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:216:"Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
+    <arr name="TITLE"><str>Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties</str></arr>
+    <arr name="YEARPUBLISH"><str>1799</str></arr>
+  </doc>
+  <doc>
+    <arr name="CURRENTNO"><str>T. 3</str></arr>
+    <arr name="DATEINDEXED"><str>20091127</str></arr>
+    <arr name="DATEMODIFIED"><str>20091127</str></arr>
+    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
+    <arr name="DOCSTRCT"><str>Volume</str></arr>
+    <arr name="IDDOC"><str>945769</str></arr>
+    <arr name="IDPARENTDOC"><str>487743</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN309777240</str></arr>
+    <arr name="PPN"><str>PPN309777240</str></arr>
+    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"487743";s:3:"PPN";s:12:"PPN309762677";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:945769;s:3:"PPN";s:12:"PPN309777240";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:216:"Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
+    <arr name="TITLE"><str>Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties</str></arr>
+    <arr name="YEARPUBLISH"><str>1802</str></arr>
+  </doc>
+  <doc>
+    <arr name="CURRENTNO"><str>T. 4</str></arr>
+    <arr name="DATEINDEXED"><str>20091127</str></arr>
+    <arr name="DATEMODIFIED"><str>20091127</str></arr>
+    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
+    <arr name="DOCSTRCT"><str>Volume</str></arr>
+    <arr name="IDDOC"><str>945881</str></arr>
+    <arr name="IDPARENTDOC"><str>487743</str></arr>
+    <arr name="ISWORK"><str>1</str></arr>
+    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN309777348</str></arr>
+    <arr name="PPN"><str>PPN309777348</str></arr>
+    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"487743";s:3:"PPN";s:12:"PPN309762677";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:945881;s:3:"PPN";s:12:"PPN309777348";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:216:"Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
+    <arr name="TITLE"><str>Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties</str></arr>
+    <arr name="YEARPUBLISH"><str>1802</str></arr>
+  </doc>
+</result>

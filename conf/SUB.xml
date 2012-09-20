@@ -289,6 +289,32 @@
 						<transform>dspace-solr-to-dc.xsl</transform>
 					</record>
 
+					<!-- ZVDD -->
+					<record>
+						<e:databaseInfo>
+							<e:title primary="true">ZVDD</e:title>
+							<e:description lang="de" primary="true">Zentrales Verzeichnis Digitalisierter Drucke.</e:description>
+						</e:databaseInfo>
+
+						<zurl>esx-151.gbv.de/solr/zvdd/</zurl>
+						<udb>zvdd</udb>
+						<sru>solr</sru>
+						<elementSet>*</elementSet>
+
+						<cclmap_term>s=al t=r</cclmap_term>
+						<cclmap_fulltext>s=al t=r</cclmap_fulltext>
+						<cclmap_ti>1=TITLE s=pw t=r</cclmap_ti>
+						<cclmap_au>1=CREATOR s=pw t=r</cclmap_au>
+<!--						<cclmap_date>1=dc.date.issued.year</cclmap_date>
+						<cclmap_lang>1=dc.language.iso</cclmap_lang>
+						<cclmap_su>1=dc.subject.gokverbal s=pw t=r</cclmap_su>
+						<cclmap_bkl>1=dc.subject.gbv t=r</cclmap_bkl>
+						<cclmap_gok>1=dc.subject.gok s=pw t=r</cclmap_gok>
+-->
+						<cclmap_id>1=PPN</cclmap_id>
+						<cclmap_iswork>1=ISWORK</cclmap_iswork>
+						<transform>zvdd-solr-to-mets.xsl</transform>
+					</record>
 
 					<!-- SRU Test -->
 					<!--
@@ -392,6 +418,9 @@
 			</fieldmap>
 			<fieldmap cql="dc.identifier.issn" ccl="issn">
 				<title lang="en">ISSN</title>
+			</fieldmap>
+			<fieldmap cql="zvdd.iswork" ccl="iswork">
+				<title lang="en">Is Work</title>
 			</fieldmap>
 
 			<log apdu="false"/>

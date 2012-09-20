@@ -35,10 +35,7 @@
   <mp:database name="dspace/gldocs">
     <xi:include href="dspace_gldocs.xml"/>
   </mp:database>
-  <mp:database name="opac-de-7">
-    <xi:include href="opac-de-7.xml"/>
-  </mp:database>
-  <mp:database name="opac-de-7Z">
-    <xi:include href="opac-de-7Z.xml"/>
+  <mp:database name="zvdd">
+    <xi:include href="zvdd.xml"/>
   </mp:database>
 </mp:filter>
