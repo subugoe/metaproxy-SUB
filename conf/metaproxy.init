@@ -122,7 +122,7 @@
 NAME=metaproxy
 MP_PID=/tmp/metaproxy.pid # /var/run/metaproxy.pid would be better, but we have no write privileges
 MP_MAINPATH=/home/metaproxy/metaproxy-SUB
-MP_CONFIGPATH = $MP_MAINPATH/conf
+MP_CONFIGPATH=$MP_MAINPATH/conf
 MP_BASEPATH=$MP_MAINPATH/metaproxy/src
 MP_BIN=$MP_BASEPATH/$NAME
 MP_BIN2=$MP_BASEPATH/.libs/$NAME
