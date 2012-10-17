@@ -2,17 +2,17 @@
 #
 #     Template SUSE system startup script for example service/daemon FOO
 #     Copyright (C) 1995--2005  Kurt Garloff, SUSE / Novell Inc.
-#          
+#
 #     This library is free software; you can redistribute it and/or modify it
 #     under the terms of the GNU Lesser General Public License as published by
 #     the Free Software Foundation; either version 2.1 of the License, or (at
 #     your option) any later version.
-#			      
+#
 #     This library is distributed in the hope that it will be useful, but
 #     WITHOUT ANY WARRANTY; without even the implied warranty of
 #     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 #     Lesser General Public License for more details.
-#      
+#
 #     You should have received a copy of the GNU Lesser General Public
 #     License along with this library; if not, write to the Free Software
 #     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,
@@ -25,10 +25,10 @@
 # Template system startup script for some example service/daemon FOO
 #
 # LSB compatible service control script; see http://www.linuxbase.org/spec/
-# 
+#
 # Note: This template uses functions rc_XXX defined in /etc/rc.status on
 # UnitedLinux/SUSE/Novell based Linux distributions. If you want to base your
-# script on this template and ensure that it works on non UL based LSB 
+# script on this template and ensure that it works on non UL based LSB
 # compliant Linux distributions, you either have to provide the rc.status
 # functions from UL or change the script to work without them.
 # See skeleton.compat for a template that works with other distros as well.
@@ -49,10 +49,10 @@
 #	what it's needed for ...
 #	(The Short-Description should already be a good hint.)
 ### END INIT INFO
-# 
-# Any extensions to the keywords given above should be preceeded by 
+#
+# Any extensions to the keywords given above should be preceeded by
 # X-VendorTag- (X-UnitedLinux- X-SuSE- for us) according to LSB.
-# 
+#
 # Notes on Required-Start/Should-Start:
 # * There are two different issues that are solved by Required-Start
 #    and Should-Start
@@ -70,7 +70,7 @@
 #     in parallel). The tag Should-Start: is used for this.
 #     It tells, that if a service is available, it should be started
 #     before. If not, never mind.
-# * When specifying hard dependencies or ordering requirements, you can 
+# * When specifying hard dependencies or ordering requirements, you can
 #   use names of services (contents of their Provides: section)
 #   or pseudo names starting with a $. The following ones are available
 #   according to LSB (1.1):
@@ -86,15 +86,15 @@
 #   The $netdaemons pseudo service has been removed in LSB 1.2.
 #   For now, we still offer it for backward compatibility.
 #   These are new (LSB 1.2):
-#	$time			the system time has been set correctly	
+#	$time			the system time has been set correctly
 #	$portmap		SunRPC portmapping service available
 #   UnitedLinux extensions:
 #	$ALL			indicates that a script should be inserted
 #				at the end
-# * The services specified in the stop tags 
+# * The services specified in the stop tags
 #   (Required-Stop/Should-Stop)
 #   specify which services need to be still running when this service
-#   is shut down. Often the entries there are just copies or a subset 
+#   is shut down. Often the entries there are just copies or a subset
 #   from the respective start tag.
 # * Should-Start/Stop are now part of LSB as of 2.0,
 #   formerly SUSE/Unitedlinux used X-UnitedLinux-Should-Start/-Stop.
@@ -108,7 +108,7 @@
 # 0 - halt/poweroff 			6 - reboot
 # 1 - single user			2 - multiuser without network exported
 # 3 - multiuser w/ network (text mode)  5 - multiuser w/ network and X11 (xdm)
-# 
+#
 # Note on script names:
 # http://www.linuxbase.org/spec/refspecs/LSB_1.3.0/gLSB/gLSB/scrptnames.html
 # A registry has been set up to manage the init script namespace.
@@ -122,24 +122,25 @@
 NAME=metaproxy
 MP_PID=/tmp/metaproxy.pid # /var/run/metaproxy.pid would be better, but we have no write privileges
 MP_MAINPATH=/home/metaproxy/metaproxy-SUB
+MP_CONFIGPATH = $MP_MAINPATH/conf
 MP_BASEPATH=$MP_MAINPATH/metaproxy/src
 MP_BIN=$MP_BASEPATH/$NAME
 MP_BIN2=$MP_BASEPATH/.libs/$NAME
-test -x $MP_BIN || { echo "$MP_BIN not installed"; 
+test -x $MP_BIN || { echo "$MP_BIN not installed";
 	if [ "$1" = "stop" ]; then exit 0;
 	else exit 5; fi; }
 
 # Check for existence of needed config file and read it
-MP_CONFIG=$MP_MAINPATH/conf/SUB.xml
+MP_CONFIG=$MP_CONFIGPATH/SUB.xml
 test -r $MP_CONFIG || { echo "$MP_CONFIG not existing";
 	if [ "$1" = "stop" ]; then exit 0;
 	else exit 6; fi; }
 
-# Read config	
+# Read config
 #. $FOO_CONFIG
 
 # Source LSB init functions
-# providing start_daemon, killproc, pidofproc, 
+# providing start_daemon, killproc, pidofproc,
 # log_success_msg, log_failure_msg and log_warning_msg.
 # This is currently not used by UnitedLinux based distributions and
 # not needed for init scripts for UnitedLinux only. If it is used,
@@ -173,7 +174,7 @@ rc_reset
 # 6       - program is not configured
 # 7       - program is not running
 # 8--199  - reserved (8--99 LSB, 100--149 distrib, 150--199 appl)
-# 
+#
 # Note that starting an already running service, stopping
 # or restarting a not-running service as well as the restart
 # with force-reload (in case signaling is not supported) are
@@ -184,7 +185,7 @@ case "$1" in
 	#echo -n "Starting metaproxy "
 	## Start daemon with startproc(8). If this fails
 	## the return value is set appropriately by startproc.
-	COMMAND="$MP_BIN -D -c $MP_CONFIG -w $MP_MAINPATH -p $MP_PID -l /var/log/metaproxy/metaproxy.log"
+	COMMAND="$MP_BIN -D -c $MP_CONFIG -w $MP_CONFIGPATH -p $MP_PID -l /var/log/metaproxy/metaproxy.log"
 	#/sbin/startproc -u metaproxy $COMMAND
 	sudo -b -u metaproxy $COMMAND
 
@@ -199,7 +200,7 @@ case "$1" in
 	echo -n "Shutting down metaproxy "
 	## Stop daemon with killproc(8) and if this fails
 	## killproc sets the return value according to LSB.
-	
+
 	# HACK!
 	# Use different path for killing due to the different path metaproxy switches to.
 	/sbin/killproc -p $MP_PID -TERM $MP_BIN2
@@ -257,7 +258,7 @@ case "$1" in
 	/sbin/killproc -HUP $FOO_BIN
 	#touch /var/run/FOO.pid
 	rc_status -v
-	
+
 	## Otherwise if it does not support reload:
 	#rc_failed 3
 	#rc_status -v
@@ -274,7 +275,7 @@ case "$1" in
 	# 3 - service not running (unused)
 	# 4 - service status unknown :-(
 	# 5--199 reserved (5--99 LSB, 100--149 distro, 150--199 appl.)
-	
+
 	# NOTE: checkproc returns LSB compliant status values.
 	/sbin/checkproc $FOO_BIN
 	# NOTE: rc_status knows that we called this init script with
