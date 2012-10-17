@@ -11,11 +11,6 @@
 		* multiple (publisher|date.issued) fields (should not exist)
 		* multiple title.translated fields (should not exist)
 		* field 773 uses the first issn and bibliographicCitation.*, hoping there won’t be others (should be)
-		*
-
-		* subject.dnb (presumably irrelevant/obsolete)
-		* affiliation.placeOfBirth (can it be mapped? to 100 $what?)
-		* identifier.purl (does not appear in any existing records)
 -->
 <record xmlns="http://www.loc.gov/MARC21/slim">
   <leader>      ma a22     3u 4500</leader>
