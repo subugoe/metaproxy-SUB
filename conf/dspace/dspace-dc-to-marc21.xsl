@@ -37,9 +37,16 @@
 			<controlfield tag="008">
 				<!-- position 0-5: date -->
 				<xsl:variable name="date">
-					<xsl:value-of select="substring(dc:date.accessioned_dt[1], 3, 2)"/>
-					<xsl:value-of select="substring(dc:date.accessioned_dt[1], 6, 2)"/>
-					<xsl:value-of select="substring(dc:date.accessioned_dt[1], 9, 2)"/>
+					<xsl:choose>
+						<xsl:when test="string-length(dc:date.accessioned_dt[1]) &gt;= 11">
+							<xsl:value-of select="substring(dc:date.accessioned_dt[1], 3, 2)"/>
+							<xsl:value-of select="substring(dc:date.accessioned_dt[1], 6, 2)"/>
+							<xsl:value-of select="substring(dc:date.accessioned_dt[1], 9, 2)"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:text>      </xsl:text>
+						</xsl:otherwise>
+					</xsl:choose>
 				</xsl:variable>
 				<xsl:variable name="realDate">
 					<xsl:choose>
