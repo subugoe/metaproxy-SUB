@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!--
+	Metaproxy Route for ZVDD:
+		* responds to SRU and Z39.50
+		* converts Z39.50 search attributes to Solr index names
+		* rewrites search queries to only include works
+		* offers MARC (MARCXML and MARC21), DC, METS and Solr data
+		* loads results from Solr
+
+	2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+<route xmlns="http://indexdata.com/metaproxy" id="zvdd">
+
+	<!--
+		Convert incoming query to RPN.
+	-->
+	<filter type="cql_rpn">
+		<conversion file="zvdd/zvdd.pqf"/>
+	</filter>
+
+
+	<!--
+		Map Z39.50 index names to Solr index names.
+	-->
+	<filter type="query_rewrite">
+		<xslt stylesheet="zvdd/zvdd-pql-to-solr.xsl"/>
+	</filter>
+
+
+	<!--
+		Add AND ISWORK:1 to query.
+	-->
+	<filter type="query_rewrite">
+		<xslt stylesheet="zvdd/zvdd-add-iswork.xsl"/>
+	</filter>
+
+
+	<!--
+		Output formats:
+			* Marc21
+			* XML with element sets:
+				* marcxml
+				* turbomarc
+				* dc
+				* mets (very expensive, loads METS records from external server)
+				* solr
+	-->
+	<filter type="record_transform">
+		<retrievalinfo  xmlns="http://indexdata.com/yaz" version="1.0">
+			<retrieval syntax="usmarc">
+				<backend name="">
+					<xslt stylesheet="zvdd/zvdd-solr-to-dc.xsl"/>
+					<xslt stylesheet="../xsl/DC2MARC21slim.xsl"/>
+					<marc inputformat="xml" outputformat="marc" outputcharset="utf-8"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="marcxml" identifier="info:srw/schema/1/marcxml-v1.1">
+				<backend name="">
+					<xslt stylesheet="zvdd/zvdd-solr-to-dc.xsl"/>
+					<xslt stylesheet="../xsl/DC2MARC21slim.xsl"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="turbomarc">
+				<backend name="">
+					<xslt stylesheet="zvdd/zvdd-solr-to-dc.xsl"/>
+					<xslt stylesheet="../xsl/DC2MARC21slim.xsl"/>
+					<xslt stylesheet="../xsl/MarcXML2TurboMarc.xsl"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="dc">
+				<backend name="">
+					<xslt stylesheet="zvdd/zvdd-solr-to-dc.xsl"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="mets">
+				<backend name="">
+					<xslt stylesheet="zvdd/zvdd-solr-to-mets.xsl"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="solr">
+				<backend name=""/>
+			</retrieval>
+		</retrievalinfo>
+	</filter>
+
+
+	<!--
+		Use zoom backend to communicate with Solr.
+	-->
+	<filter refid="zoom"/>
+
+</route>

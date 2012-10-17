@@ -1,38 +1,43 @@
-<!--
-	Test setup file.
-	Content from http://lists.indexdata.dk/pipermail/yazlist/2012-May/003480.html
--->
-<metaproxy xmlns="http://indexdata.com/metaproxy" version="1.0">
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/doc/metaproxy-docs.xsl"?>
+<metaproxy
+		xmlns="http://indexdata.com/metaproxy"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		version="1.0">
+
 
 	<start route="start"/>
 
-	<filters></filters>
+
+	<filters>
+		<xi:include href="zoom.xml"/>
+	</filters>
+
 
 	<routes>
 		<route id="start">
 			<filter type="frontend_net">
 				<threads>10</threads>
 				<port>@:9000</port>
-				<message>FN</message>
+				<!-- <port>@:210</port> -->
 			</filter>
-			<filter type="zoom">
-				<torus>
-					<records>
-						<!-- sru local connector -->
-						<record>
-							<piggyback>1</piggyback>
-							<queryEncoding>UTF-8</queryEncoding>
-							<udb>sru-local</udb>
-							<sru>get</sru>
-							<sruVersion>1.1</sruVersion>
-							<zurl>sru.gbv.de/opac-de-7</zurl>
-						</record>
-					</records>
-				</torus>
-				<log apdu="false"/>
-				<zoom timeout="20"/>
+
+			<xi:include href="explain/explains.xml"/>
+
+			<filter type="virt_db">
+				<virtual route="zvdd">
+					<database>zvdd</database>
+				</virtual>
+				<virtual route="dspace">
+					<database>dspace/gldocs</database>
+				</virtual>
 			</filter>
+
+			<filter type="bounce"/>
 		</route>
+
+		<xi:include href="zvdd/zvdd-route.xml"/>
+		<xi:include href="dspace/dspace-route.xml"/>
 	</routes>
 
 </metaproxy>

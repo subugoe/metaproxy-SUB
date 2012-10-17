@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!--
+	Result of
+	xsltproc ../DSpace-DC-to-MARC21.xsl DSpace-DC-test-eDiss.xml | xsltproc ../../../xsl/MARCXML-sort.xsl -
+
+	Lost fields:
+		* format.mimetype (useless)
+		* date.examination
+		* date.available
+		* subject.dnb (presumably irrelevant/obsolete)
+		* subject.gok (to be superseded by subject.gokcode)
+		* affiliation.placeOfBirth (can it be mapped? to 100 $what?)
+		* multiple affiliation.(dateOfBirth|institut|address) fields (should not exist)
+		* multiple (publisher|date.issued) fields (should not exist)
+		* multiple title.translated fields (should not exist)
+		* identifier.purl (does not appear in any existing records)
+-->
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>      ma a22     3u 4500</leader>
+  <controlfield tag="008">120101         xx      o  d        eng d</controlfield>
+  <datafield tag="024" ind1="2" ind2=" ">
+    <subfield code="a">identifier.urn 1</subfield>
+    <subfield code="2">urn</subfield>
+  </datafield>
+  <datafield tag="024" ind1="2" ind2=" ">
+    <subfield code="a">identifier.urn 2</subfield>
+    <subfield code="2">urn</subfield>
+  </datafield>
+  <datafield tag="041" ind1=" " ind2=" ">
+    <subfield code="a">ger</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2=" ">
+    <subfield code="a">subject.ddc 1</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2=" ">
+    <subfield code="a">subject.ddc 2</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+    <subfield code="a">subject.bk 1</subfield>
+    <subfield code="2">bcl</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+    <subfield code="a">subject.bk 2</subfield>
+    <subfield code="2">bcl</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">contributor.author 1</subfield>
+    <subfield code="d">affiliation.dateOfBirth 1</subfield>
+    <subfield code="u">affiliation.institut 1, affiliation.address 1</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">title 1</subfield>
+    <subfield code="b">= title.translated 1</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">title 2</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">title.alternative 1</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">title.alternative 2</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">title.alternativeTranslated 1</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">title.alternativeTranslated 2</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">publisher 1</subfield>
+    <subfield code="c">2001</subfield>
+  </datafield>
+  <datafield tag="520" ind1="3" ind2=" ">
+    <subfield code="a">description.abstract 1</subfield>
+  </datafield>
+  <datafield tag="520" ind1="3" ind2=" ">
+    <subfield code="a">description.abstract 2</subfield>
+  </datafield>
+  <datafield tag="520" ind1="3" ind2=" ">
+    <subfield code="a">description.abstractger 1</subfield>
+  </datafield>
+  <datafield tag="520" ind1="3" ind2=" ">
+    <subfield code="a">description.abstractger 2</subfield>
+  </datafield>
+  <datafield tag="520" ind1="3" ind2=" ">
+    <subfield code="a">description.abstracteng 1</subfield>
+  </datafield>
+  <datafield tag="520" ind1="3" ind2=" ">
+    <subfield code="a">description.abstracteng 2</subfield>
+  </datafield>
+  <datafield tag="542" ind1=" " ind2=" ">
+    <subfield code="u">rights.uri 1</subfield>
+    <subfield code="u">rights.uri 2</subfield>
+    <subfield code="n">rights 1</subfield>
+    <subfield code="n">rights 2</subfield>
+  </datafield>
+  <datafield tag="561" ind1=" " ind2=" ">
+    <subfield code="a">description.provenance 1</subfield>
+  </datafield>
+  <datafield tag="561" ind1=" " ind2=" ">
+    <subfield code="a">description.provenance 2</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.topic 1</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.topic 2</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.ger 1</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.ger 2</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.eng 1</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.eng 2</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.author 2</subfield>
+    <subfield code="4">aut</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.advisor 1</subfield>
+    <subfield code="4">ths</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.advisor 2</subfield>
+    <subfield code="4">ths</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.referee 1</subfield>
+    <subfield code="4">rev</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.referee 2</subfield>
+    <subfield code="4">rev</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.coReferee 1</subfield>
+    <subfield code="4">rev</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.coReferee 2</subfield>
+    <subfield code="4">rev</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.thirdReferee 1</subfield>
+    <subfield code="4">rev</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.thirdReferee 2</subfield>
+    <subfield code="4">rev</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://identifier.uri/1</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://identifier.uri/2</subfield>
+  </datafield>
+</record>

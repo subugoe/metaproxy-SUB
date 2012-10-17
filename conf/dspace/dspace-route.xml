@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<route xmlns="http://indexdata.com/metaproxy" id="dspace">
+
+	<!--
+		Convert incoming query to RPN.
+	-->
+	<filter type="cql_rpn">
+		<conversion file="dspace/dspace.pqf"/>
+	</filter>
+
+
+	<!--
+		Map Z39.50 index names to Solr index names.
+	-->
+	<filter type="query_rewrite">
+		<xslt stylesheet="dspace/dspace-pql-to-solr.xsl"/>
+	</filter>
+
+
+	<!--
+		Output formats:
+			* Marc21
+			* XML with element sets:
+				* marcxml
+				* turbomarc
+				* dc
+				* solr
+	-->
+	<filter type="record_transform">
+		<retrievalinfo  xmlns="http://indexdata.com/yaz" version="1.0">
+			<retrieval syntax="usmarc">
+				<backend name="">
+					<xslt stylesheet="dspace/dspace-solr-to-dc.xsl"/>
+					<xslt stylesheet="dspace/dspace-dc-to-marc21.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
+					<marc inputformat="xml" outputformat="marc" outputcharset="utf-8"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="marcxml" identifier="info:srw/schema/1/marcxml-v1.1">
+				<backend name="">
+					<xslt stylesheet="dspace/dspace-solr-to-dc.xsl"/>
+					<xslt stylesheet="dspace/dspace-dc-to-marc21.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="turbomarc">
+				<backend name="">
+					<xslt stylesheet="dspace/dspace-solr-to-dc.xsl"/>
+					<xslt stylesheet="dspace/dspace-dc-to-marc21.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
+					<xslt stylesheet="../xsl/MarcXML2TurboMarc.xsl"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="dc">
+				<backend name="">
+					<xslt stylesheet="dspace/dspace-solr-to-dc.xsl"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="solr">
+				<backend name=""/>
+			</retrieval>
+		</retrievalinfo>
+	</filter>
+
+
+	<!--
+		Use zoom backend to communicate with Solr.
+	-->
+	<filter refid="zoom"/>
+
+</route>

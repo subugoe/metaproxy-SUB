@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<!--
+	Test file with all »DC« fields from the eDiss DSpace system on 2012-10-17.
+-->
+<record xmlns="http://purl.org/dc/elements/1.1/">
+	<contributor>contributor 1</contributor>
+	<contributor>contributor 2</contributor>
+	<contributor.author>contributor.author 1</contributor.author>
+	<contributor.author>contributor.author 2</contributor.author>
+	<contributor.editor>contributor.editor 1</contributor.editor>
+	<contributor.editor>contributor.editor 2</contributor.editor>
+	<date.accessioned_dt>2012-01-01</date.accessioned_dt>
+	<date.accessioned_dt>2012-02-02</date.accessioned_dt>
+	<date.available>2012-03-03</date.available>
+	<date.available>2012-04-04</date.available>
+	<date.issued>2001</date.issued>
+	<date.issued>2002</date.issued>
+	<identifier>identifier 1</identifier>
+	<identifier>identifier 2</identifier>
+	<identifier.citation>identifier.citation 1</identifier.citation>
+	<identifier.citation>identifier.citation 2</identifier.citation>
+	<identifier.isbn>identifier.isbn 1</identifier.isbn>
+	<identifier.isbn>identifier.isbn 2</identifier.isbn>
+	<identifier.issn>identifier.issn 1</identifier.issn>
+	<identifier.issn>identifier.issn 2</identifier.issn>
+	<identifier.other>identifier.other 1</identifier.other>
+	<identifier.other>identifier.other 2</identifier.other>
+	<identifier.uri>http://identifier.uri/1</identifier.uri>
+	<identifier.uri>http://identifier.uri/2</identifier.uri>
+	<description>description 1</description>
+	<description>description 2</description>
+	<description.abstract>description.abstract 1</description.abstract>
+	<description.abstract>description.abstract 2</description.abstract>
+	<description.provenance>description.provenance 1</description.provenance>
+	<description.provenance>description.provenance 2</description.provenance>
+	<description.sponsorship>description.sponsorship 1</description.sponsorship>
+	<description.sponsorship>description.sponsorship 2</description.sponsorship>
+	<format.extent>format.extent 1</format.extent>
+	<format.extent>format.extent 2</format.extent>
+	<format.mimetype>format.mimetype 1</format.mimetype>
+	<format.mimetype>format.mimetype 2</format.mimetype>
+	<language.iso>eng</language.iso>
+	<language.iso>ger</language.iso>
+	<publisher>publisher 1</publisher>
+	<publisher>publisher 2</publisher>
+	<relation>relation 1</relation>
+	<relation>relation 2</relation>
+	<relation.ispartof>relation.ispartof 1</relation.ispartof>
+	<relation.ispartof>relation.ispartof 2</relation.ispartof>
+	<relation.ispartofseries>relation.ispartofseries 1</relation.ispartofseries>
+	<relation.ispartofseries>relation.ispartofseries 2</relation.ispartofseries>
+	<rights>rights 1</rights>
+	<rights>rights 2</rights>
+	<rights.uri>rights.uri 1</rights.uri>
+	<rights.uri>rights.uri 2</rights.uri>
+	<subject>subject 1</subject>
+	<subject>subject 2</subject>
+	<subject.ddc>subject.ddc 1</subject.ddc>
+	<subject.ddc>subject.ddc 2</subject.ddc>
+	<subject.gok>subject.gok 1</subject.gok>
+	<subject.gok>subject.gok 2</subject.gok>
+	<subject.gbv>subject.gbv 1</subject.gbv>
+	<subject.gbv>subject.gbv 2</subject.gbv>
+	<subject.swd>subject.swd 1</subject.swd>
+	<subject.swd>subject.swd 2</subject.swd>
+	<subject.other>subject.other 1</subject.other>
+	<subject.other>subject.other 2</subject.other>
+	<title>title 1</title>
+	<title>title 2</title>
+	<title.alternative>title.alternative 1</title.alternative>
+	<title.alternative>title.alternative 2</title.alternative>
+	<type>article</type>
+	<type>book</type>
+	<subject.gokverbal>subject.gokverbal 1</subject.gokverbal>
+	<subject.gokverbal>subject.gokverbal 2</subject.gokverbal>
+	<bibliographicCitation.volume>bibliographicCitation.volume 1</bibliographicCitation.volume>
+	<bibliographicCitation.volume>bibliographicCitation.volume 2</bibliographicCitation.volume>
+	<bibliographicCitation.issue>bibliographicCitation.issue 1</bibliographicCitation.issue>
+	<bibliographicCitation.issue>bibliographicCitation.issue 2</bibliographicCitation.issue>
+	<bibliographicCitation.firstPage>bibliographicCitation.firstPage 1</bibliographicCitation.firstPage>
+	<bibliographicCitation.firstPage>bibliographicCitation.firstPage 2</bibliographicCitation.firstPage>
+	<bibliographicCitation.lastPage>bibliographicCitation.lastPage 1</bibliographicCitation.lastPage>
+	<bibliographicCitation.lastPage>bibliographicCitation.lastPage 2</bibliographicCitation.lastPage>
+	<identifier.doi>identifier.doi 1</identifier.doi>
+	<identifier.doi>identifier.doi 2</identifier.doi>
+	<identifier.ppn>identifier.ppn 1</identifier.ppn>
+	<identifier.ppn>identifier.ppn 2</identifier.ppn>
+	<identifier.urn>identifier.urn 1</identifier.urn>
+	<identifier.urn>identifier.urn 2</identifier.urn>
+	<type.version>type.version 1</type.version>
+	<type.version>type.version 2</type.version>
+	<identifier.bibliographicCitation>identifier.bibliographicCitation 1</identifier.bibliographicCitation>
+	<identifier.bibliographicCitation>identifier.bibliographicCitation 2</identifier.bibliographicCitation>
+	<identifier.pISBN>identifier.pISBN 1</identifier.pISBN>
+	<identifier.pISBN>identifier.pISBN 2</identifier.pISBN>
+	<identifier.eISBN>identifier.eISBN 1</identifier.eISBN>
+	<identifier.eISBN>identifier.eISBN 2</identifier.eISBN>
+	<rights.holder>rights.holder 1</rights.holder>
+	<rights.holder>rights.holder 2</rights.holder>
+	<date.updated>date.updated 1</date.updated>
+	<date.updated>date.updated 2</date.updated>
+	<relation.isbn>relation.isbn 1</relation.isbn>
+	<relation.isbn>relation.isbn 2</relation.isbn>
+	<relation.issn>relation.issn 1</relation.issn>
+	<relation.issn>relation.issn 2</relation.issn>
+	<relation.pISSN>relation.pISSN 1</relation.pISSN>
+	<relation.pISSN>relation.pISSN 2</relation.pISSN>
+	<relation.eISSN>relation.eISSN 1</relation.eISSN>
+	<relation.eISSN>relation.eISSN 2</relation.eISSN>
+	<relation.pISBN>relation.pISBN 1</relation.pISBN>
+	<relation.pISBN>relation.pISBN 2</relation.pISBN>
+	<subject.free>subject.free 1</subject.free>
+	<subject.free>subject.free 2</subject.free>
+	<subject.bk>subject.bk 1</subject.bk>
+	<subject.bk>subject.bk 2</subject.bk>
+	<title.translated>title.translated 1</title.translated>
+	<title.translated>title.translated 2</title.translated>
+	<bibliographicCitation.article>bibliographicCitation.article 1</bibliographicCitation.article>
+	<bibliographicCitation.article>bibliographicCitation.article 2</bibliographicCitation.article>
+	<relation.volume>relation.volume 1</relation.volume>
+	<relation.volume>relation.volume 2</relation.volume>
+</record>

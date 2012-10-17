@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<filter
+	xmlns="http://indexdata.com/metaproxy"
+	xmlns:e="http://explain.z3950.org/dtd/2.0/"
+	id="zoom"
+	type="zoom">
+
+
+	<torus
+		xsldir="xsl"
+		element_transform="custom"
+		element_raw="raw">
+
+		<records>
+
+			<!-- Solr SSGFI1 -->
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">Mathematik Digitalisate</e:title>
+					<e:description lang="de" primary="true">Sammlung von Digitalisaten aus den Gebieten der Mathematik.</e:description>
+				</e:databaseInfo>
+
+				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/digreg/</zurl>
+				<udb>ssgfi/math-digreg</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=Author s=pw t=r</cclmap_au>
+				<cclmap_date>1=Year</cclmap_date>
+				<cclmap_id>1=PPN</cclmap_id>
+			</record>
+
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">Jahrbuch Datenbank</e:title>
+					<e:description lang="de" primary="true">Bestände des Jahrbuch für Mathematik</e:description>
+				</e:databaseInfo>
+
+				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/jfm/</zurl>
+				<udb>ssgfi/jfm</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=Author s=pw t=r</cclmap_au>
+				<cclmap_msc>1=MSC t=r</cclmap_msc>
+				<cclmap_isbn>1=ISBN/ISSN t=r</cclmap_isbn>
+				<cclmap_issn>1=ISBN/ISSN t=r</cclmap_issn>
+				<cclmap_id>1=Number</cclmap_id>
+			</record>
+
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">Math-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zum Thema Mathematik.</e:description>
+				</e:databaseInfo>
+
+				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/math/</zurl>
+				<udb>ssgfi/math-guide</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=Author s=pw t=r</cclmap_au>
+				<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
+				<cclmap_su>1=Keywords s=pw t=r</cclmap_su>
+				<cclmap_bkl>1=BK t=r</cclmap_bkl>
+				<cclmap_msc>1=MSC t=r</cclmap_msc>
+				<cclmap_id>1=Number</cclmap_id>
+			</record>
+
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">Geo-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zum Thema System Erde und Weltall.</e:description>
+				</e:databaseInfo>
+
+				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/geo/</zurl>
+				<udb>ssgfi/geo-guide</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=Author s=pw t=r</cclmap_au>
+				<cclmap_lang>1=Language</cclmap_lang>
+				<cclmap_su>1=Keywords s=pw t=r</cclmap_su>
+				<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
+				<cclmap_bkl>1=BK t=r</cclmap_bkl>
+				<cclmap_ddc>1=DDC t=r</cclmap_ddc>
+				<cclmap_gok>1=GOK s=pw t=r</cclmap_gok>
+				<cclmap_id>1=Number</cclmap_id>
+			</record>
+
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">History-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zum Thema Geschichte.</e:description>
+				</e:databaseInfo>
+
+				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/hist/</zurl>
+				<udb>ssgfi/history-guide</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=Author s=pw t=r</cclmap_au>
+				<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
+				<cclmap_lang>1=Language</cclmap_lang>
+				<cclmap_su>1=Keywords s=pw t=r</cclmap_su>
+				<cclmap_bkl>1=BK t=r</cclmap_bkl>
+				<cclmap_ddc>1=DDC t=r</cclmap_ddc>
+				<cclmap_gok>1=GOK s=pw t=r</cclmap_gok>
+				<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
+				<cclmap_id>1=Number</cclmap_id>
+			</record>
+
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">Literature-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zur Sprache und Literatur des angloamerikanischen Kulturraums.</e:description>
+				</e:databaseInfo>
+
+				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/lit/</zurl>
+				<udb>ssgfi/literature-guide</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=Editor s=pw t=r</cclmap_au>
+				<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
+				<cclmap_lang>1=Language</cclmap_lang>
+				<cclmap_su>1=Keywords s=pw t=r</cclmap_su>
+				<cclmap_bkl>1=BK t=r</cclmap_bkl>
+				<cclmap_ddc>1=DDC t=r</cclmap_ddc>
+				<cclmap_gok>1=GOK s=pw t=r</cclmap_gok>
+				<cclmap_id>1=Number</cclmap_id>
+			</record>
+
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">Forestry-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zur Forstwissenschaft.</e:description>
+				</e:databaseInfo>
+
+				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/forst/</zurl>
+				<udb>ssgfi/forestry-guide</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=Author s=pw t=r</cclmap_au>
+				<cclmap_su>1=Keywords s=pw t=r</cclmap_su>
+				<cclmap_id>1=Number</cclmap_id>
+			</record>
+
+
+			<!-- Solr Harvest -->
+			<record>
+				<e:databaseInfo>
+					<e:title lang="de" primary="true">GEO-LEO Artikel</e:title>
+					<e:description lang="de" primary="true">Artikel verschiedener Server zum System Erde und Weltall; geharvestet mit OAI-PMH.</e:description>
+				</e:databaseInfo>
+
+				<zurl>vlib.sub.uni-goettingen.de/solr/geo-leo-artikel</zurl>
+				<udb>harvest/geo-leo-artikel</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=author s=pw t=r</cclmap_au>
+				<cclmap_date>1=date</cclmap_date>
+				<cclmap_lang>1=language</cclmap_lang>
+				<cclmap_su>1=subject s=pw t=r</cclmap_su>
+				<cclmap_id>1=id</cclmap_id>
+			</record>
+
+			<record>
+				<e:databaseInfo>
+					<e:title lang="de" primary="true">GEO-LEO Digitalisate</e:title>
+					<e:description lang="de" primary="true">Digitalisate verschiedener Server zum System Erde und Weltall; geharvestet mit OAI-PMH.</e:description>
+				</e:databaseInfo>
+
+				<zurl>vlib.sub.uni-goettingen.de/solr/geo-leo-digitalisate</zurl>
+				<udb>harvest/geo-leo-digitalisate</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=author s=pw t=r</cclmap_au>
+				<cclmap_date>1=date</cclmap_date>
+				<cclmap_su>1=subject s=pw t=r</cclmap_su>
+				<cclmap_id>1=id</cclmap_id>
+			</record>
+
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">arXiv Math</e:title>
+					<e:description lang="de" primary="true">Mathematische Themenbereiche aus dem Prerint arXiv; geharvestet mit OAI-PMH.</e:description>
+				</e:databaseInfo>
+
+				<zurl>vlib.sub.uni-goettingen.de/solr/math-arxiv</zurl>
+				<udb>harvest/math-arxiv</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=author s=pw t=r</cclmap_au>
+				<cclmap_date>1=date</cclmap_date>
+				<cclmap_lang>1=language</cclmap_lang>
+				<cclmap_su>1=subject s=pw t=r</cclmap_su>
+				<cclmap_msc>1=subject_msc s=pw t=r</cclmap_msc>
+				<cclmap_id>1=id</cclmap_id>
+			</record>
+
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">DigiZeitschriften</e:title>
+					<e:description lang="de" primary="true">Bestand von DigiZeitschriften; geharvestet mit OAI-PMH.</e:description>
+				</e:databaseInfo>
+
+				<zurl>vlib.sub.uni-goettingen.de/solr/digizeitschriften</zurl>
+				<udb>harvest/digizeitschriften</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_ti>1=title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=author s=pw t=r</cclmap_au>
+				<cclmap_date>1=date</cclmap_date>
+				<cclmap_su>1=subject s=pw t=r</cclmap_su>
+				<cclmap_id>1=id</cclmap_id>
+			</record>
+
+			<!-- DSpace -->
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">GEO-LEO e-docs</e:title>
+					<e:description lang="de" primary="true">Publikationsserver für Fachliteratur zum System Erde und Weltall.</e:description>
+				</e:databaseInfo>
+
+				<zurl>e-docs.geo-leo.de:9010/solr/gldocs</zurl>
+				<udb>dspace/gldocs</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>1=metadata s=al t=r</cclmap_term>
+				<cclmap_fulltext>s=al t=r</cclmap_fulltext>
+				<cclmap_id>1=handle</cclmap_id>
+				<cclmap_ti>1=dc.title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=dc.contributor.author s=pw t=r</cclmap_au>
+				<cclmap_date>1=dc.date.issued.year</cclmap_date>
+				<cclmap_lang>1=dc.language.iso</cclmap_lang>
+				<cclmap_su>1=dc.subject.gokverbal s=pw t=r</cclmap_su>
+				<cclmap_bkl>1=dc.subject.bk t=r</cclmap_bkl>
+				<cclmap_gok>1=dc.subject.gokcode s=pw t=r</cclmap_gok>
+			</record>
+
+			<!-- ZVDD -->
+			<record>
+				<e:databaseInfo>
+					<e:title primary="true">ZVDD</e:title>
+					<e:description lang="de" primary="true">Zentrales Verzeichnis Digitalisierter Drucke.</e:description>
+				</e:databaseInfo>
+
+				<zurl>esx-151.gbv.de/solr/zvdd/</zurl>
+				<udb>zvdd</udb>
+				<sru>solr</sru>
+
+				<cclmap_term>s=al t=r</cclmap_term>
+				<cclmap_fulltext>s=al t=r</cclmap_fulltext>
+				<cclmap_ti>1=TITLE s=pw t=r</cclmap_ti>
+				<cclmap_au>1=CREATOR s=pw t=r</cclmap_au>
+
+				<cclmap_id>1=PPN</cclmap_id>
+				<cclmap_iswork>1=ISWORK</cclmap_iswork>
+			</record>
+
+			<!-- SRU Test -->
+			<!--
+			<record>
+				<zurl>sru.gbv.de/opac-de-7</zurl>
+				<udb>opac-de-7</udb>
+				<sru>get</sru>
+				<sruVersion>1.1</sruVersion>
+				<requestSyntax>xml</requestSyntax>
+				<piggyback>1</piggyback>
+
+				<cclmap_term>1=pica.all s=al t=r</cclmap_term>
+				<cclmap_ti>1=pica.tit s=pw t=r</cclmap_ti>
+				<cclmap_au>1=pica.per s=pw t=r</cclmap_au>
+				<cclmap_date>1=pica.jah</cclmap_date>
+				<cclmap_nel>1=pica.nel s=pw t=r</cclmap_nel>
+				<cclmap_lang>1=pica.spr</cclmap_lang>
+				<cclmap_su>1=pica.sww s=pw t=r</cclmap_su>
+				<cclmap_bkl>1=pica.bkl t=r</cclmap_bkl>
+				<cclmap_ddc>1=pica.ddc t=r</cclmap_ddc>
+				<cclmap_msc>1=pica.msc s=pw t=r</cclmap_msc>
+				<cclmap_gok>1=pica.lkl s=pw t=r</cclmap_gok>
+				<cclmap_brk>1=pica.brk s=pw t=r</cclmap_brk>
+				<cclmap_isbn>1=pica.isb s=pw t=r</cclmap_isbn>
+				<cclmap_issn>1=pica.iss s=pw t=r</cclmap_issn>
+				<cclmap_id>1=pica.ppn</cclmap_id>
+			</record>
+			-->
+
+			<!-- Z39.50 Test -->
+			<!--
+			<record>
+				<zurl>sru.gbv.de/opac-de-7</zurl>
+				<udb>opac-de-7Z</udb>
+				<requestSyntax>xml</requestSyntax>
+				<piggyback>1</piggyback>
+
+				<cclmap_term>1=1016 s=al t=r</cclmap_term>
+				<cclmap_ti>1=4 s=pw t=r</cclmap_ti>
+				<cclmap_au>1=1004 s=pw t=r</cclmap_au>
+				<cclmap_date>1=30</cclmap_date>
+				<cclmap_lang>1=8601</cclmap_lang>
+				<cclmap_su>1=46 s=pw t=r</cclmap_su>
+				<cclmap_bkl>1=5004 t=r</cclmap_bkl>
+				<cclmap_ddc>1=5008 t=r</cclmap_ddc>
+				<cclmap_msc>1=5012 s=pw t=r</cclmap_msc>
+				<cclmap_gok>1=5010 s=pw t=r</cclmap_gok>
+				<cclmap_brk>1=5006 s=pw t=r</cclmap_brk>
+				<cclmap_isbn>1=7 s=pw t=r</cclmap_isbn>
+				<cclmap_issn>1=8 s=pw t=r</cclmap_issn>
+				<cclmap_id>1=12</cclmap_id>
+			</record>
+			-->
+		</records>
+	</torus>
+
+	<fieldmap cql="cql.serverChoice">
+		<title lang="en">All Metadata fields</title>
+	</fieldmap>
+	<fieldmap cql="cql.anywhere" ccl="fulltext">
+		<title lang="en">All Metadata fields and full texts</title>
+	</fieldmap>
+	<fieldmap cql="rec.identifier" ccl="id">
+		<title lang="en">Record Identifier</title>
+	</fieldmap>
+	<fieldmap cql="dc.title" ccl="ti">
+		<title lang="en">Title</title>
+	</fieldmap>
+	<fieldmap cql="dc.creator" ccl="au">
+		<title lang="en">Author, Creator</title>
+	</fieldmap>
+	<fieldmap cql="dc.date" ccl="date">
+		<title lang="en">Publication Date</title>
+	</fieldmap>
+	<fieldmap cql="dc.date.nel" ccl="nel">
+		<title lang="en">Acquisition Date</title>
+	</fieldmap>
+	<fieldmap cql="dc.language" ccl="lang">
+		<title lang="en">Language</title>
+	</fieldmap>
+	<fieldmap cql="dc.subject" ccl="su">
+		<title lang="en">Subject</title>
+	</fieldmap>
+	<fieldmap cql="dc.subject.bkl" ccl="bkl">
+		<title lang="en">Subject: Basisklassifikation</title>
+	</fieldmap>
+	<fieldmap cql="dc.subject.ddc" ccl="ddc">
+		<title lang="en">Subject: Dewey Decimal Classification</title>
+	</fieldmap>
+	<fieldmap cql="dc.subject.msc" ccl="msc">
+		<title lang="en">Subject: Mathematics Subject Classification</title>
+	</fieldmap>
+	<fieldmap cql="dc.subject.gok" ccl="gok">
+		<title lang="en">Subject: Göttinger Online Klassifikation</title>
+	</fieldmap>
+	<fieldmap cql="dc.subject.brk" ccl="brk">
+		<title lang="en">Subject: Göttinger Bandrealkatalog Klassifikation</title>
+	</fieldmap>
+	<fieldmap cql="dc.identifier.isbn" ccl="isbn">
+		<title lang="en">ISBN</title>
+	</fieldmap>
+	<fieldmap cql="dc.identifier.issn" ccl="issn">
+		<title lang="en">ISSN</title>
+	</fieldmap>
+	<fieldmap cql="zvdd.iswork" ccl="iswork">
+		<title lang="en">Is Work</title>
+	</fieldmap>
+
+	<log apdu="false"/>
+	<zoom timeout="20" proxy_timeout="1"/>
+</filter>

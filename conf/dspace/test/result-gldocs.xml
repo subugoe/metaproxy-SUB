@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<!--
+	Result of
+	xsltproc ../DSpace-DC-to-MARC21.xsl DSpace-DC-test-gldocs.xml | xsltproc ../../../xsl/MARCXML-sort.xsl -
+
+	Lost fields:
+		* TODO: subject.gok (to be superseded by subject.gokcode)
+		* format.mimetype (useless)
+		* date.available
+		* multiple affiliation.(dateOfBirth|institut|address) fields (should not exist)
+		* multiple (publisher|date.issued) fields (should not exist)
+		* multiple title.translated fields (should not exist)
+		* field 773 uses the first issn and bibliographicCitation.*, hoping there won’t be others (should be)
+		*
+
+		* subject.dnb (presumably irrelevant/obsolete)
+		* affiliation.placeOfBirth (can it be mapped? to 100 $what?)
+		* identifier.purl (does not appear in any existing records)
+-->
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>      ma a22     3u 4500</leader>
+  <controlfield tag="008">120101         xx      o  d        eng d</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">identifier.isbn 1</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">identifier.isbn 2</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">identifier.pISBN 1</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">identifier.pISBN 2</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">identifier.eISBN 1</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">identifier.eISBN 2</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">relation.isbn 1</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">relation.isbn 2</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">identifier.issn 1</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">identifier.issn 2</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">relation.issn 1</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">relation.issn 2</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">relation.pISSN 1</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">relation.pISSN 2</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">relation.eISSN 1</subfield>
+  </datafield>
+  <datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">relation.eISSN 2</subfield>
+  </datafield>
+  <datafield tag="024" ind1="2" ind2=" ">
+    <subfield code="a">identifier.urn 1</subfield>
+    <subfield code="2">urn</subfield>
+  </datafield>
+  <datafield tag="024" ind1="2" ind2=" ">
+    <subfield code="a">identifier.urn 2</subfield>
+    <subfield code="2">urn</subfield>
+  </datafield>
+  <datafield tag="024" ind1="2" ind2=" ">
+    <subfield code="a">identifier.doi 1</subfield>
+    <subfield code="2">doi</subfield>
+  </datafield>
+  <datafield tag="024" ind1="2" ind2=" ">
+    <subfield code="a">identifier.doi 2</subfield>
+    <subfield code="2">doi</subfield>
+  </datafield>
+  <datafield tag="024" ind1="8" ind2=" ">
+    <subfield code="a">identifier 1</subfield>
+  </datafield>
+  <datafield tag="024" ind1="8" ind2=" ">
+    <subfield code="a">identifier 2</subfield>
+  </datafield>
+  <datafield tag="024" ind1="8" ind2=" ">
+    <subfield code="a">identifier.other 1</subfield>
+  </datafield>
+  <datafield tag="024" ind1="8" ind2=" ">
+    <subfield code="a">identifier.other 2</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DE-7)identifier.ppn 1</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DE-7)identifier.ppn 2</subfield>
+  </datafield>
+  <datafield tag="041" ind1=" " ind2=" ">
+    <subfield code="a">ger</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2=" ">
+    <subfield code="a">subject.ddc 1</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2=" ">
+    <subfield code="a">subject.ddc 2</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+    <subfield code="a">subject.gbv 1</subfield>
+    <subfield code="2">bcl</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+    <subfield code="a">subject.gbv 2</subfield>
+    <subfield code="2">bcl</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+    <subfield code="a">subject.bk 1</subfield>
+    <subfield code="2">bcl</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+    <subfield code="a">subject.bk 2</subfield>
+    <subfield code="2">bcl</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">contributor.author 1</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">title 1</subfield>
+    <subfield code="b">= title.translated 1</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">title 2</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">title.alternative 1</subfield>
+  </datafield>
+  <datafield tag="246" ind1="3" ind2="3">
+    <subfield code="a">title.alternative 2</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">publisher 1</subfield>
+    <subfield code="c">2001</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">format.extent 1</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">format.extent 2</subfield>
+  </datafield>
+  <datafield tag="520" ind1="3" ind2=" ">
+    <subfield code="a">description.abstract 1</subfield>
+  </datafield>
+  <datafield tag="520" ind1="3" ind2=" ">
+    <subfield code="a">description.abstract 2</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">description 1</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">description 2</subfield>
+  </datafield>
+  <datafield tag="524" ind1="8" ind2=" ">
+    <subfield code="a">identifier.citation 1</subfield>
+  </datafield>
+  <datafield tag="524" ind1="8" ind2=" ">
+    <subfield code="a">identifier.citation 2</subfield>
+  </datafield>
+  <datafield tag="524" ind1="8" ind2=" ">
+    <subfield code="a">identifier.bibliographicCitation 1</subfield>
+  </datafield>
+  <datafield tag="524" ind1="8" ind2=" ">
+    <subfield code="a">identifier.bibliographicCitation 2</subfield>
+  </datafield>
+  <datafield tag="536" ind1=" " ind2=" ">
+    <subfield code="a">description.sponsorship 1</subfield>
+  </datafield>
+  <datafield tag="536" ind1=" " ind2=" ">
+    <subfield code="a">description.sponsorship 2</subfield>
+  </datafield>
+  <datafield tag="542" ind1=" " ind2=" ">
+    <subfield code="c">rights.holder 1, rights.holder 2</subfield>
+    <subfield code="u">rights.uri 1</subfield>
+    <subfield code="u">rights.uri 2</subfield>
+    <subfield code="n">rights 1</subfield>
+    <subfield code="n">rights 2</subfield>
+  </datafield>
+  <datafield tag="561" ind1=" " ind2=" ">
+    <subfield code="a">description.provenance 1</subfield>
+  </datafield>
+  <datafield tag="561" ind1=" " ind2=" ">
+    <subfield code="a">description.provenance 2</subfield>
+  </datafield>
+  <datafield tag="562" ind1=" " ind2=" ">
+    <subfield code="c">type.version 1</subfield>
+  </datafield>
+  <datafield tag="562" ind1=" " ind2=" ">
+    <subfield code="c">type.version 2</subfield>
+  </datafield>
+  <datafield tag="630" ind1=" " ind2=" ">
+    <subfield code="a">subject.swd 1</subfield>
+    <subfield code="2">swd</subfield>
+  </datafield>
+  <datafield tag="630" ind1=" " ind2=" ">
+    <subfield code="a">subject.swd 2</subfield>
+    <subfield code="2">swd</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.gokverbal 1</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.gokverbal 2</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject 1</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject 2</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.other 1</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.other 2</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.free 1</subfield>
+  </datafield>
+  <datafield tag="653" ind1=" " ind2=" ">
+    <subfield code="a">subject.free 2</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.author 2</subfield>
+    <subfield code="4">aut</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.editor 1</subfield>
+    <subfield code="4">edt</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor.editor 2</subfield>
+    <subfield code="4">edt</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor 1</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">contributor 2</subfield>
+  </datafield>
+  <datafield tag="773" ind1="4" ind2=" ">
+    <subfield code="t">relation.ispartofseries 1</subfield>
+    <subfield code="q">bibliographicCitation.volume 1:bibliographicCitation.issue 1:bibliographicCitation.article 1&gt;bibliographicCitation.firstPage 1-bibliographicCitation.lastPage 1</subfield>
+    <subfield code="x">relation.issn 1</subfield>
+  </datafield>
+  <datafield tag="787" ind1="0" ind2=" ">
+    <subfield code="n">relation 1</subfield>
+  </datafield>
+  <datafield tag="787" ind1="0" ind2=" ">
+    <subfield code="n">relation 2</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://identifier.uri/1</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">http://identifier.uri/2</subfield>
+  </datafield>
+</record>

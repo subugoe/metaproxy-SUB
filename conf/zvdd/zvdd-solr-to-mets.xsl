@@ -18,7 +18,7 @@
 	</xsl:template>
 
 
-	<!-- Remove generic arrays. -->
+	<!-- Remove generic arrays. The specific arrays we want are handled below. -->
 	<xsl:template match="arr"/>
 
 
