@@ -3,14 +3,20 @@
 	Stylesheet for converting DSpace DC data to MARC records.
 	Our DSpace systems provide fields beyond the standard DC, try to accomotate those.
 
+	Overview of fields used by DSpace (not publicly accessible):
+		https://docs.google.com/spreadsheet/ccc?key=0AnYBqnG_KlOjdHc5R2h4ZlpSenp0d3RDZVhBYXZjR0E
 
-	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns="http://www.loc.gov/MARC21/slim"
 	exclude-result-prefixes="dc">
+
+	<xsl:import href="../../xsl/iso-639-2-to-639-2b.xsl"/>
+
+
 
 	<xsl:output method="xml" indent="yes"/>
 
@@ -83,7 +89,9 @@
 				<xsl:variable name="language">
 					<xsl:choose>
 						<xsl:when test="string-length(dc:language.iso[1]) = 3">
-							<xsl:value-of select="dc:language.iso[1]"/>
+							<xsl:call-template name="iso-639-2-cleaner">
+								<xsl:with-param name="languageCode" select="dc:language.iso[1]"/>
+							</xsl:call-template>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:text>  </xsl:text>
@@ -109,7 +117,9 @@
 			<xsl:for-each select="dc:language.iso[position() &gt; 1]">
 				<datafield tag="041" ind1=" " ind2=" ">
 					<subfield code="a">
-						<xsl:value-of select="."/>
+						<xsl:call-template name="iso-639-2-cleaner">
+							<xsl:with-param name="languageCode" select="."/>
+						</xsl:call-template>
 					</subfield>
 				</datafield>
 			</xsl:for-each>
@@ -124,7 +134,7 @@
 
 			<!--
 				First author goes to 100 $a.
-				Date of birth information in $d
+				Date of birth information in $d.
 				Affiliation information in $u.
 				Place of birth infomration is omitted.
 			-->
@@ -138,15 +148,9 @@
 							<xsl:value-of select="."/>
 						</subfield>
 					</xsl:for-each>
-					<xsl:if test="../dc:affiliation.institut or ../dc:affiliation.address">
+					<xsl:if test="../dc:affiliation.institut">
 						<subfield code="u">
 							<xsl:for-each select="../dc:affiliation.institut[1]">
-								<xsl:value-of select="."/>
-							</xsl:for-each>
-							<xsl:if test="../dc:affiliation.institut and ../dc:affiliation.address">
-								<xsl:text>, </xsl:text>
-							</xsl:if>
-							<xsl:for-each select="../dc:affiliation.address[1]">
 								<xsl:value-of select="."/>
 							</xsl:for-each>
 						</subfield>
@@ -210,7 +214,7 @@
 			<!--
 				General contributors go to 700 without $4.
 			-->
-			<xsl:for-each select="dc:contributor">
+			<xsl:for-each select="dc:contributor | dc:contributor.other">
 				<datafield tag="700" ind1="1" ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="."/>
@@ -224,11 +228,10 @@
 			<!-- TITLE -->
 
 			<!--
-				First title goes to 245 $a.
-				Additional title goes to 246 $a.
-				Title.alternative goes to 246 $a.
+				Title (should be unique) goes to 245 $a.
 				First title.translated goes to 245 $b.
 				Additional title.translated goes to 246 $a.
+				Title.alternative goes to 246 $a.
 				Title.alternativeTranslated goes to 246 $a.
 			-->
 			<xsl:if test="dc:title">
@@ -244,9 +247,7 @@
 				</datafield>
 			</xsl:if>
 
-
-			<xsl:for-each select="dc:title[position()&gt;1] | dc:title.alternative
-									| dc:title.translated[position&gt;1] | dc:title.alternativeTranslated">
+			<xsl:for-each select="dc:title.alternative | dc:title.translated[position &gt; 1] | dc:title.alternativeTranslated">
 				<datafield tag="246" ind1="3" ind2="3">
 					<subfield code="a">
 						<xsl:value-of select="."/>
@@ -283,7 +284,7 @@
 			<!--
 				Extent goes to 300 $a.
 			-->
-			<xsl:for-each select="dc:format.extent">
+			<xsl:for-each select="dc:format.extent[1]">
 				<datafield tag="300" ind1=" " ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="."/>
@@ -305,12 +306,37 @@
 
 
 			<!--
+				DFG Viewer URI goes to 856 $u with DFG-Viewer note in $y.
+			-->
+			<xsl:for-each select="dc:relation.dfgviewer">
+				<datafield tag="856" ind1="4" ind2=" ">
+					<subfield code="u">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="y">DFG-Viewer</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				URI to related data goes to 856 $u with data note in $y and ind2=2.
+			-->
+			<xsl:for-each select="dc:relation.isbasedon">
+				<datafield tag="856" ind1="4" ind2="2">
+					<subfield code="u">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="y">Data</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
 				Series and location information for articles in 773.
 				Journal name in $t
 				Create volume:issue>start-end string for $q.
-				Include ISSN in $x.
-				Unclear what to do with non article partsfoseries and whether they appear.
-
+				Include Journal’s ISSN in $x.
+				Unclear what to do with non article partofseries and whether they appear.
 			-->
 			<xsl:choose>
 				<xsl:when test="$type = 'article' and dc:relation.ispartofseries">
@@ -341,11 +367,13 @@
 								</xsl:if>
 							</subfield>
 						</xsl:if>
-						<xsl:if test="dc:relation.issn">
-							<subfield code="x">
-								<xsl:value-of select="dc:relation.issn[1]"/>
-							</subfield>
-						</xsl:if>
+						<xsl:for-each select="dc:relation.issn | dc:relation.pISSN | dc:relation.eISSN">
+							<xsl:if test="position() = 1">
+								<subfield code="x">
+									<xsl:value-of select="."/>
+								</subfield>
+							</xsl:if>
+						</xsl:for-each>
 					</datafield>
 				</xsl:when>
 				<xsl:otherwise>
@@ -368,6 +396,23 @@
 				<datafield tag="520" ind1="3" ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="."/>
+					</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				Table of Contents goes to 505 (Formatted Contents Note).
+				ind1 = 0 for Complete Contents
+			-->
+			<xsl:for-each select="dc:description.tableofcontents">
+				<datafield tag="505" ind1="0" ind2=" ">
+					<subfield code="a">
+						<xsl:call-template name="replace-separators">
+							<xsl:with-param name="list" select="."/>
+							<xsl:with-param name="separator-old">;</xsl:with-param>
+							<xsl:with-param name="separator-new"> -- </xsl:with-param>
+						</xsl:call-template>
 					</subfield>
 				</datafield>
 			</xsl:for-each>
@@ -398,10 +443,10 @@
 
 
 			<!--
-				Unqualified description goes to 520 without i1 (Summary, etc).
+				Unqualified description or note goes to 500 (General Note).
 			-->
-			<xsl:for-each select="dc:description">
-				<datafield tag="520" ind1=" " ind2=" ">
+			<xsl:for-each select="dc:description | dc:note">
+				<datafield tag="500" ind1=" " ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="."/>
 					</subfield>
@@ -462,7 +507,7 @@
 				Map all into a single 542 field. (There should be at most a single one of these.)
 				Would another field, e.g. 540 (Terms Governing Use and Reproduction Note) be more appropriate?
 			-->
-			<xsl:if test="dc:rights or dc:rights.uri or dc:rights.holder">
+			<xsl:if test="dc:rights or dc:rights.access or dc:rights.uri or dc:rights.holder">
 				<datafield tag="542" ind1=" " ind2=" ">
 					<xsl:if test="dc:rights.holder">
 						<subfield code="c">
@@ -479,7 +524,7 @@
 							<xsl:value-of select="."/>
 						</subfield>
 					</xsl:for-each>
-					<xsl:for-each select="dc:rights">
+					<xsl:for-each select="dc:rights | dc:rights.access">
 						<subfield code="n">
 							<xsl:value-of select="."/>
 						</subfield>
@@ -495,9 +540,18 @@
 
 			<!--
 				DDC goes to 082.
+				Mark DNB Sachgruppen with ind2=9 (like GBV’s MARC export does).
 			-->
 			<xsl:for-each select="dc:subject.ddc">
 				<datafield tag="082" ind1="0" ind2=" ">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
+				</datafield>
+			</xsl:for-each>
+
+			<xsl:for-each select="dc:subject.dnb">
+				<datafield tag="082" ind1="0" ind2="9">
 					<subfield code="a">
 						<xsl:value-of select="."/>
 					</subfield>
@@ -514,6 +568,32 @@
 						<xsl:value-of select="."/>
 					</subfield>
 					<subfield code="2">bcl</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				MSC goes to 084 with $2 msc.
+			-->
+			<xsl:for-each select="dc:subject.msc">
+				<datafield tag="084" ind1=" " ind2="2">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="2">msc</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				BIC goes to 084 with $2 bic.
+			-->
+			<xsl:for-each select="dc:subject.bic">
+				<datafield tag="084" ind1=" " ind2=" ">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="2">bic</subfield>
 				</datafield>
 			</xsl:for-each>
 
@@ -562,14 +642,26 @@
 
 
 			<!--
-				SWD keywords go to 630 (Subject Added Entry - Uniform Title).
+				SWD keywords go to 650 (Subject Added Entry-Topical Term), with ind2=7 and $2 swd.
 			-->
 			<xsl:for-each select="dc:subject.swd">
-				<datafield tag="630" ind1=" " ind2=" ">
+				<datafield tag="650" ind1=" " ind2="7">
 					<subfield code="a">
 						<xsl:value-of select="."/>
 					</subfield>
 					<subfield code="2">swd</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				MeSH goes to 650 (Subject Added Entry-Topical Term) with ind2=2.
+			-->
+			<xsl:for-each select="dc:subject.mesh">
+				<datafield tag="650" ind1=" " ind2="2">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
 				</datafield>
 			</xsl:for-each>
 
@@ -595,7 +687,7 @@
 				ISBN goes to 020.
 				Strip potential dashes.
 			-->
-			<xsl:for-each select="dc:identifier.isbn | dc:relation.isbn | dc:identifier.pISBN | dc:identifier.eISBN">
+			<xsl:for-each select="dc:identifier.isbn | dc:relation.isbn | dc:identifier.pISBN | dc:identifier.eISBN | dc:source.isbn">
 				<datafield tag="020" ind1=" " ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="translate(., '-', '')"/>
@@ -608,7 +700,7 @@
 				ISSN goes to 022.
 				Do not strip dashes.
 			-->
-			<xsl:for-each select="dc:identifier.issn | dc:relation.issn | dc:relation.pISSN | dc:relation.eISSN">
+			<xsl:for-each select="dc:identifier.issn">
 				<datafield tag="022" ind1=" " ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="."/>
@@ -621,7 +713,7 @@
 				URN goes to 024 with $2 urn.
 			-->
 			<xsl:for-each select="dc:identifier.urn">
-				<datafield tag="024" ind1="2" ind2=" ">
+				<datafield tag="024" ind1="7" ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="."/>
 					</subfield>
@@ -633,12 +725,39 @@
 			<!--
 				DOI goes to 024 with $2 doi.
 			-->
-			<xsl:for-each select="dc:identifier.doi">
-				<datafield tag="024" ind1="2" ind2=" ">
+			<xsl:for-each select="dc:identifier.doi | dc:relation.doi">
+				<datafield tag="024" ind1="7" ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="."/>
 					</subfield>
 					<subfield code="2">doi</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				FactScience ID goes to 024 with $2 factscience.
+				(Internal Uni Göttingen database for scientific publications)
+			-->
+			<xsl:for-each select="dc:identifier.fs">
+				<datafield tag="024" ind1="7" ind2=" ">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="2">factscience</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				PubMed ID goes to 024 with $2 pubmed.
+			-->
+			<xsl:for-each select="dc:identifier.pmid">
+				<datafield tag="024" ind1="7" ind2=" ">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="2">pubmed</subfield>
 				</datafield>
 			</xsl:for-each>
 
@@ -668,7 +787,44 @@
 				</datafield>
 			</xsl:for-each>
 
-
 		</record>
 	</xsl:template>
+
+
+
+	<!--
+		Template to replace separator strings by other ones.
+	-->
+	<xsl:template name="replace-separators">
+		<xsl:param name="list"/>
+		<xsl:param name="separator-old"/>
+		<xsl:param name="separator-new"/>
+
+		<xsl:variable name="firstItem">
+			<xsl:choose>
+				<xsl:when test="contains($list, $separator-old)">
+					<xsl:value-of select="normalize-space(substring-before($list, $separator-old))"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$list"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
+		<xsl:variable name="remainingItems" select="normalize-space(substring-after($list, $separator-old))"/>
+
+		<xsl:if test="$firstItem">
+			<xsl:value-of select="$firstItem"/>
+		</xsl:if>
+
+		<xsl:if test="$remainingItems">
+			<xsl:value-of select="$separator-new"/>
+			<xsl:call-template name="replace-separators">
+				<xsl:with-param name="list" select="$remainingItems"/>
+				<xsl:with-param name="separator-old" select="$separator-old"/>
+				<xsl:with-param name="separator-new" select="$separator-new"/>
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:template>
+
 </xsl:stylesheet>

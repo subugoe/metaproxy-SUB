@@ -9,18 +9,16 @@
 	<contributor.author>contributor.author 2</contributor.author>
 	<contributor.editor>contributor.editor 1</contributor.editor>
 	<contributor.editor>contributor.editor 2</contributor.editor>
+	<contributor.other>contributor.other 1</contributor.other>
+	<contributor.other>contributor.other 2</contributor.other>
 	<date.accessioned_dt>2012-01-01</date.accessioned_dt>
-	<date.accessioned_dt>2012-02-02</date.accessioned_dt>
 	<date.available>2012-03-03</date.available>
-	<date.available>2012-04-04</date.available>
 	<date.issued>2001</date.issued>
-	<date.issued>2002</date.issued>
 	<identifier>identifier 1</identifier>
 	<identifier>identifier 2</identifier>
 	<identifier.citation>identifier.citation 1</identifier.citation>
 	<identifier.citation>identifier.citation 2</identifier.citation>
-	<identifier.isbn>identifier.isbn 1</identifier.isbn>
-	<identifier.isbn>identifier.isbn 2</identifier.isbn>
+	<identifier.isbn>identifier.isbn</identifier.isbn>
 	<identifier.issn>identifier.issn 1</identifier.issn>
 	<identifier.issn>identifier.issn 2</identifier.issn>
 	<identifier.other>identifier.other 1</identifier.other>
@@ -35,88 +33,96 @@
 	<description.provenance>description.provenance 2</description.provenance>
 	<description.sponsorship>description.sponsorship 1</description.sponsorship>
 	<description.sponsorship>description.sponsorship 2</description.sponsorship>
-	<format.extent>format.extent 1</format.extent>
-	<format.extent>format.extent 2</format.extent>
+	<description.tableofcontents>1 Geologie; 2 Geographie; 3 Karten</description.tableofcontents>
+	<description.tableofcontents>4 Geologie; 5 Geographie; 6 Karten</description.tableofcontents>
+	<format.extent>format.extent</format.extent>
 	<format.mimetype>format.mimetype 1</format.mimetype>
 	<format.mimetype>format.mimetype 2</format.mimetype>
-	<language.iso>eng</language.iso>
+	<language.iso>deu</language.iso>
 	<language.iso>ger</language.iso>
-	<publisher>publisher 1</publisher>
-	<publisher>publisher 2</publisher>
+	<publisher>publisher</publisher>
 	<relation>relation 1</relation>
 	<relation>relation 2</relation>
-	<relation.ispartof>relation.ispartof 1</relation.ispartof>
-	<relation.ispartof>relation.ispartof 2</relation.ispartof>
-	<relation.ispartofseries>relation.ispartofseries 1</relation.ispartofseries>
-	<relation.ispartofseries>relation.ispartofseries 2</relation.ispartofseries>
-	<rights>rights 1</rights>
-	<rights>rights 2</rights>
-	<rights.uri>rights.uri 1</rights.uri>
-	<rights.uri>rights.uri 2</rights.uri>
+	<relation.ispartof>relation.ispartof</relation.ispartof>
+	<relation.ispartofseries>relation.ispartofseries</relation.ispartofseries>
+	<rights>rights</rights>
+	<rights.uri>rights.uri</rights.uri>
+	<rights.holder>rights.holder</rights.holder>
+	<rights.access>rights.access</rights.access>
 	<subject>subject 1</subject>
 	<subject>subject 2</subject>
 	<subject.ddc>subject.ddc 1</subject.ddc>
 	<subject.ddc>subject.ddc 2</subject.ddc>
+	<subject.bic>subject.bic 1</subject.bic>
+	<subject.bic>subject.bic 2</subject.bic>
+	<subject.bk>subject.bk 1</subject.bk>
+	<subject.bk>subject.bk 2</subject.bk>
+	<subject.dnb>subject.dnb 1</subject.dnb>
+	<subject.dnb>subject.dnb 2</subject.dnb>
 	<subject.gok>subject.gok 1</subject.gok>
 	<subject.gok>subject.gok 2</subject.gok>
+	<subject.mesh>subject.mesh 1</subject.mesh>
+	<subject.mesh>subject.mesh 2</subject.mesh>
+	<subject.msc>subject.msc 1</subject.msc>
+	<subject.msc>subject.msc 2</subject.msc>
+	<subject.other>subject.other 1</subject.other>
+	<subject.other>subject.other 2</subject.other>
 	<subject.gbv>subject.gbv 1</subject.gbv>
 	<subject.gbv>subject.gbv 2</subject.gbv>
 	<subject.swd>subject.swd 1</subject.swd>
 	<subject.swd>subject.swd 2</subject.swd>
 	<subject.other>subject.other 1</subject.other>
 	<subject.other>subject.other 2</subject.other>
-	<title>title 1</title>
-	<title>title 2</title>
-	<title.alternative>title.alternative 1</title.alternative>
-	<title.alternative>title.alternative 2</title.alternative>
-	<type>article</type>
-	<type>book</type>
-	<subject.gokverbal>subject.gokverbal 1</subject.gokverbal>
-	<subject.gokverbal>subject.gokverbal 2</subject.gokverbal>
-	<bibliographicCitation.volume>bibliographicCitation.volume 1</bibliographicCitation.volume>
-	<bibliographicCitation.volume>bibliographicCitation.volume 2</bibliographicCitation.volume>
-	<bibliographicCitation.issue>bibliographicCitation.issue 1</bibliographicCitation.issue>
-	<bibliographicCitation.issue>bibliographicCitation.issue 2</bibliographicCitation.issue>
-	<bibliographicCitation.firstPage>bibliographicCitation.firstPage 1</bibliographicCitation.firstPage>
-	<bibliographicCitation.firstPage>bibliographicCitation.firstPage 2</bibliographicCitation.firstPage>
-	<bibliographicCitation.lastPage>bibliographicCitation.lastPage 1</bibliographicCitation.lastPage>
-	<bibliographicCitation.lastPage>bibliographicCitation.lastPage 2</bibliographicCitation.lastPage>
-	<identifier.doi>identifier.doi 1</identifier.doi>
-	<identifier.doi>identifier.doi 2</identifier.doi>
-	<identifier.ppn>identifier.ppn 1</identifier.ppn>
-	<identifier.ppn>identifier.ppn 2</identifier.ppn>
-	<identifier.urn>identifier.urn 1</identifier.urn>
-	<identifier.urn>identifier.urn 2</identifier.urn>
-	<type.version>type.version 1</type.version>
-	<type.version>type.version 2</type.version>
-	<identifier.bibliographicCitation>identifier.bibliographicCitation 1</identifier.bibliographicCitation>
-	<identifier.bibliographicCitation>identifier.bibliographicCitation 2</identifier.bibliographicCitation>
-	<identifier.pISBN>identifier.pISBN 1</identifier.pISBN>
-	<identifier.pISBN>identifier.pISBN 2</identifier.pISBN>
-	<identifier.eISBN>identifier.eISBN 1</identifier.eISBN>
-	<identifier.eISBN>identifier.eISBN 2</identifier.eISBN>
-	<rights.holder>rights.holder 1</rights.holder>
-	<rights.holder>rights.holder 2</rights.holder>
-	<date.updated>date.updated 1</date.updated>
-	<date.updated>date.updated 2</date.updated>
-	<relation.isbn>relation.isbn 1</relation.isbn>
-	<relation.isbn>relation.isbn 2</relation.isbn>
-	<relation.issn>relation.issn 1</relation.issn>
-	<relation.issn>relation.issn 2</relation.issn>
-	<relation.pISSN>relation.pISSN 1</relation.pISSN>
-	<relation.pISSN>relation.pISSN 2</relation.pISSN>
-	<relation.eISSN>relation.eISSN 1</relation.eISSN>
-	<relation.eISSN>relation.eISSN 2</relation.eISSN>
-	<relation.pISBN>relation.pISBN 1</relation.pISBN>
-	<relation.pISBN>relation.pISBN 2</relation.pISBN>
+	<subject.topic>subject.topic 1</subject.topic>
+	<subject.topic>subject.topic 2</subject.topic>
+	<subject.ger>subject.ger</subject.ger>
+	<subject.eng>subject.eng</subject.eng>
 	<subject.free>subject.free 1</subject.free>
 	<subject.free>subject.free 2</subject.free>
-	<subject.bk>subject.bk 1</subject.bk>
-	<subject.bk>subject.bk 2</subject.bk>
+	<title>title</title>
+	<title.alternative>title.alternative</title.alternative>
+	<title.alternativeTranslated>title.alternativeTranslated</title.alternativeTranslated>
 	<title.translated>title.translated 1</title.translated>
 	<title.translated>title.translated 2</title.translated>
+	<type>article</type>
+	<subject.gokverbal>subject.gokverbal 1</subject.gokverbal>
+	<subject.gokverbal>subject.gokverbal 2</subject.gokverbal>
+	<bibliographicCitation.volume>bibliographicCitation.volume</bibliographicCitation.volume>
+	<bibliographicCitation.issue>bibliographicCitation.issue</bibliographicCitation.issue>
+	<bibliographicCitation.article>bibliographicCitation.article</bibliographicCitation.article>
+	<bibliographicCitation.firstPage>bibliographicCitation.firstPage</bibliographicCitation.firstPage>
+	<bibliographicCitation.lastPage>bibliographicCitation.lastPage</bibliographicCitation.lastPage>
+	<identifier.doi>identifier.doi</identifier.doi>
+	<identifier.ppn>identifier.ppn</identifier.ppn>
+	<identifier.urn>identifier.urn</identifier.urn>
+	<type.version>type.version 1</type.version>
+	<type.version>type.version 2</type.version>
+	<identifier.citation>identifier.citation</identifier.citation>
+	<identifier.bibliographicCitation>identifier.bibliographicCitation</identifier.bibliographicCitation>
+	<identifier.pISBN>identifier.pISBN</identifier.pISBN>
+	<identifier.eISBN>identifier.eISBN</identifier.eISBN>
+	<identifier.pmid>identifier.pmid</identifier.pmid>
+	<identifier.fs>identifier.fs</identifier.fs>
+	<date.updated>date.updated</date.updated>
+	<relation.isbn>relation.isbn</relation.isbn>
+	<relation.issn>relation.issn</relation.issn>
+	<relation.pISSN>relation.pISSN</relation.pISSN>
+	<relation.eISSN>relation.eISSN</relation.eISSN>
+	<relation.pISBN>relation.pISBN</relation.pISBN>
+	<relation.dfgviewer>http://dfg.viewer.url</relation.dfgviewer>
+	<relation.doi>relation.doi</relation.doi>
+	<relation.euproj>relation.euproj</relation.euproj>
+	<relation.eusponsor>relation.eusponsor</relation.eusponsor>
+	<relation.haspart>http://relation.haspart</relation.haspart>
+	<relation.isbasedon>http://relation.isbasedon</relation.isbasedon>
 	<bibliographicCitation.article>bibliographicCitation.article 1</bibliographicCitation.article>
 	<bibliographicCitation.article>bibliographicCitation.article 2</bibliographicCitation.article>
 	<relation.volume>relation.volume 1</relation.volume>
 	<relation.volume>relation.volume 2</relation.volume>
+	<notes>notes 1</notes>
+	<notes>notes 2</notes>
+	<notes.intern>notes.intern 1</notes.intern>
+	<notes.intern>notes.intern 2</notes.intern>
+	<source>source</source>
+	<source.isbn>source.isbn</source.isbn>
 </record>

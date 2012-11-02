@@ -3,15 +3,11 @@
 	Test file with all »DC« fields from the eDiss DSpace system on 2012-10-17.
 -->
 <record xmlns="http://purl.org/dc/elements/1.1/">
-	<contributor.advisor>contributor.advisor 1</contributor.advisor>
-	<contributor.advisor>contributor.advisor 2</contributor.advisor>
+	<contributor.advisor>contributor.advisor</contributor.advisor>
 	<contributor.author>contributor.author 1</contributor.author>
 	<contributor.author>contributor.author 2</contributor.author>
 	<date.accessioned_dt>2012-01-01</date.accessioned_dt>
-	<date.accessioned_dt>2012-02-02</date.accessioned_dt>
-	<date.available>2012-03-03</date.available>
 	<date.available>2012-04-04</date.available>
-	<date.issued>2001</date.issued>
 	<date.issued>2002</date.issued>
 	<identifier.uri>http://identifier.uri/1</identifier.uri>
 	<identifier.uri>http://identifier.uri/2</identifier.uri>
@@ -21,48 +17,38 @@
 	<description.provenance>description.provenance 2</description.provenance>
 	<format.mimetype>format.mimetype 1</format.mimetype>
 	<format.mimetype>format.mimetype 2</format.mimetype>
-	<language.iso>eng</language.iso>
+	<language.iso>deu</language.iso>
 	<language.iso>ger</language.iso>
-	<publisher>publisher 1</publisher>
-	<publisher>publisher 2</publisher>
+	<publisher>publisher</publisher>
 	<rights>rights 1</rights>
 	<rights>rights 2</rights>
 	<rights.uri>rights.uri 1</rights.uri>
 	<rights.uri>rights.uri 2</rights.uri>
 	<subject.ddc>subject.ddc 1</subject.ddc>
 	<subject.ddc>subject.ddc 2</subject.ddc>
-	<title>title 1</title>
-	<title>title 2</title>
-	<title.alternative>title.alternative 1</title.alternative>
-	<title.alternative>title.alternative 2</title.alternative>
+	<title>title</title>
+	<title.alternative>title.alternative</title.alternative>
 	<type>article</type>
 	<type>book</type>
 	<title.translated>title.translated 1</title.translated>
 	<title.translated>title.translated 2</title.translated>
-	<contributor.referee>contributor.referee 1</contributor.referee>
-	<contributor.referee>contributor.referee 2</contributor.referee>
-	<date.examination>date.examination 1</date.examination>
-	<date.examination>date.examination 2</date.examination>
+	<contributor.referee>contributor.referee</contributor.referee>
+	<date.examination>date.examination</date.examination>
 	<subject.dnb>subject.dnb 1</subject.dnb>
 	<subject.dnb>subject.dnb 2</subject.dnb>
 	<subject.gok>subject.gok 1</subject.gok>
 	<subject.gok>subject.gok 2</subject.gok>
-	<description.abstractger>description.abstractger 1</description.abstractger>
-	<description.abstractger>description.abstractger 2</description.abstractger>
-	<description.abstracteng>description.abstracteng 1</description.abstracteng>
-	<description.abstracteng>description.abstracteng 2</description.abstracteng>
-	<contributor.coReferee>contributor.coReferee 1</contributor.coReferee>
-	<contributor.coReferee>contributor.coReferee 2</contributor.coReferee>
-	<contributor.thirdReferee>contributor.thirdReferee 1</contributor.thirdReferee>
-	<contributor.thirdReferee>contributor.thirdReferee 2</contributor.thirdReferee>
+	<description.abstractger>description.abstractger</description.abstractger>
+	<description.abstracteng>description.abstracteng</description.abstracteng>
+	<contributor.coReferee>contributor.coReferee</contributor.coReferee>
+	<contributor.thirdReferee>contributor.thirdReferee</contributor.thirdReferee>
 	<title.alternativeTranslated>title.alternativeTranslated 1</title.alternativeTranslated>
 	<title.alternativeTranslated>title.alternativeTranslated 2</title.alternativeTranslated>
-	<affiliation.address>affiliation.address 1</affiliation.address>
-	<affiliation.address>affiliation.address 2</affiliation.address>
-	<affiliation.dateOfBirth>affiliation.dateOfBirth 1</affiliation.dateOfBirth>
-	<affiliation.dateOfBirth>affiliation.dateOfBirth 2</affiliation.dateOfBirth>
-	<affiliation.placeOfBirth>affiliation.placeOfBirth 1</affiliation.placeOfBirth>
-	<affiliation.placeOfBirth>affiliation.placeOfBirth 2</affiliation.placeOfBirth>
+	<affiliation.address>affiliation.address</affiliation.address>
+	<affiliation.email>em@ai.l</affiliation.email>
+	<affiliation.dateOfBirth>affiliation.dateOfBirth</affiliation.dateOfBirth>
+	<affiliation.placeOfBirth>affiliation.placeOfBirth</affiliation.placeOfBirth>
+	<affiliation.institut>affiliation.institut</affiliation.institut>
 	<subject.topic>subject.topic 1</subject.topic>
 	<subject.topic>subject.topic 2</subject.topic>
 	<subject.ger>subject.ger 1</subject.ger>
@@ -71,10 +57,8 @@
 	<subject.eng>subject.eng 2</subject.eng>
 	<subject.bk>subject.bk 1</subject.bk>
 	<subject.bk>subject.bk 2</subject.bk>
-	<identifier.urn>identifier.urn 1</identifier.urn>
-	<identifier.urn>identifier.urn 2</identifier.urn>
-	<identifier.purl>identifier.purl 1</identifier.purl>
-	<identifier.purl>identifier.purl 2</identifier.purl>
+	<identifier.urn>identifier.urn</identifier.urn>
+	<identifier.purl>identifier.purl</identifier.purl>
 	<affiliation.institut>affiliation.institut 1</affiliation.institut>
 	<affiliation.institut>affiliation.institut 2</affiliation.institut>
 </record>
