@@ -73,7 +73,7 @@
 
 			<!-- Without a match, keep the existing language code -->
 			<xsl:otherwise>
-				<xsl:value-of select="."/>
+				<xsl:value-of select="$languageCode"/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
