@@ -25,6 +25,15 @@
 
 			<xi:include href="explain/explains.xml"/>
 
+			<filter type="virt_db">
+				<virtual route="zvdd">
+					<database>zvdd</database>
+				</virtual>
+				<virtual route="dspace">
+					<database>dspace/geo-leo</database>
+				</virtual>
+			</filter>
+
 			<filter type="session_shared">
 				<resultset ttl="0" restart="false"/>
 				<session ttl="60" max="100"/>
@@ -34,6 +43,10 @@
 
 			<filter type="bounce"/>
 		</route>
+
+		<xi:include href="zvdd/zvdd-route.xml"/>
+		<xi:include href="dspace/dspace-route.xml"/>
+
 	</routes>
 </metaproxy>
 
