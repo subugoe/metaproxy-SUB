@@ -32,8 +32,8 @@
   <mp:database name="harvest/digizeitschriften">
     <xi:include href="harvest_digizeitschriften.xml"/>
   </mp:database>
-  <mp:database name="dspace/gldocs">
-    <xi:include href="dspace_gldocs.xml"/>
+  <mp:database name="dspace/geo-leo">
+    <xi:include href="dspace_geo-leo.xml"/>
   </mp:database>
   <mp:database name="zvdd">
     <xi:include href="zvdd.xml"/>

@@ -15,8 +15,8 @@ xslXML = etree.parse("../xsl/zoom-to-explains.xsl")
 xsl = etree.XSLT(xslXML)
 
 configXML = etree.parse(filename)
-explainXML = xsl(configXML, **{"hostname":"vlib.sub.uni-goettingen.de", "port":"80"})
-explains = explainXML.xpath("/records/e:explain",
+explainXML = xsl(configXML, **{"hostname":"sru.sub.uni-goettingen.de", "port":"80"})
+explains = explainXML.xpath("//explains/e:explain",
 							namespaces = {"e": "http://explain.z3950.org/dtd/2.0/"})
 
 for explain in explains:

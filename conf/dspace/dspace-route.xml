@@ -19,7 +19,7 @@
 
 	<!--
 		Output formats:
-			* Marc21
+			* MARC 21
 			* XML with element sets:
 				* marcxml
 				* turbomarc

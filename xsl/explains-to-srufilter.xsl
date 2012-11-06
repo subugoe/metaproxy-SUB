@@ -22,7 +22,7 @@
 	-->
 	<xsl:template match="/">
 		<mp:filter type="sru_z3950">
-			<xsl:for-each select="records/e:explain/e:serverInfo/e:database">
+			<xsl:for-each select="explains/e:explain/e:serverInfo/e:database">
 				<xsl:call-template name="databaseExplain"/>
 			</xsl:for-each>
 		</mp:filter>

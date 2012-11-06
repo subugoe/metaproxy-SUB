@@ -1,11 +1,11 @@
 <e:explain xmlns:e="http://explain.z3950.org/dtd/2.0/" xmlns:mp="http://indexdata.com/metaproxy">
   <e:serverInfo protocol="SRU">
     <e:port>80</e:port>
-    <e:database>dspace/gldocs</e:database>
+    <e:database>dspace/geo-leo</e:database>
   </e:serverInfo>
   <e:databaseInfo>
-    <e:title xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" primary="true">GEO-LEO e-docs</e:title>
-    <e:description xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" lang="de" primary="true">Publikationsserver für Fachliteratur zum System Erde und Weltall.</e:description>
+    <e:title xmlns="http://indexdata.com/metaproxy" primary="true">GEO-LEO e-docs</e:title>
+    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Publikationsserver für Fachliteratur zum System Erde und Weltall.</e:description>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>
@@ -29,6 +29,12 @@
       <e:title>All Metadata fields and full texts</e:title>
       <e:map>
         <e:name set="cql">anywhere</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Record Identifier</e:title>
+      <e:map>
+        <e:name set="rec">identifier</e:name>
       </e:map>
     </e:index>
     <e:index search="true" scan="false" sort="false">
@@ -73,19 +79,19 @@
         <e:name set="dc">subject.gok</e:name>
       </e:map>
     </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>Record Identifier</e:title>
-      <e:map>
-        <e:name set="rec">identifier</e:name>
-      </e:map>
-    </e:index>
   </e:indexInfo>
   <e:schemaInfo>
     <e:schema name="solr" retrieve="true">
       <e:title>Solr</e:title>
     </e:schema>
-    <e:schema name="dc" identifier="http://www.loc.gov/zing/srw/dcschema/v1.0/" location="http://www.loc.gov/zing/srw/dc.xsd" retrieve="true">
+    <e:schema name="dc" retrieve="true" identifier="http://www.loc.gov/zing/srw/dcschema/v1.0/">
       <e:title>Dublin Core</e:title>
+    </e:schema>
+    <e:schema name="marcxml" retrieve="true" identifier="info:srw/schema/1/marcxml-v1.1">
+      <e:title>MARCXML</e:title>
+    </e:schema>
+    <e:schema name="turbomarc" retrieve="true">
+      <e:title>Index Data TurboMARC</e:title>
     </e:schema>
   </e:schemaInfo>
   <e:configInfo>

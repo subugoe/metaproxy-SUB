@@ -4,8 +4,8 @@
     <e:database>harvest/math-arxiv</e:database>
   </e:serverInfo>
   <e:databaseInfo>
-    <e:title xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" primary="true">arXiv Math</e:title>
-    <e:description xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" lang="de" primary="true">Mathematische Themenbereiche aus dem Prerint arXiv; geharvestet mit OAI-PMH.</e:description>
+    <e:title xmlns="http://indexdata.com/metaproxy" primary="true">arXiv Math</e:title>
+    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Mathematische Themenbereiche aus dem Preprint arXiv; geharvestet mit OAI-PMH.</e:description>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>

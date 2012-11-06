@@ -4,8 +4,8 @@
     <e:database>ssgfi/math-guide</e:database>
   </e:serverInfo>
   <e:databaseInfo>
-    <e:title xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" primary="true">Math-Guide</e:title>
-    <e:description xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" lang="de" primary="true">Linksammlung zum Thema Mathematik.</e:description>
+    <e:title xmlns="http://indexdata.com/metaproxy" primary="true">Math-Guide</e:title>
+    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Linksammlung zum Thema Mathematik.</e:description>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>

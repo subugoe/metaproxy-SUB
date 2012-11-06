@@ -29,6 +29,8 @@
 				<cclmap_au>1=Author s=pw t=r</cclmap_au>
 				<cclmap_date>1=Year</cclmap_date>
 				<cclmap_id>1=PPN</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<record>
@@ -48,6 +50,8 @@
 				<cclmap_isbn>1=ISBN/ISSN t=r</cclmap_isbn>
 				<cclmap_issn>1=ISBN/ISSN t=r</cclmap_issn>
 				<cclmap_id>1=Number</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<record>
@@ -68,6 +72,8 @@
 				<cclmap_bkl>1=BK t=r</cclmap_bkl>
 				<cclmap_msc>1=MSC t=r</cclmap_msc>
 				<cclmap_id>1=Number</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<record>
@@ -90,6 +96,8 @@
 				<cclmap_ddc>1=DDC t=r</cclmap_ddc>
 				<cclmap_gok>1=GOK s=pw t=r</cclmap_gok>
 				<cclmap_id>1=Number</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<record>
@@ -113,6 +121,8 @@
 				<cclmap_gok>1=GOK s=pw t=r</cclmap_gok>
 				<cclmap_nel>1=Revised s=pw t=r</cclmap_nel>
 				<cclmap_id>1=Number</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<record>
@@ -135,6 +145,8 @@
 				<cclmap_ddc>1=DDC t=r</cclmap_ddc>
 				<cclmap_gok>1=GOK s=pw t=r</cclmap_gok>
 				<cclmap_id>1=Number</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<record>
@@ -152,6 +164,8 @@
 				<cclmap_au>1=Author s=pw t=r</cclmap_au>
 				<cclmap_su>1=Keywords s=pw t=r</cclmap_su>
 				<cclmap_id>1=Number</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 
@@ -173,6 +187,8 @@
 				<cclmap_lang>1=language</cclmap_lang>
 				<cclmap_su>1=subject s=pw t=r</cclmap_su>
 				<cclmap_id>1=id</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<record>
@@ -191,12 +207,14 @@
 				<cclmap_date>1=date</cclmap_date>
 				<cclmap_su>1=subject s=pw t=r</cclmap_su>
 				<cclmap_id>1=id</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<record>
 				<e:databaseInfo>
 					<e:title primary="true">arXiv Math</e:title>
-					<e:description lang="de" primary="true">Mathematische Themenbereiche aus dem Prerint arXiv; geharvestet mit OAI-PMH.</e:description>
+					<e:description lang="de" primary="true">Mathematische Themenbereiche aus dem Preprint arXiv; geharvestet mit OAI-PMH.</e:description>
 				</e:databaseInfo>
 
 				<zurl>vlib.sub.uni-goettingen.de/solr/math-arxiv</zurl>
@@ -211,6 +229,8 @@
 				<cclmap_su>1=subject s=pw t=r</cclmap_su>
 				<cclmap_msc>1=subject_msc s=pw t=r</cclmap_msc>
 				<cclmap_id>1=id</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<record>
@@ -229,6 +249,8 @@
 				<cclmap_date>1=date</cclmap_date>
 				<cclmap_su>1=subject s=pw t=r</cclmap_su>
 				<cclmap_id>1=id</cclmap_id>
+
+				<schema name="solr"/>
 			</record>
 
 			<!-- DSpace -->
@@ -239,7 +261,7 @@
 				</e:databaseInfo>
 
 				<zurl>e-docs.geo-leo.de:9010/solr/gldocs</zurl>
-				<udb>dspace/gldocs</udb>
+				<udb>dspace/geo-leo</udb>
 				<sru>solr</sru>
 
 				<cclmap_term>1=metadata s=al t=r</cclmap_term>
@@ -252,6 +274,11 @@
 				<cclmap_su>1=dc.subject.gokverbal s=pw t=r</cclmap_su>
 				<cclmap_bkl>1=dc.subject.bk t=r</cclmap_bkl>
 				<cclmap_gok>1=dc.subject.gokcode s=pw t=r</cclmap_gok>
+
+				<schema name="solr"/>
+				<schema name="dc"/>
+				<schema name="marcxml"/>
+				<schema name="turbomarc"/>
 			</record>
 
 			<!-- ZVDD -->
@@ -269,9 +296,14 @@
 				<cclmap_fulltext>s=al t=r</cclmap_fulltext>
 				<cclmap_ti>1=TITLE s=pw t=r</cclmap_ti>
 				<cclmap_au>1=CREATOR s=pw t=r</cclmap_au>
-
 				<cclmap_id>1=PPN</cclmap_id>
 				<cclmap_iswork>1=ISWORK</cclmap_iswork>
+
+				<schema name="solr"/>
+				<schema name="mets"/>
+				<schema name="dc"/>
+				<schema name="marcxml"/>
+				<schema name="turbomarc"/>
 			</record>
 
 			<!-- SRU Test -->

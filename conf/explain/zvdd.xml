@@ -4,8 +4,8 @@
     <e:database>zvdd</e:database>
   </e:serverInfo>
   <e:databaseInfo>
-    <e:title xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" primary="true">ZVDD</e:title>
-    <e:description xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" lang="de" primary="true">Zentrales Verzeichnis Digitalisierter Drucke.</e:description>
+    <e:title xmlns="http://indexdata.com/metaproxy" primary="true">ZVDD</e:title>
+    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Zentrales Verzeichnis Digitalisierter Drucke.</e:description>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>
@@ -18,6 +18,9 @@
     </e:set>
     <e:set name="dc" identifier="info:srw/cql-context-set/1/dc-v1.1">
       <e:title>Dublin Core Set with custom extensions</e:title>
+    </e:set>
+    <e:set name="zvdd">
+      <e:title>ZVDD Custom Set</e:title>
     </e:set>
     <e:index search="true" scan="false" sort="false">
       <e:title>All Metadata fields</e:title>
@@ -60,8 +63,17 @@
     <e:schema name="solr" retrieve="true">
       <e:title>Solr</e:title>
     </e:schema>
-    <e:schema name="dc" identifier="http://www.loc.gov/zing/srw/dcschema/v1.0/" location="http://www.loc.gov/zing/srw/dc.xsd" retrieve="true">
+    <e:schema name="mets" retrieve="true">
+      <e:title>METS</e:title>
+    </e:schema>
+    <e:schema name="dc" retrieve="true" identifier="http://www.loc.gov/zing/srw/dcschema/v1.0/">
       <e:title>Dublin Core</e:title>
+    </e:schema>
+    <e:schema name="marcxml" retrieve="true" identifier="info:srw/schema/1/marcxml-v1.1">
+      <e:title>MARCXML</e:title>
+    </e:schema>
+    <e:schema name="turbomarc" retrieve="true">
+      <e:title>Index Data TurboMARC</e:title>
     </e:schema>
   </e:schemaInfo>
   <e:configInfo>

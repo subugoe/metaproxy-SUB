@@ -24,9 +24,9 @@
 			* add explain element converted from metaproxy torus records as children
 	-->
 	<xsl:template match="/">
-		<records>
-			<xsl:apply-templates select="/mp:metaproxy/mp:filters/mp:filter[@type='zoom']/mp:torus/mp:records/mp:record"/>
-		</records>
+		<explains>
+			<xsl:apply-templates select="//mp:filter[@type='zoom']/mp:torus/mp:records/mp:record"/>
+		</explains>
 	</xsl:template>
 
 
@@ -36,7 +36,7 @@
 			* databaseInfo
 			* indexInfo
 	-->
-	<xsl:template match="/mp:metaproxy/mp:filters/mp:filter[@type='zoom']/mp:torus/mp:records/mp:record">
+	<xsl:template match="//mp:filter[@type='zoom']/mp:torus/mp:records/mp:record">
 		<e:explain>
 			<xsl:call-template name="serverInfo"/>
 			<xsl:call-template name="databaseInfo"/>
@@ -109,17 +109,35 @@
 	-->
 	<xsl:template name="schemaInfo">
 		<e:schemaInfo>
-			<e:schema name="solr" retrieve="true">
-				<e:title>Solr</e:title>
-			</e:schema>
-			<xsl:if test="./mp:transform">
-				<e:schema name="dc"
-							identifier="http://www.loc.gov/zing/srw/dcschema/v1.0/"
-							location="http://www.loc.gov/zing/srw/dc.xsd"
-							retrieve="true">
-					<e:title>Dublin Core</e:title>
-				</e:schema>
-			</xsl:if>
+			<xsl:for-each select="mp:schema">
+				<xsl:choose>
+					<xsl:when test="@name='solr'">
+						<e:schema name="solr" retrieve="true">
+							<e:title>Solr</e:title>
+						</e:schema>
+					</xsl:when>
+					<xsl:when test="@name='mets'">
+						<e:schema name="mets" retrieve="true">
+							<e:title>METS</e:title>
+						</e:schema>
+					</xsl:when>
+					<xsl:when test="@name='dc'">
+						<e:schema name="dc" retrieve="true" identifier="http://www.loc.gov/zing/srw/dcschema/v1.0/">
+							<e:title>Dublin Core</e:title>
+						</e:schema>
+					</xsl:when>
+					<xsl:when test="@name='marcxml'">
+						<e:schema name="marcxml" retrieve="true" identifier="info:srw/schema/1/marcxml-v1.1">
+							<e:title>MARCXML</e:title>
+						</e:schema>
+					</xsl:when>
+					<xsl:when test="@name='turbomarc'">
+						<e:schema name="turbomarc" retrieve="true">
+							<e:title>Index Data TurboMARC</e:title>
+						</e:schema>
+					</xsl:when>
+				</xsl:choose>
+			</xsl:for-each>
 		</e:schemaInfo>
 	</xsl:template>
 
@@ -147,7 +165,7 @@
 			<xsl:for-each select="./*">
 				<xsl:variable name="fieldName" select="substring-after(local-name(.), 'cclmap_')"/>
 				<xsl:if test="string-length($fieldName) &gt; 0">
-					<xsl:for-each select="/mp:metaproxy/mp:filters/mp:filter[@type='zoom']/mp:fieldmap">
+					<xsl:for-each select="//mp:filter[@type='zoom']/mp:fieldmap">
 						<xsl:variable name="elementSet" select="substring-before(@cql, '.')"/>
 						<xsl:variable name="indexName" select="substring-after(@cql, '.')"/>
 						<xsl:variable name="cclName">
@@ -194,6 +212,11 @@
 				<e:title>Dublin Core Set with custom extensions</e:title>
 			</e:set>
 		</xsl:if>
+		<xsl:if test="contains($setNames, 'zvdd*')">
+			<e:set name="zvdd">
+				<e:title>ZVDD Custom Set</e:title>
+			</e:set>
+		</xsl:if>
 	</xsl:template>
 
 
@@ -206,7 +229,7 @@
 		<xsl:for-each select="./*">
 			<xsl:variable name="fieldName" select="substring-after(local-name(.), 'cclmap_')"/>
 			<xsl:if test="string-length($fieldName) &gt; 0">
-				<xsl:for-each select="/mp:metaproxy/mp:filters/mp:filter[@type='zoom']/mp:fieldmap">
+				<xsl:for-each select="//mp:filter[@type='zoom']/mp:fieldmap">
 					<xsl:variable name="elementSet" select="substring-before(@cql, '.')"/>
 					<xsl:variable name="indexName" select="substring-after(@cql, '.')"/>
 					<xsl:variable name="cclName">
