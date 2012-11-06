@@ -136,6 +136,13 @@ test -r $MP_CONFIG || { echo "$MP_CONFIG not existing";
 	if [ "$1" = "stop" ]; then exit 0;
 	else exit 6; fi; }
 
+
+# iptables rules for redirection
+IPTABLES_PREROUTING="PREROUTING --protocol tcp --destination-port 210 --jump REDIRECT --to-ports 9000"
+IPTABLES_OUTPUT="OUTPUT --protocol tcp --destination 0/0 --destination-port 210 --jump REDIRECT --to-ports 9000"
+
+
+
 # Read config
 #. $FOO_CONFIG
 
@@ -182,11 +189,12 @@ rc_reset
 
 case "$1" in
     start)
-	#echo -n "Starting metaproxy "
-	## Start daemon with startproc(8). If this fails
-	## the return value is set appropriately by startproc.
+	# set up iptables to map port 210 to 9000
+	iptables -t nat --append $IPTABLES_PREROUTING
+	iptables -t nat --append $IPTABLES_OUTPUT
+
+	# start metaproxy with its own user
 	COMMAND="$MP_BIN -D -c $MP_CONFIG -w $MP_CONFIGPATH -p $MP_PID -l /var/log/metaproxy/metaproxy.log"
-	#/sbin/startproc -u metaproxy $COMMAND
 	sudo -b -u metaproxy $COMMAND
 
 	# Remember status and be verbose
@@ -198,8 +206,9 @@ case "$1" in
 	;;
     stop)
 	echo -n "Shutting down metaproxy "
-	## Stop daemon with killproc(8) and if this fails
-	## killproc sets the return value according to LSB.
+	# remove iptables rules
+	iptables -t nat --delete $IPTABLES_PREROUTING
+	iptables -t nat --delete $IPTABLES_OUTPUT
 
 	# HACK!
 	# Use different path for killing due to the different path metaproxy switches to.
