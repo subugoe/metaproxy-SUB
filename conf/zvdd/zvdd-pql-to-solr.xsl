@@ -32,6 +32,9 @@
 						<xsl:when test="@value = '12'">
 							<xsl:text>PPN</xsl:text>
 						</xsl:when>
+						<xsl:when test="@value = '9999'">
+							<xsl:text>ISWORK</xsl:text>
+						</xsl:when>
 						<xsl:otherwise>
 							<xsl:value-of select="@value"/>
 						</xsl:otherwise>
