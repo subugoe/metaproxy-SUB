@@ -1,153 +1,216 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<result>
+<?xml version="1.0"?>
+<result name="response" numFound="302" start="0">
   <doc>
-    <arr name="DATEMODIFIED"><str>20091018</str></arr>
-    <arr name="DC"><str>pressedienst.1946.1995.fes.bn.de</str></arr>
-    <arr name="DOCSTRCT"><str>Monograph</str></arr>
-    <arr name="IDDOC"><str>62688</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="LOCATION"><str>http://library.fes.de/spdpd/1951/510908.pdf</str></arr>
-    <arr name="PPN"><str>urn:zvdd.pressedienst_1946-1995.fes.bn.de:92139</str></arr>
-    <arr name="STRUCTRUN"><str>a:1:{i:0;a:6:{s:5:"IDDOC";i:62688;s:3:"PPN";s:47:"urn:zvdd.pressedienst_1946-1995.fes.bn.de:92139";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:32:"Um den Verkauf von Geiselgasteig";s:5:"DMDID";s:10:"dmd1000001";}}</str></arr>
-    <arr name="TITLE"><str>Um den Verkauf von Geiselgasteig</str></arr>
-    <arr name="YEARPUBLISH"><str>1951</str></arr>
+    <str name="CREATOR">Hilbert, Gerhard</str>
+    <str name="CURRENTNO">Heft 1</str>
+    <str name="DATEINDEXED">20120731</str>
+    <str name="DATEMODIFIED">20120801</str>
+    <str name="DC">historische.drucke.staatsbibliothek.berlin.de</str>
+    <str name="DOCSTRCT">Volume</str>
+    <str name="IDDOC">11373685</str>
+    <str name="IDPARENTDOC">11363486</str>
+    <str name="ISWORK">1</str>
+    <str name="PARENTCREATOR">Hilbert, Gerhard</str>
+    <str name="PLACEPUBLISH">Rostock i. M.</str>
+    <str name="PPN">PPN718126149</str>
+    <str name="PUBLISHER">Kaufungen-Verlag</str>
+    <str name="STRUCTRUN">
+a:2:{i:0;a:4:{s:5:"IDDOC";s:8:"11363486";s:3:"PPN";s:12:"PPN718126084";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:8:{s:5:"IDDOC";i:11373685;s:3:"PPN";s:12:"PPN718126149";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:37:"Der Segen des Krieges. Demut vor Gott";s:9:"CURRENTNO";s:6:"Heft 1";s:11:"YEARPUBLISH";s:4:"1914";s:5:"DMDID";s:11:"DMDLOG_0001";}}
+</str>
+    <str name="TITLE">Der Segen des Krieges. Demut vor Gott</str>
+    <str name="YEARPUBLISH">1914</str>
   </doc>
   <doc>
-    <arr name="DATEINDEXED"><str>20100131</str></arr>
-    <arr name="DATEMODIFIED"><str>20100131</str></arr>
-    <arr name="DC"><str>dilibri.dilibri.de</str></arr>
-    <arr name="DOCSTRCT"><str>Other</str></arr>
-    <arr name="IDDOC"><str>852717</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="PLACEPUBLISH"><str>Mainz</str></arr>
-    <arr name="PPN"><str>047875720</str></arr>
-    <arr name="STRUCTRUN"><str>a:1:{i:0;a:6:{s:5:"IDDOC";i:852717;s:3:"PPN";s:9:"047875720";s:5:"depth";i:0;s:8:"DOCSTRCT";s:5:"Other";s:5:"TITLE";s:34:"Mainzer Carneval-Zeitung Narrhalla";s:5:"DMDID";s:8:"md121139";}}</str></arr>
-    <arr name="TITLE"><str>Mainzer Carneval-Zeitung Narrhalla</str></arr>
-    <arr name="YEARPUBLISH"><str>1903-1957</str></arr>
+    <str name="CREATOR">Hilbert, Christian G.</str>
+    <str name="DATEINDEXED">20120216</str>
+    <str name="DATEMODIFIED">20120216</str>
+    <str name="DC">bsb.muenchen.de</str>
+    <str name="DOCSTRCT">Other</str>
+    <str name="IDDOC">9470145</str>
+    <str name="ISWORK">1</str>
+    <str name="LOCATION">
+http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10845356-6
+</str>
+    <str name="PARENTCREATOR">Hilbert, Christian G.</str>
+    <str name="PPN">urn:nbn:de:bvb:12-bsb10845356-6</str>
+    <str name="PUBLISHER">Berolini</str>
+    <str name="STRUCTRUN">
+a:1:{i:0;a:8:{s:5:"IDDOC";i:9470145;s:3:"PPN";s:31:"urn:nbn:de:bvb:12-bsb10845356-6";s:5:"depth";i:0;s:8:"DOCSTRCT";s:5:"Other";s:5:"TITLE";s:22:"De gravidarum regimine";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1822";s:5:"DMDID";s:7:"dmdlog1";}}
+</str>
+    <str name="TITLE">De gravidarum regimine</str>
+    <str name="YEARPUBLISH">1822</str>
   </doc>
   <doc>
-    <arr name="CREATOR"><str>Blumenbach, Johann Friedrich</str></arr>
-    <arr name="CURRENTNO"><str>[Teil 1]</str></arr>
-    <arr name="DATEINDEXED"><str>20091127</str></arr>
-    <arr name="DATEMODIFIED"><str>20091127</str></arr>
-    <arr name="DC"><str>zoologica.sub.uni.goettingen.de</str></arr>
-    <arr name="DOCSTRCT"><str>Volume</str></arr>
-    <arr name="IDDOC"><str>853870</str></arr>
-    <arr name="IDPARENTDOC"><str>350198</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="PARENTCREATOR"><str>Blumenbach, Johann Friedrich</str></arr>
-    <arr name="PLACEPUBLISH"><str>Göttingen</str></arr>
-    <arr name="PPN"><str>PPN146155742</str></arr>
-    <arr name="PUBLISHER"><str>Dieterich</str></arr>
-    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"350198";s:3:"PPN";s:12:"PPN578154560";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:853870;s:3:"PPN";s:12:"PPN146155742";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:70:"Joh. Friedr. Blumenbachs ... Handbuch der Naturgeschichte  Mit Kupfern";s:5:"DMDID";s:11:"DMDLOG_0001";}}</str></arr>
-    <arr name="TITLE"><str>Joh. Friedr. Blumenbachs ... Handbuch der Naturgeschichte  Mit Kupfern</str></arr>
-    <arr name="YEARPUBLISH"><str>1779</str></arr>
+    <str name="CREATOR">Seidelmann, Christian Friedrich</str>
+    <str name="DATEINDEXED">20120104</str>
+    <str name="DATEMODIFIED">20120104</str>
+    <str name="DC">18th.century.prints.slub.dresden.de</str>
+    <str name="DOCSTRCT">Monograph</str>
+    <str name="IDDOC">9088335</str>
+    <str name="ISWORK">1</str>
+    <str name="PARENTCREATOR">Seidelmann, Christian Friedrich</str>
+    <str name="PLACEPUBLISH">Wittenberg</str>
+    <str name="PPN">urn:nbn:de:bsz:14-db-id3549774668</str>
+    <str name="PUBLISHER">G&#xE4;berdt</str>
+    <str name="STRUCTRUN">
+a:1:{i:0;a:8:{s:5:"IDDOC";i:9088335;s:3:"PPN";s:33:"urn:nbn:de:bsz:14-db-id3549774668";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:401:"Dem Magnifco Hoch-W&#xFC;rdigen und Hoch-Gelahrten Herrn Herrn Joh. Andreas Gleichen ... Wolten, Als Derselbe Die ... Doctor-W&#xFC;rde in der Theologie Auf der Weltber&#xFC;hmten Academie Wittenberg d. VIII. Septembr. MDCCXXIV. ... erhielte, Ihre gehorsamste Observance und Freude ... contestiren ... Zwey innen benanndte ... Diener und Lands-Leute [i.e.Christian Friedrich Seidelmann; Heinrich Abraham Hilbert]";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";b:0;s:5:"DMDID";s:11:"DMDLOG_0000";}}
+</str>
+    <str name="TITLE">
+Dem Magnifco Hoch-W&#xFC;rdigen und Hoch-Gelahrten Herrn Herrn Joh. Andreas Gleichen ... Wolten, Als Derselbe Die ... Doctor-W&#xFC;rde in der Theologie Auf der Weltber&#xFC;hmten Academie Wittenberg d. VIII. Septembr. MDCCXXIV. ... erhielte, Ihre gehorsamste Observance und Freude ... contestiren ... Zwey innen benanndte ... Diener und Lands-Leute [i.e.Christian Friedrich Seidelmann; Heinrich Abraham Hilbert]
+</str>
+    <str name="VD18">VD18 11609303</str>
   </doc>
   <doc>
-    <arr name="DATEINDEXED"><str>20091127</str></arr>
-    <arr name="DATEMODIFIED"><str>20091127</str></arr>
-    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
-    <arr name="DOCSTRCT"><str>Monograph</str></arr>
-    <arr name="IDDOC"><str>883204</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN240627504</str></arr>
-    <arr name="PLACEPUBLISH"><str>[Ephrata]</str></arr>
-    <arr name="PPN"><str>PPN240627504</str></arr>
-    <arr name="PUBLISHER"><str>[Mayer]</str></arr>
-    <arr name="STRUCTRUN"><str>a:1:{i:0;a:6:{s:5:"IDDOC";i:883204;s:3:"PPN";s:12:"PPN240627504";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:30:"Kurzgefaßtes Weiber-Büchlein";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
-    <arr name="TITLE"><str>Kurzgefaßtes Weiber-Büchlein</str></arr>
-    <arr name="YEARPUBLISH"><str>1798</str></arr>
+    <str name="CREATOR">Hilbert, David ; 1862-1943</str>
+    <str name="DATEINDEXED">20121211</str>
+    <str name="DATEMODIFIED">20121211</str>
+    <str name="DC">bsb.muenchen.de</str>
+    <str name="DOCSTRCT">Other</str>
+    <str name="IDDOC">15835017</str>
+    <str name="ISWORK">1</str>
+    <str name="LOCATION">
+http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb00076372-2
+</str>
+    <str name="PARENTCREATOR">Hilbert, David ; 1862-1943</str>
+    <str name="PLACEPUBLISH">K&#xF6;nigsberg</str>
+    <str name="PPN">urn:nbn:de:bvb:12-bsb00076372-2</str>
+    <str name="PUBLISHER">Druck von R. Leupold</str>
+    <str name="STRUCTRUN">
+a:1:{i:0;a:8:{s:5:"IDDOC";i:15835017;s:3:"PPN";s:31:"urn:nbn:de:bvb:12-bsb00076372-2";s:5:"depth";i:0;s:8:"DOCSTRCT";s:5:"Other";s:5:"TITLE";s:111:"&#xDC;ber die invarianten Eigenschaften spezieller bin&#xE4;rer Formen, insbesondere der Kugelfunktionen : Inaug.-Diss.";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1885";s:5:"DMDID";s:7:"dmdlog1";}}
+</str>
+    <str name="TITLE">
+&#xDC;ber die invarianten Eigenschaften spezieller bin&#xE4;rer Formen, insbesondere der Kugelfunktionen : Inaug.-Diss.
+</str>
+    <str name="YEARPUBLISH">1885</str>
   </doc>
   <doc>
-    <arr name="CURRENTNO"><str>Bd. 2</str></arr>
-    <arr name="DATEINDEXED"><str>20091127</str></arr>
-    <arr name="DATEMODIFIED"><str>20091127</str></arr>
-    <arr name="DC"><str>sibirica.sub.uni.goettingen.de</str></arr>
-    <arr name="DOCSTRCT"><str>Volume</str></arr>
-    <arr name="IDDOC"><str>904384</str></arr>
-    <arr name="IDPARENTDOC"><str>404465</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN246200057_Kupfer</str></arr>
-    <arr name="PPN"><str>PPN246200057_Kupfer</str></arr>
-    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"404465";s:3:"PPN";s:12:"PPN246199261";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:904384;s:3:"PPN";s:19:"PPN246200057_Kupfer";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:6:"Kupfer";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
-    <arr name="TITLE"><str>Kupfer</str></arr>
-    <arr name="YEARPUBLISH"><str>1800</str></arr>
+    <str name="CREATOR">Steinbuch, Johann Georg</str>
+    <str name="DATEINDEXED">20110107</str>
+    <str name="DATEMODIFIED">20110107</str>
+    <str name="DC">bsb.muenchen.de</str>
+    <str name="DOCSTRCT">Other</str>
+    <str name="IDDOC">6029833</str>
+    <str name="ISWORK">1</str>
+    <str name="LOCATION">
+http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10308969-1
+</str>
+    <str name="PARENTCREATOR">Steinbuch, Johann Georg</str>
+    <str name="PLACEPUBLISH">Erlanga</str>
+    <str name="PPN">urn:nbn:de:bvb:12-bsb10308969-1</str>
+    <str name="PUBLISHER">Hilbert</str>
+    <str name="STRUCTRUN">
+a:1:{i:0;a:8:{s:5:"IDDOC";i:6029833;s:3:"PPN";s:31:"urn:nbn:de:bvb:12-bsb10308969-1";s:5:"depth";i:0;s:8:"DOCSTRCT";s:5:"Other";s:5:"TITLE";s:118:"De taenia hydatigena anomala adnexis cogitatis quibusdam de vermium visceralium physiologia : [Inaugural-Dissertation]";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1801";s:5:"DMDID";s:7:"dmdlog1";}}
+</str>
+    <str name="TITLE">
+De taenia hydatigena anomala adnexis cogitatis quibusdam de vermium visceralium physiologia : [Inaugural-Dissertation]
+</str>
+    <str name="YEARPUBLISH">1801</str>
   </doc>
   <doc>
-    <arr name="CREATOR"><str>Steller, Georg Wilhelm</str></arr>
-    <arr name="DATEINDEXED"><str>20091127</str></arr>
-    <arr name="DATEMODIFIED"><str>20091127</str></arr>
-    <arr name="DC"><str>sibirica.sub.uni.goettingen.de</str></arr>
-    <arr name="DOCSTRCT"><str>Monograph</str></arr>
-    <arr name="IDDOC"><str>925187</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN253686768</str></arr>
-    <arr name="PARENTCREATOR"><str>Steller, Georg Wilhelm</str></arr>
-    <arr name="PLACEPUBLISH"><str>St. Petersburg</str></arr>
-    <arr name="PPN"><str>PPN253686768</str></arr>
-    <arr name="PUBLISHER"><str>Logan</str></arr>
-    <arr name="STRUCTRUN"><str>a:1:{i:0;a:6:{s:5:"IDDOC";i:925187;s:3:"PPN";s:12:"PPN253686768";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:89:"G. W. Steller's ... Reise von Kamtschatka nach Amerika mit dem Commandeur-Capitän Bering";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
-    <arr name="TITLE"><str>G. W. Steller's ... Reise von Kamtschatka nach Amerika mit dem Commandeur-Capitän Bering</str></arr>
-    <arr name="YEARPUBLISH"><str>1793</str></arr>
+    <str name="CREATOR">Schaumburg, Johann Gottfried</str>
+    <str name="DATEINDEXED">20111108</str>
+    <str name="DATEMODIFIED">20111108</str>
+    <str name="DC">bsb.muenchen.de</str>
+    <str name="DOCSTRCT">Other</str>
+    <str name="IDDOC">8704370</str>
+    <str name="ISWORK">1</str>
+    <str name="LOCATION">
+http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10155424-6
+</str>
+    <str name="PARENTCREATOR">Schaumburg, Johann Gottfried</str>
+    <str name="PLACEPUBLISH">Vitembergae</str>
+    <str name="PPN">urn:nbn:de:bvb:12-bsb10155424-6</str>
+    <str name="PUBLISHER">Gaeberdt</str>
+    <str name="STRUCTRUN">
+a:1:{i:0;a:8:{s:5:"IDDOC";i:8704370;s:3:"PPN";s:31:"urn:nbn:de:bvb:12-bsb10155424-6";s:5:"depth";i:0;s:8:"DOCSTRCT";s:5:"Other";s:5:"TITLE";s:76:"Dissertatio iuridica de aequitate et usu practico L. 2. C. de rescind. vend.";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1725";s:5:"DMDID";s:7:"dmdlog1";}}
+</str>
+    <str name="TITLE">
+Dissertatio iuridica de aequitate et usu practico L. 2. C. de rescind. vend.
+</str>
+    <str name="VD18">VD18 15209369-001</str>
+    <str name="YEARPUBLISH">1725</str>
   </doc>
   <doc>
-    <arr name="CURRENTNO"><str>T. 1</str></arr>
-    <arr name="DATEINDEXED"><str>20091127</str></arr>
-    <arr name="DATEMODIFIED"><str>20091127</str></arr>
-    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
-    <arr name="DOCSTRCT"><str>Volume</str></arr>
-    <arr name="IDDOC"><str>945216</str></arr>
-    <arr name="IDPARENTDOC"><str>487743</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN309768772</str></arr>
-    <arr name="PPN"><str>PPN309768772</str></arr>
-    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"487743";s:3:"PPN";s:12:"PPN309762677";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:945216;s:3:"PPN";s:12:"PPN309768772";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:216:"Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
-    <arr name="TITLE"><str>Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties</str></arr>
-    <arr name="YEARPUBLISH"><str>1799</str></arr>
+    <str name="CURRENTNO">439</str>
+    <str name="DATEINDEXED">20091127</str>
+    <str name="DATEMODIFIED">20100610</str>
+    <str name="DC">mathematica.sub.uni.goettingen.de</str>
+    <str name="DOCSTRCT">Volume</str>
+    <str name="IDDOC">4682210</str>
+    <str name="IDPARENTDOC">515246</str>
+    <str name="ISWORK">1</str>
+    <str name="LOCATION">
+http://resolver.sub.uni-goettingen.de/purl?PPN243919689_0439
+</str>
+    <str name="PPN">PPN243919689_0439</str>
+    <str name="PUBLISHER">de Gruyter</str>
+    <str name="STRUCTRUN">
+a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"515246";s:3:"PPN";s:12:"PPN243919689";s:5:"depth";i:0;s:8:"DOCSTRCT";s:7:"Journal";}i:1;a:8:{s:5:"IDDOC";i:4682210;s:3:"PPN";s:17:"PPN243919689_0439";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:48:"Journal f&#xFC;r die reine und angewandte Mathematik";s:9:"CURRENTNO";s:3:"439";s:11:"YEARPUBLISH";s:4:"1993";s:5:"DMDID";s:7:"dmdlog1";}}
+</str>
+    <str name="TITLE">Journal f&#xFC;r die reine und angewandte Mathematik</str>
+    <str name="YEARPUBLISH">1993</str>
   </doc>
   <doc>
-    <arr name="CURRENTNO"><str>T. 2</str></arr>
-    <arr name="DATEINDEXED"><str>20091127</str></arr>
-    <arr name="DATEMODIFIED"><str>20091127</str></arr>
-    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
-    <arr name="DOCSTRCT"><str>Volume</str></arr>
-    <arr name="IDDOC"><str>945633</str></arr>
-    <arr name="IDPARENTDOC"><str>487743</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN309776767</str></arr>
-    <arr name="PPN"><str>PPN309776767</str></arr>
-    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"487743";s:3:"PPN";s:12:"PPN309762677";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:945633;s:3:"PPN";s:12:"PPN309776767";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:216:"Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
-    <arr name="TITLE"><str>Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties</str></arr>
-    <arr name="YEARPUBLISH"><str>1799</str></arr>
+    <str name="CURRENTNO">49</str>
+    <str name="DATEINDEXED">20091128</str>
+    <str name="DATEMODIFIED">20100610</str>
+    <str name="DC">mathematica.sub.uni.goettingen.de</str>
+    <str name="DOCSTRCT">Volume</str>
+    <str name="IDDOC">4719520</str>
+    <str name="IDPARENTDOC">552817</str>
+    <str name="ISWORK">1</str>
+    <str name="LOCATION">
+http://resolver.sub.uni-goettingen.de/purl?PPN356556735_0049
+</str>
+    <str name="PPN">PPN356556735_0049</str>
+    <str name="PUBLISHER">Springer</str>
+    <str name="STRUCTRUN">
+a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"552817";s:3:"PPN";s:12:"PPN356556735";s:5:"depth";i:0;s:8:"DOCSTRCT";s:7:"Journal";}i:1;a:8:{s:5:"IDDOC";i:4719520;s:3:"PPN";s:17:"PPN356556735_0049";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:24:"Inventiones Mathematicae";s:9:"CURRENTNO";s:2:"49";s:11:"YEARPUBLISH";s:4:"1978";s:5:"DMDID";s:7:"dmdlog1";}}
+</str>
+    <str name="TITLE">Inventiones Mathematicae</str>
+    <str name="YEARPUBLISH">1978</str>
   </doc>
   <doc>
-    <arr name="CURRENTNO"><str>T. 3</str></arr>
-    <arr name="DATEINDEXED"><str>20091127</str></arr>
-    <arr name="DATEMODIFIED"><str>20091127</str></arr>
-    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
-    <arr name="DOCSTRCT"><str>Volume</str></arr>
-    <arr name="IDDOC"><str>945769</str></arr>
-    <arr name="IDPARENTDOC"><str>487743</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN309777240</str></arr>
-    <arr name="PPN"><str>PPN309777240</str></arr>
-    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"487743";s:3:"PPN";s:12:"PPN309762677";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:945769;s:3:"PPN";s:12:"PPN309777240";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:216:"Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
-    <arr name="TITLE"><str>Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties</str></arr>
-    <arr name="YEARPUBLISH"><str>1802</str></arr>
+    <str name="CREATOR">B&#xF6;ger, Erwin</str>
+    <str name="DATEINDEXED">20091127</str>
+    <str name="DATEMODIFIED">20100610</str>
+    <str name="DC">mathematica.sub.uni.goettingen.de</str>
+    <str name="DOCSTRCT">Monograph</str>
+    <str name="IDDOC">4660806</str>
+    <str name="ISWORK">1</str>
+    <str name="LOCATION">
+http://resolver.sub.uni-goettingen.de/purl?PPN562605045
+</str>
+    <str name="PARENTCREATOR">B&#xF6;ger, Erwin</str>
+    <str name="PLACEPUBLISH">M&#xFC;nster</str>
+    <str name="PPN">PPN562605045</str>
+    <str name="PUBLISHER">Univ., Math. Inst.</str>
+    <str name="STRUCTRUN">
+a:1:{i:0;a:8:{s:5:"IDDOC";i:4660806;s:3:"PPN";s:12:"PPN562605045";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:67:"Minimalit&#xE4;tsbedingungen in der Theorie der Reduktionen von Idealen";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1968";s:5:"DMDID";s:7:"dmdlog1";}}
+</str>
+    <str name="TITLE">
+Minimalit&#xE4;tsbedingungen in der Theorie der Reduktionen von Idealen
+</str>
+    <str name="YEARPUBLISH">1968</str>
   </doc>
   <doc>
-    <arr name="CURRENTNO"><str>T. 4</str></arr>
-    <arr name="DATEINDEXED"><str>20091127</str></arr>
-    <arr name="DATEMODIFIED"><str>20091127</str></arr>
-    <arr name="DC"><str>wissenschaftsgeschichte.sub.uni.goettingen.de</str></arr>
-    <arr name="DOCSTRCT"><str>Volume</str></arr>
-    <arr name="IDDOC"><str>945881</str></arr>
-    <arr name="IDPARENTDOC"><str>487743</str></arr>
-    <arr name="ISWORK"><str>1</str></arr>
-    <arr name="LOCATION"><str>http://resolver.sub.uni-goettingen.de/purl?PPN309777348</str></arr>
-    <arr name="PPN"><str>PPN309777348</str></arr>
-    <arr name="STRUCTRUN"><str>a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"487743";s:3:"PPN";s:12:"PPN309762677";s:5:"depth";i:0;s:8:"DOCSTRCT";s:15:"MultivolumeWork";}i:1;a:6:{s:5:"IDDOC";i:945881;s:3:"PPN";s:12:"PPN309777348";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:216:"Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties";s:5:"DMDID";s:7:"dmdlog1";}}</str></arr>
-    <arr name="TITLE"><str>Histoire des Mathématiques, dans laquelle on rend compte de leurs progrès depuis leur origine jusqu'à nos jours; où l'on expose le tableau et le développement des principales découvertes dans toutes les parties</str></arr>
-    <arr name="YEARPUBLISH"><str>1802</str></arr>
+    <str name="CURRENTNO">474</str>
+    <str name="DATEINDEXED">20091128</str>
+    <str name="DATEMODIFIED">20100610</str>
+    <str name="DC">mathematica.sub.uni.goettingen.de</str>
+    <str name="DOCSTRCT">Volume</str>
+    <str name="IDDOC">4688776</str>
+    <str name="IDPARENTDOC">515246</str>
+    <str name="ISWORK">1</str>
+    <str name="LOCATION">
+http://resolver.sub.uni-goettingen.de/purl?PPN243919689_0474
+</str>
+    <str name="PPN">PPN243919689_0474</str>
+    <str name="PUBLISHER">de Gruyter</str>
+    <str name="STRUCTRUN">
+a:2:{i:0;a:4:{s:5:"IDDOC";s:6:"515246";s:3:"PPN";s:12:"PPN243919689";s:5:"depth";i:0;s:8:"DOCSTRCT";s:7:"Journal";}i:1;a:8:{s:5:"IDDOC";i:4688776;s:3:"PPN";s:17:"PPN243919689_0474";s:5:"depth";i:1;s:8:"DOCSTRCT";s:6:"Volume";s:5:"TITLE";s:48:"Journal f&#xFC;r die reine und angewandte Mathematik";s:9:"CURRENTNO";s:3:"474";s:11:"YEARPUBLISH";s:4:"1996";s:5:"DMDID";s:7:"dmdlog1";}}
+</str>
+    <str name="TITLE">Journal f&#xFC;r die reine und angewandte Mathematik</str>
+    <str name="YEARPUBLISH">1996</str>
   </doc>
 </result>
