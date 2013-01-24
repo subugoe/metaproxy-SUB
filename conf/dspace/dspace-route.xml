@@ -1,4 +1,10 @@
 <?xml version="1.0"?>
+<!--
+	Metaproxy Route for DSpace, accessing DSpace’s Solr index.
+
+	2012-2013 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
 <route xmlns="http://indexdata.com/metaproxy" id="dspace">
 
 	<!--
@@ -61,7 +67,9 @@
 			</retrieval>
 
 			<retrieval syntax="xml" name="solr">
-				<backend name=""/>
+				<backend name="">
+					<xslt stylesheet="../xsl/indent.xsl"/>
+				</backend>
 			</retrieval>
 		</retrievalinfo>
 	</filter>
