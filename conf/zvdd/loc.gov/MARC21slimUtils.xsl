@@ -1,6 +1,11 @@
 <?xml version='1.0'?>
 <xsl:stylesheet version="1.0" xmlns:marc="http://www.loc.gov/MARC21/slim"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<!--
+	2013-03-08: Copied from
+		http://www.loc.gov/standards/marcxml/xslt/MARC21slimUtils.xsl
+-->
+
 
 	<!-- 08/08/08: tmee added corrected chopPunctuation templates for 260c -->
 	<!-- 08/19/04: ntra added "marc:" prefix to datafield element -->

@@ -5,12 +5,17 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	exclude-result-prefixes="mods xlink" 
 	xmlns:marc="http://www.loc.gov/MARC21/slim">
+<!--
+	2013-03-08: Copied from
+		http://www.loc.gov/standards/mods/v3/MODS3-4_MARC21slim_XSLT1-0.xsl
+	Changed to load a local copy of MARC21slimUtils.xsl
+-->
 <!-- 
 	Upgraded to MODS 3.4 XSLT 1.0 - 2012/05/11
 	MODS v3 to MARC21Slim transformation - 2004/02/20 
 -->
 
-	<xsl:include href="http://www.loc.gov/marcxml/xslt/MARC21slimUtils.xsl"/>
+	<xsl:include href="MARC21slimUtils.xsl"/>
 	
 	<xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
