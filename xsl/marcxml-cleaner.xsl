@@ -9,16 +9,17 @@
 <xsl:stylesheet
 	xmlns:marc="http://www.loc.gov/MARC21/slim"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	exclude-result-prefixes="marc"
 	version="1.0">
 
 	<xsl:output method="xml" indent="yes"/>
 
 
-	<!-- Record root node: ensure we have a namespace here. -->
+	<!-- Record root node: ensure we have a namespace URL but no namespace name here. -->
 	<xsl:template match="marc:record">
-		<marc:record>
+		<record xmlns="http://www.loc.gov/MARC21/slim">
 			<xsl:apply-templates select="*"/>
-		</marc:record>
+		</record>
 	</xsl:template>
 
 
