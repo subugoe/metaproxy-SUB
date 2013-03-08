@@ -52,6 +52,7 @@
 					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
 					<xslt stylesheet="../xsl/MODS3-4_MARC21slim_XSLT1-0.xsl"/>
 					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-cleaner.xsl"/>
 					<marc inputformat="xml" outputformat="marc" outputcharset="utf-8"/>
 				</backend>
 			</retrieval>
@@ -61,6 +62,7 @@
 					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
 					<xslt stylesheet="../xsl/MODS3-4_MARC21slim_XSLT1-0.xsl"/>
 					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-cleaner.xsl"/>
 				</backend>
 			</retrieval>
 
@@ -69,6 +71,7 @@
 					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
 					<xslt stylesheet="../xsl/MODS3-4_MARC21slim_XSLT1-0.xsl"/>
 					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-cleaner.xsl"/>
 					<xslt stylesheet="../xsl/MarcXML2TurboMarc.xsl"/>
 				</backend>
 			</retrieval>
@@ -77,6 +80,7 @@
 				<backend name="">
 					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
 					<xslt stylesheet="../xsl/MODS3-4_DC_XSLT1-0.xsl"/>
+					<xslt stylesheet="../xsl/dc-cleaner.xsl"/>
 				</backend>
 			</retrieval>
 
