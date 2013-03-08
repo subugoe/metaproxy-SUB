@@ -325,7 +325,7 @@
 			<record>
 				<udb>zvdd</udb>
 
-				<zurl>esx-151.gbv.de/solr/</zurl>
+				<zurl>sru.sub.uni-goettingen.de/solr-zvdd-xsl</zurl>
 				<sru>solr</sru>
 
 				<e:databaseInfo>
