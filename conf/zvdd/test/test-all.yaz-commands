@@ -1,0 +1,21 @@
+open sru.sub.uni-goettingen.de/zvdd
+find @attr 1=1016 Martin
+format usmarc
+s 1
+
+open http://sru.sub.uni-goettingen.de/zvdd
+sru get
+find Martin
+schema marcxml
+s 1
+schema turbomarc
+s 1
+schema mets
+s 1
+schema mods
+s 1
+schema dc
+s 1
+schema solr
+s 1
+
