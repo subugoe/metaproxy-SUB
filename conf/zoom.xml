@@ -427,6 +427,5 @@
 		<title lang="en">Is Work</title>
 	</fieldmap>
 
-	<log apdu="false"/>
 	<zoom timeout="20" proxy_timeout="1"/>
 </filter>
