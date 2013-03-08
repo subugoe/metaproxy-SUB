@@ -1,4 +1,4 @@
-/var/log/apache2/metaproxy/access_log {
+/var/log/apache2/sru/access_log {
     compress
     dateext
     maxage 365
@@ -15,7 +15,7 @@
     endscript
 }
 
-/var/log/apache2/metaproxy/error_log {
+/var/log/apache2/sru/error_log {
     compress
     dateext
     maxage 365
