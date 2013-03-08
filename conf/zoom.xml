@@ -342,6 +342,7 @@
 
 				<schema name="solr"/>
 				<schema name="mets"/>
+				<schema name="mods"/>
 				<schema name="dc"/>
 				<schema name="marcxml"/>
 				<schema name="turbomarc"/>
