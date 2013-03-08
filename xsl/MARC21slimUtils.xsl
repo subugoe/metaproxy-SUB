@@ -4,6 +4,7 @@
 <!--
 	2013-03-08: Copied from
 		http://www.loc.gov/standards/marcxml/xslt/MARC21slimUtils.xsl
+	Used in MODS3-4_MARC21slim_XSLT1-0.xsl
 -->
 
 

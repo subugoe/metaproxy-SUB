@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="dc">
+<!--
+	2013-03-08: Copied from
+		http://www.loc.gov/standards/mods/v3/MODS3-4_DC_XSLT1-0.xsl
+		http://www.loc.gov/standards/mods/mods-conversions.html
+	Changed to load a local copy of MARC21slimUtils.xsl
+-->
 	<xsl:output method="xml" indent="yes"/>
 
 	<xsl:template match="/">

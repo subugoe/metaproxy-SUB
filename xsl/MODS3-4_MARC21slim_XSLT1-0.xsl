@@ -8,6 +8,7 @@
 <!--
 	2013-03-08: Copied from
 		http://www.loc.gov/standards/mods/v3/MODS3-4_MARC21slim_XSLT1-0.xsl
+		http://www.loc.gov/standards/mods/mods-conversions.html
 	Changed to load a local copy of MARC21slimUtils.xsl
 -->
 
