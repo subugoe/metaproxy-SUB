@@ -134,7 +134,6 @@
 
 			<!--
 				First author goes to 100 $a.
-				Date of birth information in $d.
 				Affiliation information in $u.
 				Place of birth infomration is omitted.
 			-->
@@ -143,11 +142,6 @@
 					<subfield code="a">
 						<xsl:value-of select="."/>
 					</subfield>
-					<xsl:for-each select="../dc:affiliation.dateOfBirth[1]">
-						<subfield code="d">
-							<xsl:value-of select="."/>
-						</subfield>
-					</xsl:for-each>
 					<xsl:if test="../dc:affiliation.institut">
 						<subfield code="u">
 							<xsl:for-each select="../dc:affiliation.institut[1]">
@@ -171,6 +165,17 @@
 				</datafield>
 			</xsl:for-each>
 
+
+			<!--
+				First Corporation goes to 110.
+			-->
+			<xsl:for-each select="dc:contributor.corporation[1]">
+				<datafield tag="110" ind1="2" ind2=" ">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
+				</datafield>
+			</xsl:for-each>
 
 			<!--
 				Editor goes to 700 with $4 edt (Editor).
@@ -212,9 +217,33 @@
 
 
 			<!--
-				General contributors go to 700 without $4.
+				Corporations go to 110.
 			-->
-			<xsl:for-each select="dc:contributor | dc:contributor.other">
+			<xsl:for-each select="dc:contributor.corporation">
+				<datafield tag="110" ind1="2" ind2=" ">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				Meetings go to 111.
+			-->
+			<xsl:for-each select="dc:contributor.meeting">
+				<datafield tag="111" ind1="2" ind2=" ">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				Other contributors go to 700 without $4.
+			-->
+			<xsl:for-each select="dc:contributor.other">
 				<datafield tag="700" ind1="1" ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="."/>
@@ -267,16 +296,16 @@
 			-->
 			<xsl:if test="dc:publisher or dc:date.issued">
 				<datafield tag="260" ind1=" " ind2=" ">
-					<xsl:for-each select="dc:publisher[1]">
+					<xsl:if test="dc:publisher">
 						<subfield code="b">
-							<xsl:value-of select="."/>
+							<xsl:value-of select="dc:publisher"/>
 						</subfield>
-					</xsl:for-each>
-					<xsl:for-each select="dc:date.issued[1]">
+					</xsl:if>
+					<xsl:if test="dc:date.issued">
 						<subfield code="c">
-							<xsl:value-of select="."/>
+							<xsl:value-of select="dc:date.issued"/>
 						</subfield>
-					</xsl:for-each>
+					</xsl:if>
 				</datafield>
 			</xsl:if>
 
@@ -306,14 +335,15 @@
 
 
 			<!--
-				DFG Viewer URI goes to 856 $u with DFG-Viewer note in $y.
+				METS URI goes to 856 $u with METS note in $y and MIME Type text/xml.
 			-->
-			<xsl:for-each select="dc:relation.dfgviewer">
+			<xsl:for-each select="dc:relation.mets">
 				<datafield tag="856" ind1="4" ind2=" ">
 					<subfield code="u">
 						<xsl:value-of select="."/>
 					</subfield>
-					<subfield code="y">DFG-Viewer</subfield>
+					<subfield code="q">text/xml</subfield>
+					<subfield cod="y">METS</subfield>
 				</datafield>
 			</xsl:for-each>
 
@@ -342,7 +372,7 @@
 				<xsl:when test="$type = 'article' and dc:relation.ispartofseries">
 					<datafield tag="773" ind1="4" ind2=" ">
 						<subfield code="t">
-							<xsl:value-of select="dc:relation.ispartofseries[1]"/>
+							<xsl:value-of select="dc:bibliographicCitation.journal"/>
 						</subfield>
 						<xsl:if test="dc:bibliographicCitation.volume | dc:bibliographicCitation.firstPage">
 							<subfield code="q">
@@ -351,9 +381,9 @@
 									<xsl:if test="dc:bibliographicCitation.issue">
 										<xsl:text>:</xsl:text>
 										<xsl:value-of select="dc:bibliographicCitation.issue[1]"/>
-										<xsl:if test="dc:bibliographicCitation.article">
+										<xsl:if test="dc:bibliographicCitation.articlenumber">
 											<xsl:text>:</xsl:text>
-											<xsl:value-of select="dc:bibliographicCitation.article[1]"/>
+											<xsl:value-of select="dc:bibliographicCitation.articlenumber[1]"/>
 										</xsl:if>
 									</xsl:if>
 								</xsl:if>
@@ -421,20 +451,8 @@
 			<!--
 				Sponsorship goes to 536 (Funding Information Note).
 			-->
-			<xsl:for-each select="dc:description.sponsorship">
+			<xsl:for-each select="dc:description.sponsorship | dc:relation.euproject | dc:relation.eusponsor">
 				<datafield tag="536" ind1=" " ind2=" ">
-					<subfield code="a">
-						<xsl:value-of select="."/>
-					</subfield>
-				</datafield>
-			</xsl:for-each>
-
-
-			<!--
-				Provenance goes to 561 (Ownership and Custodial History).
-			-->
-			<xsl:for-each select="dc:description.provenance">
-				<datafield tag="561" ind1=" " ind2=" ">
 					<subfield code="a">
 						<xsl:value-of select="."/>
 					</subfield>
@@ -448,32 +466,6 @@
 			<xsl:for-each select="dc:description | dc:note">
 				<datafield tag="500" ind1=" " ind2=" ">
 					<subfield code="a">
-						<xsl:value-of select="."/>
-					</subfield>
-				</datafield>
-			</xsl:for-each>
-
-
-			<!--
-				Citation goes to 524 (Preferred Citation of Described Materials Note).
-				Does this make sense? We should have the same information with finer granularity in other fields.
-			-->
-			<xsl:for-each select="dc:identifier.citation | dc:identifier.bibliographicCitation">
-				<datafield tag="524" ind1="8" ind2=" ">
-					<subfield code="a">
-						<xsl:value-of select="."/>
-					</subfield>
-				</datafield>
-			</xsl:for-each>
-
-
-			<!--
-				Relation goes to 787 (Other Relationship Entry).
-				This seems very unspecific.
-			-->
-			<xsl:for-each select="dc:relation">
-				<datafield tag="787" ind1="0" ind2=" ">
-					<subfield code="n">
 						<xsl:value-of select="."/>
 					</subfield>
 				</datafield>
@@ -770,18 +762,6 @@
 				<datafield tag="035" ind1=" " ind2=" ">
 					<subfield code="a">
 						<xsl:text>(DE-7)</xsl:text>
-						<xsl:value-of select="."/>
-					</subfield>
-				</datafield>
-			</xsl:for-each>
-
-
-			<!--
-				Unqualified identifier goes to 024 with i1=8.
-			-->
-			<xsl:for-each select="dc:identifier | dc:identifier.other">
-				<datafield tag="024" ind1="8" ind2=" ">
-					<subfield code="a">
 						<xsl:value-of select="."/>
 					</subfield>
 				</datafield>
