@@ -269,12 +269,39 @@
 
 				<zurl>134.76.21.193:9010/solr/gldocs</zurl>
 				<sru>solr</sru>
+
 				<e:databaseInfo>
 					<e:title primary="true">GEO-LEO e-docs</e:title>
 					<e:description lang="de" primary="true">Publikationsserver für Fachliteratur zum System Erde und Weltall</e:description>
 				</e:databaseInfo>
 
+				<cclmap_term>1=metadata s=al t=r</cclmap_term>
+				<cclmap_fulltext>s=al t=r</cclmap_fulltext>
+				<cclmap_id>1=handle</cclmap_id>
+				<cclmap_ti>1=dc.title s=pw t=r</cclmap_ti>
+				<cclmap_au>1=dc.contributor.author s=pw t=r</cclmap_au>
+				<cclmap_date>1=dc.date.issued.year</cclmap_date>
+				<cclmap_lang>1=dc.language.iso</cclmap_lang>
+				<cclmap_su>1=dc.subject.gokverbal s=pw t=r</cclmap_su>
+				<cclmap_bkl>1=dc.subject.bk t=r</cclmap_bkl>
+				<cclmap_gok>1=dc.subject.gokcode s=pw t=r</cclmap_gok>
+
+				<schema name="solr"/>
+				<schema name="dc"/>
+				<schema name="marcxml"/>
+				<schema name="turbomarc"/>
+			</record>
+
+			<record>
+				<udb>dspace/diss</udb>
+
+				<zurl>134.76.21.193:9010/solr/ediss</zurl>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title primary="true">eDiss</e:title>
+					<e:description lang="de" primary="true">Dissertationen der Georg-August-Universität Göttingen</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>1=metadata s=al t=r</cclmap_term>
 				<cclmap_fulltext>s=al t=r</cclmap_fulltext>
