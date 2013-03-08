@@ -9,20 +9,28 @@
 <xsl:stylesheet
 	xmlns:marc="http://www.loc.gov/MARC21/slim"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	exclude-result-prefixes=""
 	version="1.0">
 
 	<xsl:output method="xml" indent="yes"/>
 
 
-	<!-- Copy tags with non-empty content. -->
-	<xsl:template match="node()">
+	<!-- Record root node: ensure we have a namespace here. -->
+	<xsl:template match="marc:record">
+		<marc:record>
+			<xsl:apply-templates select="*"/>
+		</marc:record>
+	</xsl:template>
+
+
+	<!-- Copy tags with non-empty content. Ensure they have no namespace. -->
+	<xsl:template match="*">
 		<xsl:if test="string-length(normalize-space(.)) &gt; 0">
-			<xsl:copy>
+			<xsl:element name="{local-name()}">
 				<xsl:apply-templates select="@*|node()"/>
-			</xsl:copy>
+			</xsl:element>
 		</xsl:if>
  	</xsl:template>
+
 
  	<!-- Copy attributes. -->
 	<xsl:template match="@*">
