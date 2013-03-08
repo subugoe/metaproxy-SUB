@@ -180,7 +180,7 @@
 			<record>
 				<udb>harvest/geo-leo-artikel</udb>
 
-				<zurl>vlib.sub.uni-goettingen.de/solr/geo-leo-artikel</zurl>
+				<zurl>solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-artikel</zurl>
 				<sru>solr</sru>
 
 				<e:databaseInfo>
@@ -202,7 +202,7 @@
 			<record>
 				<udb>harvest/geo-leo-digitalisate</udb>
 
-				<zurl>vlib.sub.uni-goettingen.de/solr/geo-leo-digitalisate</zurl>
+				<zurl>solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-digitalisate</zurl>
 				<sru>solr</sru>
 
 				<e:databaseInfo>
@@ -223,7 +223,7 @@
 			<record>
 				<udb>harvest/math-arxiv</udb>
 
-				<zurl>vlib.sub.uni-goettingen.de/solr/math-arxiv</zurl>
+				<zurl>solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv</zurl>
 				<sru>solr</sru>
 
 				<e:databaseInfo>
@@ -249,7 +249,7 @@
 					<e:description lang="de" primary="true">Bestand von DigiZeitschriften; geharvestet mit OAI-PMH</e:description>
 				</e:databaseInfo>
 
-				<zurl>vlib.sub.uni-goettingen.de/solr/digizeitschriften</zurl>
+				<zurl>solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften</zurl>
 				<udb>harvest/digizeitschriften</udb>
 				<sru>solr</sru>
 
