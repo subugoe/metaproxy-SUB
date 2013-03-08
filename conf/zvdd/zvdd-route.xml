@@ -4,7 +4,7 @@
 		* responds to SRU and Z39.50
 		* converts Z39.50 search attributes to Solr index names
 		* rewrites search queries to only include works
-		* offers MARC (MARCXML and MARC21), DC, METS and Solr data
+		* offers MARC (MARCXML and MARC21), DC, MODS, METS and Solr data
 		* loads results from Solr
 
 	2012-2013 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
@@ -49,30 +49,40 @@
 		<retrievalinfo  xmlns="http://indexdata.com/yaz" version="1.0">
 			<retrieval syntax="usmarc">
 				<backend name="">
-					<xslt stylesheet="zvdd/zvdd-solr-to-dc.xsl"/>
-					<xslt stylesheet="../xsl/DC2MARC21slim.xsl"/>
+					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
+					<xslt stylesheet="../xsl/MODS3-4_MARC21slim_XSLT1-0.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
 					<marc inputformat="xml" outputformat="marc" outputcharset="utf-8"/>
 				</backend>
 			</retrieval>
 
 			<retrieval syntax="xml" name="marcxml" identifier="info:srw/schema/1/marcxml-v1.1">
 				<backend name="">
-					<xslt stylesheet="zvdd/zvdd-solr-to-dc.xsl"/>
-					<xslt stylesheet="../xsl/DC2MARC21slim.xsl"/>
+					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
+					<xslt stylesheet="../xsl/MODS3-4_MARC21slim_XSLT1-0.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
 				</backend>
 			</retrieval>
 
 			<retrieval syntax="xml" name="turbomarc">
 				<backend name="">
-					<xslt stylesheet="zvdd/zvdd-solr-to-dc.xsl"/>
-					<xslt stylesheet="../xsl/DC2MARC21slim.xsl"/>
+					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
+					<xslt stylesheet="../xsl/MODS3-4_MARC21slim_XSLT1-0.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
 					<xslt stylesheet="../xsl/MarcXML2TurboMarc.xsl"/>
 				</backend>
 			</retrieval>
 
 			<retrieval syntax="xml" name="dc">
 				<backend name="">
-					<xslt stylesheet="zvdd/zvdd-solr-to-dc.xsl"/>
+					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
+					<xslt stylesheet="../xsl/MODS3-4_DC_XSLT1-0.xsl"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="mods">
+				<backend name="">
+					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
 				</backend>
 			</retrieval>
 
