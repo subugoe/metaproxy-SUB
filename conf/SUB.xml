@@ -32,6 +32,9 @@
 				<virtual route="dspace">
 					<database>dspace/geo-leo</database>
 				</virtual>
+				<virtual route="dspace">
+					<database>dspace/diss</database>
+				</virtual>
 			</filter>
 
 			<filter type="session_shared">
