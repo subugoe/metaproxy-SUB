@@ -15,14 +15,15 @@
 
 			<!-- Solr SSGFI1 -->
 			<record>
-				<e:databaseInfo>
-					<e:title primary="true">Mathematik Digitalisate</e:title>
-					<e:description lang="de" primary="true">Sammlung von Digitalisaten aus den Gebieten der Mathematik.</e:description>
-				</e:databaseInfo>
+				<udb>ssgfi/math-digreg</udb>
 
 				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/digreg/</zurl>
-				<udb>ssgfi/math-digreg</udb>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title primary="true">Mathematik Digitalisate</e:title>
+					<e:description lang="de" primary="true">Sammlung von Digitalisaten aus den Gebieten der Mathematik</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
@@ -34,14 +35,15 @@
 			</record>
 
 			<record>
+				<udb>ssgfi/jfm</udb>
+
+				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/jfm/</zurl>
+				<sru>solr</sru>
+
 				<e:databaseInfo>
 					<e:title primary="true">Jahrbuch Datenbank</e:title>
 					<e:description lang="de" primary="true">Bestände des Jahrbuch für Mathematik</e:description>
 				</e:databaseInfo>
-
-				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/jfm/</zurl>
-				<udb>ssgfi/jfm</udb>
-				<sru>solr</sru>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
@@ -55,14 +57,15 @@
 			</record>
 
 			<record>
-				<e:databaseInfo>
-					<e:title primary="true">Math-Guide</e:title>
-					<e:description lang="de" primary="true">Linksammlung zum Thema Mathematik.</e:description>
-				</e:databaseInfo>
+				<udb>ssgfi/math-guide</udb>
 
 				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/math/</zurl>
-				<udb>ssgfi/math-guide</udb>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title primary="true">Math-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zum Thema Mathematik</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
@@ -77,14 +80,15 @@
 			</record>
 
 			<record>
-				<e:databaseInfo>
-					<e:title primary="true">Geo-Guide</e:title>
-					<e:description lang="de" primary="true">Linksammlung zum Thema System Erde und Weltall.</e:description>
-				</e:databaseInfo>
+				<udb>ssgfi/geo-guide</udb>
 
 				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/geo/</zurl>
-				<udb>ssgfi/geo-guide</udb>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title primary="true">Geo-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zum Thema System Erde und Weltall</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
@@ -101,14 +105,15 @@
 			</record>
 
 			<record>
-				<e:databaseInfo>
-					<e:title primary="true">History-Guide</e:title>
-					<e:description lang="de" primary="true">Linksammlung zum Thema Geschichte.</e:description>
-				</e:databaseInfo>
+				<udb>ssgfi/history-guide</udb>
 
 				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/hist/</zurl>
-				<udb>ssgfi/history-guide</udb>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title primary="true">History-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zum Thema Geschichte</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
@@ -126,14 +131,15 @@
 			</record>
 
 			<record>
-				<e:databaseInfo>
-					<e:title primary="true">Literature-Guide</e:title>
-					<e:description lang="de" primary="true">Linksammlung zur Sprache und Literatur des angloamerikanischen Kulturraums.</e:description>
-				</e:databaseInfo>
+				<udb>ssgfi/literature-guide</udb>
 
 				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/lit/</zurl>
-				<udb>ssgfi/literature-guide</udb>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title primary="true">Literature-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zur Sprache und Literatur des angloamerikanischen Kulturraums</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
@@ -150,14 +156,15 @@
 			</record>
 
 			<record>
-				<e:databaseInfo>
-					<e:title primary="true">Forestry-Guide</e:title>
-					<e:description lang="de" primary="true">Linksammlung zur Forstwissenschaft.</e:description>
-				</e:databaseInfo>
+				<udb>ssgfi/forestry-guide</udb>
 
 				<zurl>ssgfi1.sub.uni-goettingen.de:8081/solr/forst/</zurl>
-				<udb>ssgfi/forestry-guide</udb>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title primary="true">Forestry-Guide</e:title>
+					<e:description lang="de" primary="true">Linksammlung zur Forstwissenschaft</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=Title s=pw t=r</cclmap_ti>
@@ -171,14 +178,15 @@
 
 			<!-- Solr Harvest -->
 			<record>
-				<e:databaseInfo>
-					<e:title lang="de" primary="true">GEO-LEO Artikel</e:title>
-					<e:description lang="de" primary="true">Artikel verschiedener Server zum System Erde und Weltall; geharvestet mit OAI-PMH.</e:description>
-				</e:databaseInfo>
+				<udb>harvest/geo-leo-artikel</udb>
 
 				<zurl>vlib.sub.uni-goettingen.de/solr/geo-leo-artikel</zurl>
-				<udb>harvest/geo-leo-artikel</udb>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title lang="de" primary="true">GEO-LEO Artikel</e:title>
+					<e:description lang="de" primary="true">Artikel verschiedener Server zum System Erde und Weltall; geharvestet mit OAI-PMH</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=title s=pw t=r</cclmap_ti>
@@ -192,14 +200,15 @@
 			</record>
 
 			<record>
-				<e:databaseInfo>
-					<e:title lang="de" primary="true">GEO-LEO Digitalisate</e:title>
-					<e:description lang="de" primary="true">Digitalisate verschiedener Server zum System Erde und Weltall; geharvestet mit OAI-PMH.</e:description>
-				</e:databaseInfo>
+				<udb>harvest/geo-leo-digitalisate</udb>
 
 				<zurl>vlib.sub.uni-goettingen.de/solr/geo-leo-digitalisate</zurl>
-				<udb>harvest/geo-leo-digitalisate</udb>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title lang="de" primary="true">GEO-LEO Digitalisate</e:title>
+					<e:description lang="de" primary="true">Digitalisate verschiedener Server zum System Erde und Weltall; geharvestet mit OAI-PMH</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=title s=pw t=r</cclmap_ti>
@@ -212,14 +221,15 @@
 			</record>
 
 			<record>
-				<e:databaseInfo>
-					<e:title primary="true">arXiv Math</e:title>
-					<e:description lang="de" primary="true">Mathematische Themenbereiche aus dem Preprint arXiv; geharvestet mit OAI-PMH.</e:description>
-				</e:databaseInfo>
+				<udb>harvest/math-arxiv</udb>
 
 				<zurl>vlib.sub.uni-goettingen.de/solr/math-arxiv</zurl>
-				<udb>harvest/math-arxiv</udb>
 				<sru>solr</sru>
+
+				<e:databaseInfo>
+					<e:title primary="true">arXiv Math</e:title>
+					<e:description lang="de" primary="true">Mathematische Themenbereiche aus dem Preprint arXiv; geharvestet mit OAI-PMH</e:description>
+				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_ti>1=title s=pw t=r</cclmap_ti>
@@ -236,7 +246,7 @@
 			<record>
 				<e:databaseInfo>
 					<e:title primary="true">DigiZeitschriften</e:title>
-					<e:description lang="de" primary="true">Bestand von DigiZeitschriften; geharvestet mit OAI-PMH.</e:description>
+					<e:description lang="de" primary="true">Bestand von DigiZeitschriften; geharvestet mit OAI-PMH</e:description>
 				</e:databaseInfo>
 
 				<zurl>vlib.sub.uni-goettingen.de/solr/digizeitschriften</zurl>
@@ -255,13 +265,15 @@
 
 			<!-- DSpace -->
 			<record>
+				<udb>dspace/geo-leo</udb>
+
+				<zurl>134.76.21.193:9010/solr/gldocs</zurl>
+				<sru>solr</sru>
 				<e:databaseInfo>
 					<e:title primary="true">GEO-LEO e-docs</e:title>
-					<e:description lang="de" primary="true">Publikationsserver für Fachliteratur zum System Erde und Weltall.</e:description>
+					<e:description lang="de" primary="true">Publikationsserver für Fachliteratur zum System Erde und Weltall</e:description>
 				</e:databaseInfo>
 
-				<zurl>e-docs.geo-leo.de:9010/solr/gldocs</zurl>
-				<udb>dspace/geo-leo</udb>
 				<sru>solr</sru>
 
 				<cclmap_term>1=metadata s=al t=r</cclmap_term>
@@ -281,16 +293,18 @@
 				<schema name="turbomarc"/>
 			</record>
 
+
 			<!-- ZVDD -->
 			<record>
+				<udb>zvdd</udb>
+
+				<zurl>esx-151.gbv.de/solr/</zurl>
+				<sru>solr</sru>
+
 				<e:databaseInfo>
 					<e:title primary="true">ZVDD</e:title>
 					<e:description lang="de" primary="true">Zentrales Verzeichnis Digitalisierter Drucke.</e:description>
 				</e:databaseInfo>
-
-				<zurl>esx-151.gbv.de/solr/</zurl>
-				<udb>zvdd</udb>
-				<sru>solr</sru>
 
 				<cclmap_term>s=al t=r</cclmap_term>
 				<cclmap_fulltext>s=al t=r</cclmap_fulltext>
