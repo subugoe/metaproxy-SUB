@@ -6,10 +6,12 @@
 	exclude-result-prefixes="mods xlink"
 	xmlns:marc="http://www.loc.gov/MARC21/slim">
 <!--
-	2013-03-08: Copied from
+	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2013-03-08:
 		http://www.loc.gov/standards/mods/v3/MODS3-4_MARC21slim_XSLT1-0.xsl
 		http://www.loc.gov/standards/mods/mods-conversions.html
-	Changed to load a local copy of MARC21slimUtils.xsl
+	* Change to load a local copy of MARC21slimUtils.xsl
+	* Fix bug which leads to an empty leader[05] when no mods:typeOfResource exists
 -->
 
 
@@ -46,23 +48,25 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<xsl:template match="mods:typeOfResource" mode="leader">
+	<xsl:template name="leader-6">
+		<xsl:param name="resourceType"/>
 		<xsl:choose>
-			<xsl:when test="text()='text'">a</xsl:when>
-			<xsl:when test="text()='text' and @manuscript='yes'">t</xsl:when>
-			<xsl:when test="text()='cartographic' and @manuscript='yes'">f</xsl:when>
-			<xsl:when test="text()='cartographic'">e</xsl:when>
-			<xsl:when test="text()='notated music' and @manuscript='yes'">d</xsl:when>
-			<xsl:when test="text()='notated music'">c</xsl:when>
+			<xsl:when test="$resourceType='text'">a</xsl:when>
+			<xsl:when test="$resourceType='text' and @manuscript='yes'">t</xsl:when>
+			<xsl:when test="$resourceType='cartographic' and @manuscript='yes'">f</xsl:when>
+			<xsl:when test="$resourceType='cartographic'">e</xsl:when>
+			<xsl:when test="$resourceType='notated music' and @manuscript='yes'">d</xsl:when>
+			<xsl:when test="$resourceType='notated music'">c</xsl:when>
 			<!-- v3 musical/non -->
-			<xsl:when test="text()='sound recording-nonmusical'">i</xsl:when>
-			<xsl:when test="text()='sound recording'">j</xsl:when>
-			<xsl:when test="text()='sound recording-musical'">j</xsl:when>
-			<xsl:when test="text()='still image'">k</xsl:when>
-			<xsl:when test="text()='moving image'">g</xsl:when>
-			<xsl:when test="text()='three dimensional object'">r</xsl:when>
-			<xsl:when test="text()='software, multimedia'">m</xsl:when>
-			<xsl:when test="text()='mixed material'">p</xsl:when>
+			<xsl:when test="$resourceType='sound recording-nonmusical'">i</xsl:when>
+			<xsl:when test="$resourceType='sound recording'">j</xsl:when>
+			<xsl:when test="$resourceType='sound recording-musical'">j</xsl:when>
+			<xsl:when test="$resourceType='still image'">k</xsl:when>
+			<xsl:when test="$resourceType='moving image'">g</xsl:when>
+			<xsl:when test="$resourceType='three dimensional object'">r</xsl:when>
+			<xsl:when test="$resourceType='software, multimedia'">m</xsl:when>
+			<xsl:when test="$resourceType='mixed material'">p</xsl:when>
+			<xsl:otherwise><xsl:text> </xsl:text></xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 
@@ -185,7 +189,9 @@
 				<!-- 05 -->
 				<xsl:text>n</xsl:text>
 				<!-- 06 -->
-				<xsl:apply-templates mode="leader" select="mods:typeOfResource[1]"/>
+				<xsl:call-template name="leader-6">
+					<xsl:with-param name="resourceType" select="mods:typeOfResource[1]"/>
+				</xsl:call-template>
 				<!-- 07 -->
 				<xsl:choose>
 					<xsl:when test="mods:originInfo/mods:issuance='monographic'">m</xsl:when>
