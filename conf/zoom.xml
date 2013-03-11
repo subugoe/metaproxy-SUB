@@ -325,7 +325,7 @@
 			<record>
 				<udb>zvdd</udb>
 
-				<zurl>sru.sub.uni-goettingen.de/solr-zvdd-xsl</zurl>
+				<zurl>www.zvdd.de/zvdd2</zurl>
 				<sru>solr</sru>
 
 				<e:databaseInfo>
@@ -339,6 +339,8 @@
 				<cclmap_au>1=creator s=pw t=r</cclmap_au>
 				<cclmap_id>1=pid</cclmap_id>
 				<cclmap_iswork>1=iswork</cclmap_iswork>
+
+				<extraArgs>&amp;wt=xslt&amp;tr=xmlpassthrough.xsl</extraArgs>
 
 				<schema name="solr"/>
 				<schema name="mets"/>
