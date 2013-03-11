@@ -9,11 +9,11 @@ set.bib1 = 1.2.840.10003.3.1
 
 # Index info
 index.cql.serverChoice =
-index.cql.all =
-index.rec.id = 1=PPN
-index.dc.title = 1=TITLE
-index.dc.creator = 1=CREATOR
-index.zvdd.iswork = 1=ISWORK
+index.cql.all = 1=fulltext
+index.rec.id = 1=pid
+index.dc.title = 1=title
+index.dc.creator = 1=creator
+index.zvdd.iswork = 1=iswork
 
 # Relation info
 relation.<  = 2=1
