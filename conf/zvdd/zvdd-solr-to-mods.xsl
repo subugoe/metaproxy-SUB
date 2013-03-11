@@ -15,8 +15,8 @@
 -->
 <xsl:stylesheet
 	xmlns:mods="http://www.loc.gov/mods/v3"
-	version="1.0"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	version="1.0">
 
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
@@ -34,10 +34,14 @@
 	<!--
 		Match xml/mods tags.
 		Copy them and their children with an added mods namespace.
+		Add the zvdd-id as an attribute.
 		Strip leading and trailing whitespace from the contained text.
 	-->
 	<xsl:template match="xml/mods">
 		<mods:mods>
+			<xsl:attribute name="zvdd-id">
+				<xsl:value-of select="../../str[@name='pid']"/>
+			</xsl:attribute>
 			<xsl:copy-of select="namespace::*"/>
 			<xsl:apply-templates select="./*" mode="addMODSNS"/>
 		</mods:mods>
