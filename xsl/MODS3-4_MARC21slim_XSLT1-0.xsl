@@ -11,7 +11,7 @@
 		http://www.loc.gov/standards/mods/v3/MODS3-4_MARC21slim_XSLT1-0.xsl
 		http://www.loc.gov/standards/mods/mods-conversions.html
 	* Change to load a local copy of MARC21slimUtils.xsl
-	* Fix bug which leads to an empty leader[05] when no mods:typeOfResource exists
+	* Fix bug which leads to an empty leader[06] when no mods:typeOfResource exists
 -->
 
 
