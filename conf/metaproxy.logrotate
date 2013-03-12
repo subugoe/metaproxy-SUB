@@ -1,11 +1,14 @@
 /var/log/metaproxy/metaproxy.log {
-	weekly
-	missingok
-	rotate 4
 	compress
+	weekly
+	dateext
+	missingok
+	rotate 12
 	delaycompress
+	create 640 metaproxy metaproxy
+	su metaproxy metaproxy
 	notifempty
 	postrotate
-	/etc/init.d/metaproxy restart
+		/etc/init.d/metaproxy restart
 	endscript
 }

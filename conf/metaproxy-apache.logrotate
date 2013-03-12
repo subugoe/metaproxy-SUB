@@ -1,34 +1,31 @@
 /var/log/apache2/sru/access_log {
-    compress
-    dateext
-    maxage 365
-    rotate 99
-    size=+4096k
-    notifempty
-    missingok
-    create 644 root root
-    prerotate
-    /etc/init.d/apache2 check-reload
-    endscript
-    postrotate
-    /etc/init.d/apache2 reload
-    endscript
+	compress
+	dateext
+	maxage 365
+	rotate 12
+	size=+1024k
+	notifempty
+	missingok
+	prerotate
+		/etc/init.d/apache2 check-reload
+	endscript
+	postrotate
+		/etc/init.d/apache2 reload
+	endscript
 }
 
 /var/log/apache2/sru/error_log {
-    compress
-    dateext
-    maxage 365
-    rotate 99
-    size=+1024k
-    notifempty
-    missingok
-    create 644 root root
-    prerotate
-    /etc/init.d/apache2 check-reload
-    endscript
-    postrotate
-    /etc/init.d/apache2 reload
-    endscript
+	compress
+	dateext
+	maxage 365
+	rotate 12
+	size=+1024k
+	notifempty
+	missingok
+	prerotate
+		/etc/init.d/apache2 check-reload
+	endscript
+	postrotate
+		/etc/init.d/apache2 reload
+	endscript
 }
-
