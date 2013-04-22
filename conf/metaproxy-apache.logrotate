@@ -1,14 +1,10 @@
 /var/log/apache2/sru/access_log {
 	compress
+	weekly
 	dateext
-	maxage 365
-	rotate 12
-	size=+1024k
-	notifempty
 	missingok
-	prerotate
-		/etc/init.d/apache2 check-reload
-	endscript
+	notifempty
+	rotate 12
 	postrotate
 		/etc/init.d/apache2 reload
 	endscript
@@ -16,15 +12,11 @@
 
 /var/log/apache2/sru/error_log {
 	compress
+	weekly
 	dateext
-	maxage 365
-	rotate 12
-	size=+1024k
-	notifempty
 	missingok
-	prerotate
-		/etc/init.d/apache2 check-reload
-	endscript
+	notifempty
+	rotate 12
 	postrotate
 		/etc/init.d/apache2 reload
 	endscript

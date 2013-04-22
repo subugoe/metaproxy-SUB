@@ -3,11 +3,10 @@
 	weekly
 	dateext
 	missingok
+	notifempty
 	rotate 12
-	delaycompress
 	create 640 metaproxy metaproxy
 	su metaproxy metaproxy
-	notifempty
 	postrotate
 		/etc/init.d/metaproxy restart
 	endscript
