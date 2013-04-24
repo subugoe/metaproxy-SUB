@@ -194,7 +194,7 @@ case "$1" in
 	iptables -t nat --append $IPTABLES_OUTPUT
 
 	# start metaproxy with its own user
-	COMMAND="$MP_BIN -D -c $MP_CONFIG -w $MP_CONFIGPATH -p $MP_PID -l /var/log/metaproxy/metaproxy.log"
+	COMMAND="$MP_BIN -D -c $MP_CONFIG -w $MP_CONFIGPATH -p $MP_PID -l /var/log/metaproxy/metaproxy.log -m %F--%T"
 	sudo -b -u metaproxy $COMMAND
 
 	# Remember status and be verbose
