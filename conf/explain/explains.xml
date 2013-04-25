@@ -32,7 +32,7 @@
   <mp:database name="harvest/digizeitschriften">
     <xi:include href="harvest_digizeitschriften.xml"/>
   </mp:database>
-  <mp:database name="dspace/geo-leo">
+  <mp:database name="dspace/geo-leo" xslURL="../metaproxy/xsl/SRW-Sheets/sru-gbv.xsl">
     <xi:include href="dspace_geo-leo.xml"/>
   </mp:database>
   <mp:database name="zvdd">

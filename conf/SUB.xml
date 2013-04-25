@@ -23,6 +23,14 @@
 				<message>FN</message>
 			</filter>
 
+			<filter type="http_file">
+				<mimetypes>/etc/mime.types</mimetypes>
+				<area>
+					<documentroot>..</documentroot>
+					<prefix>/metaproxy</prefix>
+				</area>
+			</filter>
+
 			<xi:include href="explain/explains.xml"/>
 
 			<filter type="virt_db">
