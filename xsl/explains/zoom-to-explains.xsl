@@ -33,8 +33,11 @@
 
 	<!--
 		Process Torus records to create an explain tag with:
+			* serverInfo
 			* databaseInfo
 			* indexInfo
+			* schemaInfo
+			* configInfo
 	-->
 	<xsl:template match="//mp:filter[@type='zoom']/mp:torus/mp:records/mp:record">
 		<e:explain>
@@ -121,6 +124,11 @@
 							<e:title>METS</e:title>
 						</e:schema>
 					</xsl:when>
+					<xsl:when test="@name='mods'">
+						<e:schema name="mods" retrieve="true">
+							<e:title>MODS</e:title>
+						</e:schema>
+					</xsl:when>
 					<xsl:when test="@name='dc'">
 						<e:schema name="dc" retrieve="true" identifier="http://www.loc.gov/zing/srw/dcschema/v1.0/">
 							<e:title>Dublin Core</e:title>
@@ -128,12 +136,12 @@
 					</xsl:when>
 					<xsl:when test="@name='marcxml'">
 						<e:schema name="marcxml" retrieve="true" identifier="info:srw/schema/1/marcxml-v1.1">
-							<e:title>MARCXML</e:title>
+							<e:title>MARC</e:title>
 						</e:schema>
 					</xsl:when>
 					<xsl:when test="@name='turbomarc'">
 						<e:schema name="turbomarc" retrieve="true">
-							<e:title>Index Data TurboMARC</e:title>
+							<e:title>TurboMARC</e:title>
 						</e:schema>
 					</xsl:when>
 				</xsl:choose>
@@ -254,5 +262,32 @@
 			</xsl:if>
 		</xsl:for-each>
 	</xsl:template>
+	
+	
+	
+	<!--
+		Template to Search & Replace in a string.
+	-->
+	<xsl:template name="string-replace">
+		<xsl:param name="string"/>
+		<xsl:param name="search"/>
+		<xsl:param name="replace"/>
+
+		<xsl:choose>
+			<xsl:when test="contains($string, $search)">
+				<xsl:value-of select="substring-before($string, $search)"/>
+				<xsl:value-of select="$replace"/>
+				<xsl:call-template name="string-replace">
+					<xsl:with-param name="string" select="substring-after($string, $search)"/>
+					<xsl:with-param name="search" select="$search"/>
+					<xsl:with-param name="replace" select="$replace"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$string"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
 
 </xsl:stylesheet>

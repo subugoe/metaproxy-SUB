@@ -11,7 +11,7 @@ from lxml import etree
 
 filename = sys.argv[1]
 
-xslXML = etree.parse("../xsl/zoom-to-explains.xsl")
+xslXML = etree.parse("../xsl/explains/zoom-to-explains.xsl")
 xsl = etree.XSLT(xslXML)
 
 configXML = etree.parse(filename)
@@ -31,7 +31,7 @@ for explain in explains:
 		print u"wrote »" + filePath + u"«"
 
 
-xslXML = etree.parse("../xsl/explains-to-srufilter.xsl")
+xslXML = etree.parse("../xsl/explains/explains-to-srufilter.xsl")
 xsl = etree.XSLT(xslXML)
 sruFilter = xsl(explainXML)
 
