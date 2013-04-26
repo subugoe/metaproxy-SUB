@@ -5,6 +5,27 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		xmlns:e="http://explain.z3950.org/dtd/2.0/"
 		version="1.0">
+<!--
+	Metaproxy configuration for SUB Göttingen.
+	
+	* listen on Port 9000 for SRU and Z39.50
+	* most SRU configuration in zoom.xml
+	* explain records loaded from explain/ and created by ./create-explains.py
+	* DSpace Solr targets with Solr/DC/MARC output (configuration files in dspace/):
+	** eDiss
+	** GEO-LEO e-docs
+	* ZVDD Solr target with Solr/DC/MODS/METS/MARC output (configuration files in zvdd/):
+	** includes slight query rewriting
+	* Harvesting Solr targets with Solr/DC output
+	* SSGFI Solr Targets with Solr output:
+	** math
+	** geo
+	** lit
+	** hist
+	** forst
+	
+	2012-2013 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
 
 
 	<start route="start"/>
@@ -41,7 +62,7 @@
 					<database>dspace/geo-leo</database>
 				</virtual>
 				<virtual route="dspace">
-					<database>dspace/diss</database>
+					<database>dspace/ediss</database>
 				</virtual>
 			</filter>
 
