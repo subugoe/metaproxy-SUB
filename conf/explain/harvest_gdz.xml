@@ -1,14 +1,14 @@
 <e:explain xmlns:e="http://explain.z3950.org/dtd/2.0/" xmlns:mp="http://indexdata.com/metaproxy">
   <e:serverInfo protocol="SRU">
     <e:port>80</e:port>
-    <e:database>ssgfi/geo-guide</e:database>
+    <e:database>harvest/gdz</e:database>
   </e:serverInfo>
   <e:databaseInfo>
-    <e:title xmlns="http://indexdata.com/metaproxy" primary="true">Geo-Guide</e:title>
-    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Linksammlung zum Thema System Erde und Weltall für GEO-LEO</e:description>
-    <infoURL xmlns="http://indexdata.com/metaproxy">http://geo-leo.de/geo-guide/</infoURL>
-    <infoString xmlns="http://indexdata.com/metaproxy">Geo-Guide</infoString>
-    <logoURL xmlns="http://indexdata.com/metaproxy">http://geo-leo.de/fileadmin/geoleo/geo-leo-logo.png</logoURL>
+    <e:title xmlns="http://indexdata.com/metaproxy" primary="true">GDZ</e:title>
+    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Göttinger Digitalisierungszentrum; geharvestet mit OAI-PMH</e:description>
+    <infoURL xmlns="http://indexdata.com/metaproxy">http://gdz.sub.uni-goettingen.de/</infoURL>
+    <infoString xmlns="http://indexdata.com/metaproxy">GDZ</infoString>
+    <logoURL xmlns="http://indexdata.com/metaproxy">http://gdz.sub.uni-goettingen.de/fileadmin/gdz/layout/head_logo.jpg</logoURL>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>
@@ -41,39 +41,15 @@
       </e:map>
     </e:index>
     <e:index search="true" scan="false" sort="false">
-      <e:title>Language</e:title>
+      <e:title>Publication Date</e:title>
       <e:map>
-        <e:name set="dc">language</e:name>
+        <e:name set="dc">date</e:name>
       </e:map>
     </e:index>
     <e:index search="true" scan="false" sort="false">
       <e:title>Subject</e:title>
       <e:map>
         <e:name set="dc">subject</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>Acquisition Date</e:title>
-      <e:map>
-        <e:name set="dc">date.nel</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>Subject: Basisklassifikation</e:title>
-      <e:map>
-        <e:name set="dc">subject.bkl</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>Subject: Dewey Decimal Classification</e:title>
-      <e:map>
-        <e:name set="dc">subject.ddc</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>Subject: Göttinger Online Klassifikation</e:title>
-      <e:map>
-        <e:name set="dc">subject.gok</e:name>
       </e:map>
     </e:index>
     <e:index search="true" scan="false" sort="false">

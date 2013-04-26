@@ -5,7 +5,10 @@
   </e:serverInfo>
   <e:databaseInfo>
     <e:title xmlns="http://indexdata.com/metaproxy" primary="true">DigiZeitschriften</e:title>
-    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Bestand von DigiZeitschriften; geharvestet mit OAI-PMH.</e:description>
+    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Bestand von DigiZeitschriften; geharvestet mit OAI-PMH</e:description>
+    <infoURL xmlns="http://indexdata.com/metaproxy">http://digizeitschriften.de/</infoURL>
+    <infoString xmlns="http://indexdata.com/metaproxy">DigiZeitschriften</infoString>
+    <logoURL xmlns="http://indexdata.com/metaproxy">http://www.digizeitschriften.de/fileadmin/layout/digizeit_logo.png</logoURL>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>

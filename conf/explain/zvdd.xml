@@ -6,6 +6,8 @@
   <e:databaseInfo>
     <e:title xmlns="http://indexdata.com/metaproxy" primary="true">ZVDD</e:title>
     <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Zentrales Verzeichnis Digitalisierter Drucke.</e:description>
+    <infoURL xmlns="http://indexdata.com/metaproxy">http://www.zvdd.de/</infoURL>
+    <infoString xmlns="http://indexdata.com/metaproxy">ZVDD</infoString>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>
@@ -60,20 +62,23 @@
     </e:index>
   </e:indexInfo>
   <e:schemaInfo>
-    <e:schema name="solr" retrieve="true">
-      <e:title>Solr</e:title>
+    <e:schema name="marcxml" retrieve="true" identifier="info:srw/schema/1/marcxml-v1.1">
+      <e:title>MARC</e:title>
+    </e:schema>
+    <e:schema name="turbomarc" retrieve="true">
+      <e:title>TurboMARC</e:title>
     </e:schema>
     <e:schema name="mets" retrieve="true">
       <e:title>METS</e:title>
     </e:schema>
+    <e:schema name="mods" retrieve="true">
+      <e:title>MODS</e:title>
+    </e:schema>
     <e:schema name="dc" retrieve="true" identifier="http://www.loc.gov/zing/srw/dcschema/v1.0/">
       <e:title>Dublin Core</e:title>
     </e:schema>
-    <e:schema name="marcxml" retrieve="true" identifier="info:srw/schema/1/marcxml-v1.1">
-      <e:title>MARCXML</e:title>
-    </e:schema>
-    <e:schema name="turbomarc" retrieve="true">
-      <e:title>Index Data TurboMARC</e:title>
+    <e:schema name="solr" retrieve="true">
+      <e:title>Solr</e:title>
     </e:schema>
   </e:schemaInfo>
   <e:configInfo>

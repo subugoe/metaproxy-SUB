@@ -1,9 +1,13 @@
 <e:explain xmlns:e="http://explain.z3950.org/dtd/2.0/" xmlns:mp="http://indexdata.com/metaproxy">
   <e:serverInfo protocol="SRU">
     <e:port>80</e:port>
-    <e:database>opac-de-7</e:database>
+    <e:database>dspace/ediss</e:database>
   </e:serverInfo>
   <e:databaseInfo>
+    <e:title xmlns="http://indexdata.com/metaproxy" primary="true">eDiss</e:title>
+    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Dissertationen der Georg-August-Universität Göttingen</e:description>
+    <infoURL xmlns="http://indexdata.com/metaproxy">http://ediss.uni-goettingen.de/</infoURL>
+    <infoString xmlns="http://indexdata.com/metaproxy">eDiss</infoString>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>
@@ -21,6 +25,18 @@
       <e:title>All Metadata fields</e:title>
       <e:map>
         <e:name set="cql">serverChoice</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>All Metadata fields and full texts</e:title>
+      <e:map>
+        <e:name set="cql">anywhere</e:name>
+      </e:map>
+    </e:index>
+    <e:index search="true" scan="false" sort="false">
+      <e:title>Record Identifier</e:title>
+      <e:map>
+        <e:name set="rec">identifier</e:name>
       </e:map>
     </e:index>
     <e:index search="true" scan="false" sort="false">
@@ -42,12 +58,6 @@
       </e:map>
     </e:index>
     <e:index search="true" scan="false" sort="false">
-      <e:title>Acquisition Date</e:title>
-      <e:map>
-        <e:name set="dc">date.nel</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
       <e:title>Language</e:title>
       <e:map>
         <e:name set="dc">language</e:name>
@@ -66,49 +76,22 @@
       </e:map>
     </e:index>
     <e:index search="true" scan="false" sort="false">
-      <e:title>Subject: Dewey Decimal Classification</e:title>
-      <e:map>
-        <e:name set="dc">subject.ddc</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>Subject: Mathematics Subject Classification</e:title>
-      <e:map>
-        <e:name set="dc">subject.msc</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
       <e:title>Subject: Göttinger Online Klassifikation</e:title>
       <e:map>
         <e:name set="dc">subject.gok</e:name>
       </e:map>
     </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>Subject: Göttinger Bandrealkatalog Klassifikation</e:title>
-      <e:map>
-        <e:name set="dc">subject.brk</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>ISBN</e:title>
-      <e:map>
-        <e:name set="dc">identifier.isbn</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>ISSN</e:title>
-      <e:map>
-        <e:name set="dc">identifier.issn</e:name>
-      </e:map>
-    </e:index>
-    <e:index search="true" scan="false" sort="false">
-      <e:title>Record Identifier</e:title>
-      <e:map>
-        <e:name set="rec">identifier</e:name>
-      </e:map>
-    </e:index>
   </e:indexInfo>
   <e:schemaInfo>
+    <e:schema name="marcxml" retrieve="true" identifier="info:srw/schema/1/marcxml-v1.1">
+      <e:title>MARC</e:title>
+    </e:schema>
+    <e:schema name="turbomarc" retrieve="true">
+      <e:title>TurboMARC</e:title>
+    </e:schema>
+    <e:schema name="dc" retrieve="true" identifier="http://www.loc.gov/zing/srw/dcschema/v1.0/">
+      <e:title>Dublin Core</e:title>
+    </e:schema>
     <e:schema name="solr" retrieve="true">
       <e:title>Solr</e:title>
     </e:schema>

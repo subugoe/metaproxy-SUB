@@ -5,7 +5,10 @@
   </e:serverInfo>
   <e:databaseInfo>
     <e:title xmlns="http://indexdata.com/metaproxy" primary="true">History-Guide</e:title>
-    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Linksammlung zum Thema Geschichte.</e:description>
+    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Linksammlung zum Thema Geschichte für Lib AAC.</e:description>
+    <infoURL xmlns="http://indexdata.com/metaproxy">http://aac.sub.uni-goettingen.de/geschichte/guide/</infoURL>
+    <infoString xmlns="http://indexdata.com/metaproxy">History-Guide</infoString>
+    <logoURL xmlns="http://indexdata.com/metaproxy">http://aac.sub.uni-goettingen.de/fileadmin/AAC/logo/SCREEN%20(version%20for%20display%20on%20computer%20screens)/Bitmap%20(do%20not%20alter%20the%20size%20of%20these)/Horizontal%20Logo/Blue%20on%20Transparent%20Background/SSGAnglo_horiz_logo_SCREEN_blue_transp_300x32px.png</logoURL>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>

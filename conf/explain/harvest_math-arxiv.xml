@@ -5,7 +5,10 @@
   </e:serverInfo>
   <e:databaseInfo>
     <e:title xmlns="http://indexdata.com/metaproxy" primary="true">arXiv Math</e:title>
-    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Mathematische Themenbereiche aus dem Preprint arXiv; geharvestet mit OAI-PMH.</e:description>
+    <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Mathematische Themenbereiche aus dem Preprint arXiv; geharvestet mit OAI-PMH für vifamath.</e:description>
+    <infoURL xmlns="http://indexdata.com/metaproxy">http://vlib.sub.uni-goettingen.de/harvester/math-arxiv/</infoURL>
+    <infoString xmlns="http://indexdata.com/metaproxy">OAI-Harvester konfigurieren</infoString>
+    <logoURL xmlns="http://indexdata.com/metaproxy">http://vifamath.de/fileadmin/download/vifamath_logo_200.jpg</logoURL>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>

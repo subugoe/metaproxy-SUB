@@ -6,6 +6,8 @@
   <e:databaseInfo>
     <e:title xmlns="http://indexdata.com/metaproxy" primary="true">Jahrbuch Datenbank</e:title>
     <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Bestände des Jahrbuch für Mathematik</e:description>
+    <infoURL xmlns="http://indexdata.com/metaproxy">http://www.sub.uni-goettingen.de/projekte-forschung/projektdetails/projekt/electronic-research-archive-for-mathematics-jahrbuch-datenbank/</infoURL>
+    <infoString xmlns="http://indexdata.com/metaproxy">über das Projekt</infoString>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>
