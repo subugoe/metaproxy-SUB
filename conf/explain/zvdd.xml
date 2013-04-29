@@ -8,6 +8,7 @@
     <e:description xmlns="http://indexdata.com/metaproxy" lang="de" primary="true">Zentrales Verzeichnis Digitalisierter Drucke.</e:description>
     <infoURL xmlns="http://indexdata.com/metaproxy">http://www.zvdd.de/</infoURL>
     <infoString xmlns="http://indexdata.com/metaproxy">ZVDD</infoString>
+    <logoURL xmlns="http://indexdata.com/metaproxy">http://www.zvdd.de/fileadmin/template/zvdd/img/zvdd_logo.gif</logoURL>
     <e:author>Sven-S. Porst, SUB Göttingen</e:author>
     <e:contact>porst@sub.uni-goettingen.de</e:contact>
   </e:databaseInfo>
