@@ -4,7 +4,10 @@
 Script to create SRU explain response setup from a Metaproxy configuration
 file with a zoom filter.
 
-2012 Sven-S. Porst <porst@sub.uni-goettingen.de>
+Usage for SUB Göttingen setup:
+	./create-explains.py zoom.xml
+
+2012-2013 Sven-S. Porst <porst@sub.uni-goettingen.de>
 """
 import sys
 from lxml import etree
