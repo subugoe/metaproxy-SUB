@@ -399,6 +399,7 @@
 					<e:description lang="de" primary="true">Zentrales Verzeichnis Digitalisierter Drucke.</e:description>
 					<infoURL>http://www.zvdd.de/</infoURL>
 					<infoString>ZVDD</infoString>
+					<logoURL>http://www.zvdd.de/fileadmin/template/zvdd/img/zvdd_logo.gif</logoURL>
 				</e:databaseInfo>
 
 				<cclmap_term>s=al t=r</cclmap_term>
