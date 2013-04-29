@@ -35,7 +35,7 @@
 		tag to load the database’s explain information.
 	-->
 	<xsl:template name="databaseExplain">
-		<mp:database xslURL="http://vlib.sub.uni-goettingen.de/sru/metaproxy/xsl/sru-ui.xsl">
+		<mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl">
 			<xsl:attribute name="name">
 				<xsl:value-of select="."/>
 			</xsl:attribute>
