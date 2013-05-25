@@ -5,173 +5,176 @@
 -->
 
 <response>
-
-<lst name="responseHeader">
-  <int name="status">0</int>
-  <int name="QTime">1</int>
-  <lst name="params">
-    <str name="indent">on</str>
-    <str name="start">0</str>
-    <str name="tr">xmlpassthrough.xsl</str>
-    <str name="q">*:*</str>
-    <str name="wt">xslt</str>
-    <str name="rows">10</str>
-    <str name="version">2.2</str>
-  </lst>
-</lst>
-<result name="response" numFound="1" start="0">
-  <doc>
-    <str name="BYCREATOR">Waldseemüller</str>
-    <str name="BYTITLE">Cosmographiae.Introdvctio.Cvm.Qvisbvsdam.Geometriae.Ac.Astronomiae.Principiis.Ad.Eam.Rem.Necessariis</str>
-    <str name="CREATOR">Waldseemüller, Martin</str>
-    <str name="DATEINDEXED">20130209</str>
-    <str name="DATEMODIFIED">20130209</str>
-    <str name="DC">druckschriften.dl.ub.uni.freiburg.de</str>
-    <str name="DMDID">log dmd</str>
-    <str name="DOCSTRCT">monograph</str>
-    <str name="IDDOC">18024955</str>
-    <str name="LOCATION">http://dl.ub.uni-freiburg.de/diglit/ringmann1507</str>
-    <str name="PLACEPUBLISH">Saint-Dié</str>
-    <str name="PPN">urn:nbn:de:bsz:25-digilib-75393</str>
-    <str name="STRUCTRUN">a:1:{i:0;a:8:{s:5:"IDDOC";i:18024955;s:3:"PPN";s:31:"urn:nbn:de:bsz:25-digilib-75393";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:100:"Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1507";s:5:"DMDID";s:3:"dmd";}}</str>
-    <str name="TITLE">Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis</str>
-    <str name="YEARPUBLISH">1507</str>
-    <str name="att_s">Waldseemüller, Martin</str>
-    <str name="bycreator">Waldseemüller, Martin</str>
-    <str name="bytitle">Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis</str>
-    <str name="creator">Waldseemüller, Martin</str>
-    <date name="dateindexed">2013-02-09T05:24:59Z</date>
-    <date name="datemodified">2013-02-09T05:24:59Z</date>
-    <arr name="dc"><str>druckschriften.dl.ub.uni.freiburg.de</str></arr>
-    <str name="dmdid">dmd</str>
-    <str name="docstrct">Monograph</str>
-    <str name="dub_s">Ringmann, Matthias</str>
-    <str name="id">18024955</str>
-    <bool name="ismets">true</bool>
-    <bool name="iswork">true</bool>
-    <str name="location">http://dl.ub.uni-freiburg.de/diglit/ringmann1507</str>
-    <str name="logid">log</str>
-    <xml>
-<mods>
-<titleInfo>
-<title own="Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis">
+	<lst name="responseHeader">
+		<int name="status">0</int>
+		<int name="QTime">0</int>
+		<lst name="params">
+			<str name="indent">on</str>
+			<str name="start">0</str>
+			<str name="q">*:*</str>
+			<str name="rows">10</str>
+			<str name="version">2.2</str>
+		</lst>
+	</lst>
+	<result name="response" numFound="1" start="0">
+		<doc>
+			<str name="BYCREATOR">Waldseem&#xFC;ller</str>
+			<str name="BYTITLE">
+Cosmographiae.Introdvctio.Cvm.Qvisbvsdam.Geometriae.Ac.Astronomiae.Principiis.Ad.Eam.Rem.Necessariis
+</str>
+			<str name="CREATOR">Waldseem&#xFC;ller, Martin</str>
+			<str name="DATEINDEXED">20130209</str>
+			<str name="DATEMODIFIED">20130209</str>
+			<str name="DC">druckschriften.dl.ub.uni.freiburg.de</str>
+			<str name="DMDID">log dmd</str>
+			<str name="DOCSTRCT">monograph</str>
+			<str name="IDDOC">18024955</str>
+			<str name="LOCATION">http://dl.ub.uni-freiburg.de/diglit/ringmann1507</str>
+			<str name="PLACEPUBLISH">Saint-Di&#xE9;</str>
+			<str name="PPN">urn:nbn:de:bsz:25-digilib-75393</str>
+			<str name="STRUCTRUN">
+a:1:{i:0;a:8:{s:5:"IDDOC";i:18024955;s:3:"PPN";s:31:"urn:nbn:de:bsz:25-digilib-75393";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:100:"Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1507";s:5:"DMDID";s:3:"dmd";}}
+</str>
+			<str name="TITLE">
 Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis
-</title>
-</titleInfo>
-<name valueURI="http://d-nb.info/gnd/119353717" type="personal" authorityURI="http://d-nb.info/gnd/" authority="gnd">
-<namePart type="family">Waldseemüller</namePart>
-<namePart type="given">Martin</namePart>
-<displayForm>Waldseemüller, Martin</displayForm>
-<role>
-<roleTerm type="code" authority="marcrelator">att</roleTerm>
-</role>
-</name>
-<name valueURI="http://d-nb.info/gnd/120151448" type="personal" authorityURI="http://d-nb.info/gnd/" authority="gnd">
-<namePart type="family">Ringmann</namePart>
-<namePart type="given">Matthias</namePart>
-<displayForm>Ringmann, Matthias</displayForm>
-<role>
-<roleTerm type="code" authority="marcrelator">dub</roleTerm>
-</role>
-</name>
-<name valueURI="http://d-nb.info/gnd/118768247" type="personal" authorityURI="http://d-nb.info/gnd/" authority="gnd">
-<namePart type="family">Vespucci</namePart>
-<namePart type="given">Amerigo</namePart>
-<displayForm>Vespucci, Amerigo</displayForm>
-<role>
-<roleTerm type="code" authority="marcrelator">oth</roleTerm>
-</role>
-</name>
-<originInfo>
-<place>
-<placeTerm type="text">Saint-Dié</placeTerm>
-</place>
-<dateIssued keyDate="yes" encoding="w3cdtf">1507</dateIssued>
-<dateIssued>1507</dateIssued>
-</originInfo>
-<physicalDescription>
-<digitalOrigin>reformatted digital</digitalOrigin>
-</physicalDescription>
-<language>
-<languageTerm type="code" authority="iso639-2b">lat</languageTerm>
-</language>
-<relatedItem lang="ger" type="series">
-<titleInfo>
-<title>Drucke des Humanismus und der Reformationszeit</title>
-</titleInfo>
-<recordInfo>
-<recordIdentifier source="UBFR">http://www.ub.uni-freiburg.de/go/humanismus/</recordIdentifier>
-</recordInfo>
-</relatedItem>
-<relatedItem lang="eng" type="series">
-<titleInfo>
-<title>Drucke des Humanismus und der Reformationszeit</title>
-</titleInfo>
-<recordInfo>
-<recordIdentifier source="UBFR">http://www.ub.uni-freiburg.de/go/humanismus/</recordIdentifier>
-</recordInfo>
-</relatedItem>
-<relatedItem type="series">
-<titleInfo>
-<title>Druckschriften</title>
-</titleInfo>
-<recordInfo>
-<recordIdentifier source="UBFR">druckschriften</recordIdentifier>
-</recordInfo>
-</relatedItem>
-<relatedItem type="series">
-<titleInfo>
-<title>
-Digitalisierung wertvoller Bestände baden-württembergischer Bibliotheken
-</title>
-</titleInfo>
-<recordInfo>
-<recordIdentifier source="UBFR">leo-bw</recordIdentifier>
-</recordInfo>
-</relatedItem>
-<relatedItem type="series">
-<titleInfo>
-<title>
-Freiburger historische Bestände - digitalisiert : Drucke des Humanismus und der Reformationszeit
-</title>
-</titleInfo>
-<recordInfo>
-<recordIdentifier source="UBFR">sammlung5</recordIdentifier>
-</recordInfo>
-</relatedItem>
-<location>
-<physicalLocation>
-Universitätsbibliothek Freiburg, UB Freiburg, T 2047,aa
-</physicalLocation>
-</location>
-<location>
-<url access="object in context">http://dl.ub.uni-freiburg.de/diglit/ringmann1507</url>
-</location>
-<recordInfo>
-<recordIdentifier source="swb-ppn">378149814</recordIdentifier>
-</recordInfo>
-<identifier type="urn">urn:nbn:de:bsz:25-digilib-75393</identifier>
-<abstract lang="ger" html=""></abstract>
-<abstract lang="eng" html=""></abstract>
-<note lang="ger" displayLabel="Signatur" type="shelf number">UB Freiburg, T 2047,aa</note>
-<note lang="eng" displayLabel="Shelf number" type="shelf number">UB Freiburg, T 2047,aa</note>
-<note lang="ger" type="creation/production credits"></note>
-<note lang="eng" type="creation/production credits"></note>
-<identifier type="oai">oai:dl.ub.uni-freiburg.de:7539</identifier>
-<extension>
-<zvdd:zvddWrap xmlns:zvdd="namespace-deklarations-dummy">
-<zvdd:collectionIdentifier>druckschriften.dl.ub.uni.freiburg.de</zvdd:collectionIdentifier>
-</zvdd:zvddWrap>
-</extension>
-</mods>
-</xml>
-    <str name="oth_s">Vespucci, Amerigo</str>
-    <str name="pid">urn:nbn:de:bsz:25-digilib-75393</str>
-    <str name="placepublish">Saint-Dié</str>
-    <str name="structrun">a:1:{i:0;a:8:{s:5:"IDDOC";i:18024955;s:3:"PPN";s:31:"urn:nbn:de:bsz:25-digilib-75393";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:100:"Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1507";s:5:"DMDID";s:3:"dmd";}}</str>
-    <str name="swb-ppn_id_s">378149814</str>
-    <str name="title">Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis</str>
-    <int name="yearpublish">1507</int>
-  </doc>
-</result>
+</str>
+			<str name="YEARPUBLISH">1507</str>
+			<str name="att_s">Waldseem&#xFC;ller, Martin</str>
+			<str name="bycreator">Waldseem&#xFC;ller, Martin</str>
+			<str name="bytitle">
+Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis
+</str>
+			<str name="creator">Waldseem&#xFC;ller, Martin</str>
+			<date name="dateindexed">2013-02-09T05:24:59Z</date>
+			<date name="datemodified">2013-02-09T05:24:59Z</date>
+			<arr name="dc">
+				<str>druckschriften.dl.ub.uni.freiburg.de</str>
+			</arr>
+			<str name="dmdid">dmd</str>
+			<str name="docstrct">Monograph</str>
+			<str name="dub_s">Ringmann, Matthias</str>
+			<str name="id">18024955</str>
+			<bool name="ismets">true</bool>
+			<bool name="iswork">true</bool>
+			<str name="location">http://dl.ub.uni-freiburg.de/diglit/ringmann1507</str>
+			<str name="logid">log</str>
+			<str name="mods">
+				<mods>
+					<titleInfo>
+						<title own="Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis"> Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis </title>
+					</titleInfo>
+					<name valueURI="http://d-nb.info/gnd/119353717" type="personal" authorityURI="http://d-nb.info/gnd/" authority="gnd">
+						<namePart type="family">Waldseem&#xFC;ller</namePart>
+						<namePart type="given">Martin</namePart>
+						<displayForm>Waldseem&#xFC;ller, Martin</displayForm>
+						<role>
+							<roleTerm type="code" authority="marcrelator">att</roleTerm>
+						</role>
+					</name>
+					<name valueURI="http://d-nb.info/gnd/120151448" type="personal" authorityURI="http://d-nb.info/gnd/" authority="gnd">
+						<namePart type="family">Ringmann</namePart>
+						<namePart type="given">Matthias</namePart>
+						<displayForm>Ringmann, Matthias</displayForm>
+						<role>
+							<roleTerm type="code" authority="marcrelator">dub</roleTerm>
+						</role>
+					</name>
+					<name valueURI="http://d-nb.info/gnd/118768247" type="personal" authorityURI="http://d-nb.info/gnd/" authority="gnd">
+						<namePart type="family">Vespucci</namePart>
+						<namePart type="given">Amerigo</namePart>
+						<displayForm>Vespucci, Amerigo</displayForm>
+						<role>
+							<roleTerm type="code" authority="marcrelator">oth</roleTerm>
+						</role>
+					</name>
+					<originInfo>
+						<place>
+							<placeTerm type="text">Saint-Di&#xE9;</placeTerm>
+						</place>
+						<dateIssued keyDate="yes" encoding="w3cdtf">1507</dateIssued>
+						<dateIssued>1507</dateIssued>
+					</originInfo>
+					<physicalDescription>
+						<digitalOrigin>reformatted digital</digitalOrigin>
+					</physicalDescription>
+					<language>
+						<languageTerm type="code" authority="iso639-2b">lat</languageTerm>
+					</language>
+					<relatedItem lang="ger" type="series">
+						<titleInfo>
+							<title>Drucke des Humanismus und der Reformationszeit</title>
+						</titleInfo>
+						<recordInfo>
+							<recordIdentifier source="UBFR">http://www.ub.uni-freiburg.de/go/humanismus/</recordIdentifier>
+						</recordInfo>
+					</relatedItem>
+					<relatedItem lang="eng" type="series">
+						<titleInfo>
+							<title>Drucke des Humanismus und der Reformationszeit</title>
+						</titleInfo>
+						<recordInfo>
+							<recordIdentifier source="UBFR">http://www.ub.uni-freiburg.de/go/humanismus/</recordIdentifier>
+						</recordInfo>
+					</relatedItem>
+					<relatedItem type="series">
+						<titleInfo>
+							<title>Druckschriften</title>
+						</titleInfo>
+						<recordInfo>
+							<recordIdentifier source="UBFR">druckschriften</recordIdentifier>
+						</recordInfo>
+					</relatedItem>
+					<relatedItem type="series">
+						<titleInfo>
+							<title> Digitalisierung wertvoller Best&#xE4;nde baden-w&#xFC;rttembergischer Bibliotheken </title>
+						</titleInfo>
+						<recordInfo>
+							<recordIdentifier source="UBFR">leo-bw</recordIdentifier>
+						</recordInfo>
+					</relatedItem>
+					<relatedItem type="series">
+						<titleInfo>
+							<title> Freiburger historische Best&#xE4;nde - digitalisiert : Drucke des Humanismus und der Reformationszeit </title>
+						</titleInfo>
+						<recordInfo>
+							<recordIdentifier source="UBFR">sammlung5</recordIdentifier>
+						</recordInfo>
+					</relatedItem>
+					<location>
+						<physicalLocation> Universit&#xE4;tsbibliothek Freiburg, UB Freiburg, T 2047,aa </physicalLocation>
+					</location>
+					<location>
+						<url access="object in context">http://dl.ub.uni-freiburg.de/diglit/ringmann1507</url>
+					</location>
+					<recordInfo>
+						<recordIdentifier source="swb-ppn">378149814</recordIdentifier>
+					</recordInfo>
+					<identifier type="urn">urn:nbn:de:bsz:25-digilib-75393</identifier>
+					<abstract lang="ger" html=""/>
+					<abstract lang="eng" html=""/>
+					<note lang="ger" displayLabel="Signatur" type="shelf number">UB Freiburg, T 2047,aa</note>
+					<note lang="eng" displayLabel="Shelf number" type="shelf number">UB Freiburg, T 2047,aa</note>
+					<note lang="ger" type="creation/production credits"/>
+					<note lang="eng" type="creation/production credits"/>
+					<identifier type="oai">oai:dl.ub.uni-freiburg.de:7539</identifier>
+					<extension>
+						<zvdd:zvddWrap xmlns:zvdd="namespace-deklarations-dummy">
+							<zvdd:collectionIdentifier>druckschriften.dl.ub.uni.freiburg.de</zvdd:collectionIdentifier>
+						</zvdd:zvddWrap>
+					</extension>
+				</mods>
+			</str>
+			<str name="oth_s">Vespucci, Amerigo</str>
+			<str name="pid">urn:nbn:de:bsz:25-digilib-75393</str>
+			<str name="placepublish">Saint-Di&#xE9;</str>
+			<str name="structrun">
+a:1:{i:0;a:8:{s:5:"IDDOC";i:18024955;s:3:"PPN";s:31:"urn:nbn:de:bsz:25-digilib-75393";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:100:"Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1507";s:5:"DMDID";s:3:"dmd";}}
+</str>
+			<str name="swb-ppn_id_s">378149814</str>
+			<str name="title">
+Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis
+</str>
+			<int name="yearpublish">1507</int>
+		</doc>
+	</result>
 </response>
