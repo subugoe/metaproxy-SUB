@@ -13,7 +13,7 @@
        - zvdd/DFG-Viewer METS-Profil Version 2.0 (http://www.zvdd.de/fileadmin/AGSDD-Redaktion/METS_Anwendungsprofil_2.0.pdf)
        - MODS Anwendungsprofil für digitalisierte Drucke Version 2.1 (http://www.zvdd.de/fileadmin/AGSDD-Redaktion/zvdd_MODS_Application_Profile_2.1.pdf)
        
-    Last Change: 2013-05-24, Alex Jahnke, SUB Göttingen/Metadaten und Datenkonversion (jahnke@sub.uni-goettingen.de)
+    Last Change: 2013-06-05, Alex Jahnke, SUB Göttingen/Metadaten und Datenkonversion (jahnke@sub.uni-goettingen.de)
     ========================================================================================================================================================
     -->
     <xsl:output method="xml" indent="yes"/>
@@ -709,9 +709,9 @@
             </marc:subfield>
             <xsl:apply-templates select="./mods:place | ./mods:publisher"/>
             <xsl:if test="./mods:dateCaptured">
-                <mods:subfield code="d">
+                <marc:subfield code="d">
                     <xsl:apply-templates select="./mods:dateCaptured"/>
-                </mods:subfield>
+                </marc:subfield>
             </xsl:if>
         </marc:datafield>
     </xsl:template> 
@@ -1061,7 +1061,7 @@
                     <xsl:attribute name="ind2">4</xsl:attribute>
                 </xsl:otherwise>
             </xsl:choose>
-            <mods:subfield code="a">
+            <marc:subfield code="a">
                 <xsl:choose>
                     <xsl:when test="child::node()[1]=mods:titleInfo">
                         <xsl:if test="./mods:nonSort">
@@ -1083,10 +1083,10 @@
                         <xsl:value-of select="normalize-space(child::node()[1])"/>
                     </xsl:otherwise>
                 </xsl:choose>
-            </mods:subfield>
+            </marc:subfield>
             <xsl:apply-templates select="child::node()[position()>1]"/>
             <xsl:if test="@authority">
-                <mods:subfield code="2">
+                <marc:subfield code="2">
                     <xsl:choose>
                         <xsl:when test="contains('aass aat abne agrifors agrovoc agrovocf agrovocs afset aiatsisl aiatsisp aiatsiss aktp albt allars apaist asft asrcrfcd asrctoa asth atg atla aucsh barn bella bet bhammf bhashe bib1814 bibalex biccbmc bicssc bidex bisacmt bisacrt bisacsh bjornson blcpss blmlsh blnpn bt cabt cash ccsa cct ccte cctf cdcng ceeus chirosh cht ciesiniv cilla collett conorsi csahssa csalsct csapa csh csht cstud czenas dcs ddcri ddcrit ddcut dissao dit drama dtict ebfem eclas eet eflch eks embne emnmus ept erfemn ericd est eum eurovocen fast finmesh fire fmesh francis galestne gccst gem geonet georeft gnd gnis gst gtt hamsun hapi helecon henn hkcan hlasstg hoidokki hrvmesh huc humord ica icpsr idas idsbb idszbz idszbzes idszbzna idszbzzg idszbzzh idszbzzk iescs iest ilpt inist inspect ipsp isis itglit itrt jhpb jhpk jlabsh jurivoc kaa kao kaunokki kdm kitu kkts kssbar kta ktpt ktta kula kupu lacnaf larpcal lcac lcdgt lcmpt lcsh lcshac lcstt lctgm lemac lemb liv lnmmbr local ltcsh lua maaq mar masa mech mesh mipfesd mmm mpirdes msc msh mtirdes musa muzeukc muzeukn muzvukci naf nal nalnaf nasat nbiemnfag ncjt ndlsh netc nicem nimacsc nlgaf nlgkk nlgsh nlmnaf no-ubo-mr noraf noubojur noram norbok noubomn nsbncf nskps ntcpsc ntcsd ntids ntissc nzggn nznb ogst opms ordnok pascal peri pha pmbok pmcsg pmont pmt poliscit popinte pkk precis prvt psychit qlsp qrma qrmak qtglit quiding ram rasuqam renib reo rero rerovoc rma rpe rswk rswkaf rugeo rurkp rvm samisk sanb sao sbiao sbt scbi scgdst scisshl scot sears sfit sgc sgce shbe she shsples sigle sipri sk skon slem smda snt socio solstad sosa spines ssg stw swd swemesh taika taxhs tekord tesa test tgn thesoz tho thub tlka tlsh trt trtsa tsht ttka tucua ukslc ulan umitrist unbisn unbist unescot usaidt vmj waqaf watrest wgst wot wpicsh ysa',@authority)">
                             <xsl:value-of select="@authority"/>
@@ -1095,7 +1095,7 @@
                             <xsl:text>local</xsl:text>
                         </xsl:otherwise>
                     </xsl:choose>
-                </mods:subfield>
+                </marc:subfield>
             </xsl:if>
         </marc:datafield>
     </xsl:template>
