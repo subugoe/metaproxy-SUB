@@ -6,7 +6,7 @@
 	Overview of fields used by DSpace (not publicly accessible):
 		https://docs.google.com/spreadsheet/ccc?key=0AnYBqnG_KlOjdHc5R2h4ZlpSenp0d3RDZVhBYXZjR0E
 
-	2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2012-2013 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -26,14 +26,22 @@
 			<xsl:variable name="type" select="dc:type[1]"/>
 
 			<leader>
-				<!-- position 6: type of record: m (computer file) -->
+				<!-- position 6: type of record: a (language material) -->
 				<xsl:variable name="leader06">m</xsl:variable>
 				<!-- position 7: bibliographic level -->
 				<xsl:variable name="leader07">
 					<xsl:choose>
-						<xsl:when test="$type='article'">a</xsl:when> <!-- monographic component part -->
-						<xsl:when test="$type='collection'">c</xsl:when> <!-- collection -->
-						<xsl:otherwise>m</xsl:otherwise> <!-- monograph -->
+						<!-- monographic component part -->
+						<xsl:when test="$type='article'">a</xsl:when>
+						<xsl:when test="$type='bookPart'">a</xsl:when>
+						<xsl:when test="$type='contributionToPeriodial'">a</xsl:when>
+						<xsl:when test="$type='preprint'">a</xsl:when>
+						<xsl:when test="$type='review'">a</xsl:when>
+						<xsl:when test="$type='wrokingPaper'">a</xsl:when>
+						<!-- collection -->
+						<xsl:when test="$type='collection'">c</xsl:when>
+						<!-- monograph -->
+						<xsl:otherwise>m</xsl:otherwise>
 					</xsl:choose>
 				</xsl:variable>
 				<xsl:value-of select="concat('      ', $leader06, $leader07, ' a22     3u 4500')"/>
@@ -104,18 +112,63 @@
 				<xsl:variable name="place">
 					<xsl:text>xx </xsl:text>
 				</xsl:variable>
-				<!-- position 18-34:
-					 18-21: blank (undefined)
-					 22: blank (target audience)
+				<!-- position 18-34 for type book:
+					 18-21: blank (illustrations)
+					 22: f (target audience: specialised)
 					 23: o (form of item: online resource)
-					 24-25: blank (undefined)
-					 26: d (type of computer file: document)
-					 27: blank (undefined)
+					 24-27: depending on type: [jmot2](nature of contents)
 					 28: blank (government publication)
-					 29-34: blank (undefined)
+					 29: [1 ] (conference publication)
+					 30: blank (festschrift)
+					 31: blank (index)
+					 32: blank (undefined)
+					 33: [i ] (literary form)
+					 34: blank (biography)
 				-->
+				<xsl:variable name="illustrations">    </xsl:variable>
+				<xsl:variable name="targetAudience">f</xsl:variable>
+				<xsl:variable name="formOfItem">o</xsl:variable>
+				<xsl:variable name="natureOfContents">
+					<xsl:choose>
+						<xsl:when test="dc:type='bachelorThesis' or dc:type='masterThesis'
+									 or dc:type='doctoralThesis' or dc:type='magisterThesis'">m</xsl:when>
+						<xsl:when test="dc:type='patent'">j</xsl:when>
+						<xsl:when test="dc:type='review'">o</xsl:when>
+						<xsl:when test="dc:type='preprint' or dc:type='workingPaper'">2</xsl:when>
+						<xsl:otherwise> </xsl:otherwise>
+					</xsl:choose>
+					<xsl:text>   </xsl:text>
+				</xsl:variable>
+				<xsl:variable name="governmentPublication"> </xsl:variable>
+				<xsl:variable name="conferencePublication">
+					<xsl:choose>
+						<xsl:when test="dc:type='conferenceObject' or dc:contributor.meeting">1</xsl:when>
+						<xsl:otherwise> </xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+				<xsl:variable name="festschrift"> </xsl:variable>
+				<xsl:variable name="index"> </xsl:variable>
+				<xsl:variable name="literaryForm">
+					<xsl:choose>
+						<!-- preliminary / DSpace field likely to change -->
+						<xsl:when test="dc:type.subtype='letter' or dc:type.subtype='letters'">i</xsl:when>
+						<xsl:otherwise> </xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+				<xsl:variable name="biography"> </xsl:variable>
+				
 				<xsl:variable name="typespecific">
-					<xsl:text>     o  d        </xsl:text>
+					<xsl:value-of select="$illustrations"/> <!-- 18-21 -->
+					<xsl:value-of select="$targetAudience"/> <!-- 22 -->
+					<xsl:value-of select="$formOfItem"/> <!-- 23 -->
+					<xsl:value-of select="$natureOfContents"/> <!-- 24-27 -->
+					<xsl:value-of select="$governmentPublication"/> <!-- 28 -->
+					<xsl:value-of select="$conferencePublication"/> <!-- 29 -->
+					<xsl:value-of select="$festschrift"/> <!-- 30 -->
+					<xsl:value-of select="$index"/> <!-- 31 -->
+					<xsl:text> </xsl:text> <!-- 32: undefined -->
+					<xsl:value-of select="$literaryForm"/> <!-- 33 -->
+					<xsl:value-of select="$biography"/> <!-- 34 -->
 				</xsl:variable>
 				
 				<!-- position: 35-37 language code -->
@@ -172,7 +225,7 @@
 				Affiliation information in $u.
 				Place of birth information is omitted.
 			-->
-			<xsl:for-each select="dc:contributor.author | dc:contributor.editor |									
+			<xsl:for-each select="dc:contributor.author | dc:contributor.editor |
 									dc:contributor.corporation | dc:contributor.meeting |
 									dc:contributor.sender | dc:contributor.senderCorporation |
 									dc:contributor.recipient | dc:contributor.recipientCorporation |
@@ -189,7 +242,15 @@
 							X00 otherwise
 					-->
 					<xsl:variable name="fieldNumber">
-						<xsl:text>7</xsl:text>
+						<xsl:choose>
+							<xsl:when test="(count(../dc:contributor.author) + count(../dc:contributor.editor)
+										+ count(../dc:contributor.sender) + count(../dc:contributor.meeting) 
+										+ count(../dc:contributor.corporation) = 1) and
+										(local-name()='contributor.author' or local-name()='contributor.editor'
+										or local-name()='contributor.sender' or local-name()='contributor.meeting'
+										or local-name()='contributor.corporation')">1</xsl:when>
+							<xsl:otherwise>7</xsl:otherwise>
+						</xsl:choose>
 						<xsl:choose>
 							<xsl:when test="contains(local-name(), 'orporation')">10</xsl:when>
 							<xsl:when test="contains(local-name(), 'meeting')">11</xsl:when>
@@ -220,7 +281,7 @@
 					
 					<!-- Person role(s) -->
 					<xsl:choose>
-						<xsl:when test="local-name()='contribtor.author' or local-name()='contributor.sender'">
+						<xsl:when test="local-name()='contributor.author' or local-name()='contributor.sender'">
 							<subfield code="4">aut</subfield>
 						</xsl:when>
 						<xsl:when test="local-name()='contributor.sender'">
@@ -283,20 +344,41 @@
 			<!-- TITLE -->
 
 			<!--
-				Title (should be unique) goes to 245 $a.
-				First title.translated goes to 245 $b.
-				Additional title.translated goes to 246 $a.
-				Title.alternative goes to 246 $a.
-				Title.alternativeTranslated goes to 246 $a.
+				Title goes to 245 $a.
+				Subtitle, translated title and translated subtitle go to $b
+					with funny librarian characters in between.
 			-->
 			<xsl:if test="dc:title">
 				<datafield tag="245" ind1="0" ind2="0">
 					<subfield code="a">
-						<xsl:value-of select="dc:title[1]"/>
+						<xsl:value-of select="dc:title"/>
+						<xsl:choose>
+							<xsl:when test="dc:title.alternative">
+								<xsl:text> :</xsl:text>
+							</xsl:when>
+							<xsl:when test="dc:title.translated">
+								<xsl:text> =</xsl:text>
+							</xsl:when>
+						</xsl:choose>
 					</subfield>
-					<xsl:if test="dc:title.translated">
+					<xsl:if test="dc:title.alternative or dc:title.translated">
 						<subfield code="b">
-							<xsl:value-of select="concat('= ', dc:title.translated[1])"/>
+							<xsl:if test="dc:title.alternative">
+								<xsl:value-of select="dc:title.alternative"/>
+							</xsl:if>
+							<xsl:for-each select="dc:title.translated">
+								<xsl:variable name="position">
+									<xsl:value-of select="position()"/>
+								</xsl:variable>
+								<xsl:if test="../dc:title.alternative or $position!=1">
+									<xsl:text> = </xsl:text>
+								</xsl:if>
+								<xsl:value-of select="."/>
+								<xsl:if test="../dc:title.alternativeTranslated[position()=$position]">
+									<xsl:text> : </xsl:text>
+									<xsl:value-of select="../dc:title.alternativeTranslated[position()=$position]"/>
+								</xsl:if>
+							</xsl:for-each>
 						</subfield>
 					</xsl:if>
 					<xsl:if test="dc:description.statementofresponsibility">
@@ -307,14 +389,6 @@
 				</datafield>
 			</xsl:if>
 
-			<xsl:for-each select="dc:title.alternative | dc:title.translated[position &gt; 1] | dc:title.alternativeTranslated">
-				<datafield tag="246" ind1="3" ind2="3">
-					<subfield code="a">
-						<xsl:value-of select="."/>
-					</subfield>
-				</datafield>
-			</xsl:for-each>
-
 
 
 
@@ -323,11 +397,14 @@
 
 			<!--
 				Information about the first publication goes to 775 $d.
-				TODO: Hier noch $a Titel, IS[SB]N o.ä. einfügen?
-				Wie ist das Verhältnis zu 773?
 			-->
 			<xsl:if test="dc:publisher">
 				<datafield tag="775" ind1=" " ind2=" ">
+					<xsl:if test="dc:title">
+						<subfield code="t">
+							<xsl:value-of select="dc:title"/>
+						</subfield>
+					</xsl:if>
 					<subfield code="d">
 						<xsl:value-of select="dc:publisher"/>
 						<xsl:if test="dc:publisher.place">
@@ -347,13 +424,13 @@
 				Location of publication goes to 260 $e.
 				Used for letters.				
 			-->
-			<xsl:foreach select="dc:description.location">
+			<xsl:for-each select="dc:description.location">
 				<datafield tag="260" ind1=" " ind2=" ">
 					<subfield code="e">
 						<xsl:value-of select="."/>
 					</subfield>
 				</datafield>
-			</xsl:foreach>
+			</xsl:for-each>
 
 
 			<!--
@@ -381,27 +458,53 @@
 			
 			
 			<!--
-				URI of part goes to 856 $u with note.
+				URI of part goes to 856 $u with note »Part« in $y.
 			-->
 			<xsl:for-each select="dc:relation.haspart">
 				<datafield tag="856" ind1="4" ind2="2">
 					<subfield code="u">
 						<xsl:value-of select="."/>
 					</subfield>
-					<subfield code="y">Part</subfield>
+					<subfield code="3">Part</subfield>
 				</datafield>
 			</xsl:for-each>
 
 
 			<!--
-				URI to related data goes to 856 $u with data note in $y and ind2=2.
+				URI of related data goes to 856 $u with »Data« note in $y and ind2=2.
 			-->
 			<xsl:for-each select="dc:relation.isbasedon">
 				<datafield tag="856" ind1="4" ind2="2">
 					<subfield code="u">
 						<xsl:value-of select="."/>
 					</subfield>
-					<subfield code="y">Data</subfield>
+					<subfield code="3">Data</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				URI of other version goes to 856 $u with »Other Version« note in $y and ind2=1.
+			-->
+			<xsl:for-each select="dc:relation.hasversion">
+				<datafield tag="856" ind1="4" ind2="1">
+					<subfield code="u">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="3">Other Version</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				URI of referencing item goes to 856 $u with »Other Version« note in $y and ind2=1.
+			-->
+			<xsl:for-each select="dc:relation.hasversion">
+				<datafield tag="856" ind1="4" ind2="1">
+					<subfield code="u">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="3">Other Version</subfield>
 				</datafield>
 			</xsl:for-each>
 
@@ -415,7 +518,7 @@
 						<xsl:value-of select="."/>
 					</subfield>
 					<subfield code="q">text/xml</subfield>
-					<subfield cod="y">METS</subfield>
+					<subfield code="y">METS</subfield>
 				</datafield>
 			</xsl:for-each>
 
@@ -661,7 +764,6 @@
 
 			<!--
 				DDC goes to 082.
-				Mark DNB Sachgruppen with ind2=9 (like GBV’s MARC export does).
 			-->
 			<xsl:for-each select="dc:subject.ddc">
 				<datafield tag="082" ind1="0" ind2=" ">
@@ -671,17 +773,9 @@
 				</datafield>
 			</xsl:for-each>
 
-			<xsl:for-each select="dc:subject.dnb">
-				<datafield tag="082" ind1="0" ind2="9">
-					<subfield code="a">
-						<xsl:value-of select="."/>
-					</subfield>
-				</datafield>
-			</xsl:for-each>
-
 
 			<!--
-				BK goes to 084 with $2 bcl.
+				BK (Basisklassifikation) goes to 084 with $2 bcl.
 			-->
 			<xsl:for-each select="dc:subject.bk | dc:subject.gbv">
 				<datafield tag="084" ind1=" " ind2=" ">
@@ -694,7 +788,7 @@
 
 
 			<!--
-				MSC goes to 084 with $2 msc.
+				MSC (Mathematics Subject Classification) goes to 084 with $2 msc.
 			-->
 			<xsl:for-each select="dc:subject.msc">
 				<datafield tag="084" ind1=" " ind2="2">
@@ -720,29 +814,54 @@
 
 
 			<!--
-				GOK goes to 084 with $2 gok.
+				KISS (Kieler Sacherschließungssystem) goes to 084 with $2 kiss.
+			-->
+			<xsl:for-each select="dc:subject.kiss">
+				<datafield tag="084" ind1=" " ind2=" ">
+					<subfield code="a">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="2">kiss</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
+				GOK (Göttinger Online Klassifikation) goes to 084 with $2 gok.
 				If we have identical numbers of subject.gokcode and subject.gokverbal,
 				add the verbalistion to $9. (In analogy to GBV’s handling of BKL.)
 				Otherwise just map the codes to 084 and the verbalisations to 653.
 			-->
-			<xsl:if test="dc:subject.gokcode or dc:subject.gokverbal">
+			<xsl:if test="dc:subject.gok or dc:subject.gokverbal">
 				<xsl:choose>
-					<xsl:when test="count(dc:subject.gokcode) = count(dc:subject.gokverbal)">
-						<xsl:for-each select="dc:subject.gokcode">
+					<xsl:when test="count(dc:subject.gok) = count(dc:subject.gokverbal)">
+						<xsl:for-each select="dc:subject.gok">
 							<xsl:variable name="position" select="position()"/>
 							<datafield tag="084" ind1=" " ind2=" ">
 								<subfield code="a">
 									<xsl:value-of select="."/>
 								</subfield>
-								<subfield code="9">
-									<xsl:value-of select="dc:subject.gokverbal[$position]"/>
-								</subfield>
+								<xsl:choose>
+									<xsl:when test="contains(dc:subject.gokverbal, ' (PPN')">
+										<subfield code="9">
+											<xsl:value-of select="substring-before(dc:subject.gokverbal[position()=$position], ' (PPN')"/>
+										</subfield>
+										<subfield code="0">
+											<xsl:value-of select="substring-before(substring-after(dc:subject.gokverbal[position()=$position], ' (PPN'), ')')"/>
+										</subfield>
+									</xsl:when>
+									<xsl:otherwise>
+										<subfield code="9">
+											<xsl:value-of select="dc:subject.gokverbal"/>		
+										</subfield>			
+									</xsl:otherwise>
+								</xsl:choose>
 								<subfield code="2">gok</subfield>
 							</datafield>
 						</xsl:for-each>
 					</xsl:when>
 					<xsl:otherwise>
-						<xsl:for-each select="dc:subject.gokcode">
+						<xsl:for-each select="dc:subject.gok">
 							<datafield tag="084" ind1=" " ind2=" ">
 								<subfield code="a">
 									<xsl:value-of select="."/>
@@ -763,14 +882,14 @@
 
 
 			<!--
-				SWD keywords go to 650 (Subject Added Entry-Topical Term), with ind2=7 and $2 swd.
+				SWD keywords go to 650 (Subject Added Entry-Topical Term), with ind2=7 and $2 gnd.
 			-->
 			<xsl:for-each select="dc:subject.swd">
 				<datafield tag="650" ind1=" " ind2="7">
 					<subfield code="a">
 						<xsl:value-of select="."/>
 					</subfield>
-					<subfield code="2">swd</subfield>
+					<subfield code="2">gnd</subfield>
 				</datafield>
 			</xsl:for-each>
 

@@ -151,12 +151,11 @@
 <subject.topic>subject.topic 1</subject.topic>
 <title>title 1</title>
 <title.alternative>title.alternative 1</title.alternative>
-<title.alternativeTranslated>title.alternativeTranslated 1</title.alternativeTranslated>
 <title.chapter>title.chapter 1</title.chapter>
+<title.alternativeTranslated>title.alternativeTranslated 1</title.alternativeTranslated>
+<title.alternativeTranslated>title.alternativeTranslated 2</title.alternativeTranslated>"
 <title.translated>title.translated 1</title.translated>
-<title.translated>title.translated 2</title.translated>"
-<title.translated>title.translated 1</title.translated>
-<title.translated>title.translated 2</title.translated>"
+<title.translated>title.translated 2</title.translated>
 <type>type 1</type>
 <type.subtype>type.subtype 1</type.subtype>
 <type.version>type.version 1</type.version>

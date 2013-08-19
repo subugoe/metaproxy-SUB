@@ -5,7 +5,6 @@
 <record xmlns="http://purl.org/dc/elements/1.1/">
 	<contributor.advisor>contributor.advisor</contributor.advisor>
 	<contributor.author>contributor.author 1</contributor.author>
-	<contributor.author>contributor.author 2</contributor.author>
 	<date.accessioned_dt>2012-01-01</date.accessioned_dt>
 	<date.available>2012-04-04</date.available>
 	<date.issued>2002</date.issued>
