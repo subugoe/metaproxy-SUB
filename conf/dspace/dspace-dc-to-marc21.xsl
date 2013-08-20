@@ -25,174 +25,181 @@
 
 			<xsl:variable name="type" select="dc:type[1]"/>
 
+			<!-- position 5: record status: c (changed) - even if it could be new as we can’t tell the difference -->
+			<xsl:variable name="leader05">c</xsl:variable>
+			
+			<!-- position 6: type of record: a (language material) -->
+			<xsl:variable name="leader06">a</xsl:variable>
+			
+			<!-- position 7: bibliographic level -->
+			<xsl:variable name="leader07">
+				<xsl:choose>
+					<!-- monographic component part -->
+					<xsl:when test="$type='article'">a</xsl:when>
+					<xsl:when test="$type='bookPart'">a</xsl:when>
+					<xsl:when test="$type='contributionToPeriodial'">a</xsl:when>
+					<xsl:when test="$type='preprint'">a</xsl:when>
+					<xsl:when test="$type='review'">a</xsl:when>
+					<xsl:when test="$type='wrokingPaper'">a</xsl:when>
+					<!-- collection -->
+					<xsl:when test="$type='collection'">c</xsl:when>
+					<!-- monograph -->
+					<xsl:otherwise>m</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+
 			<leader>
-				<!-- position 6: type of record: a (language material) -->
-				<xsl:variable name="leader06">m</xsl:variable>
-				<!-- position 7: bibliographic level -->
-				<xsl:variable name="leader07">
-					<xsl:choose>
-						<!-- monographic component part -->
-						<xsl:when test="$type='article'">a</xsl:when>
-						<xsl:when test="$type='bookPart'">a</xsl:when>
-						<xsl:when test="$type='contributionToPeriodial'">a</xsl:when>
-						<xsl:when test="$type='preprint'">a</xsl:when>
-						<xsl:when test="$type='review'">a</xsl:when>
-						<xsl:when test="$type='wrokingPaper'">a</xsl:when>
-						<!-- collection -->
-						<xsl:when test="$type='collection'">c</xsl:when>
-						<!-- monograph -->
-						<xsl:otherwise>m</xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				<xsl:value-of select="concat('      ', $leader06, $leader07, ' a22     3u 4500')"/>
+				<xsl:value-of select="concat('     ', $leader05, $leader06, $leader07, ' a22     3u 4500')"/>
 			</leader>
 
 
-			<controlfield tag="008">
-				<!-- position 0-5: date -->
-				<xsl:variable name="date">
-					<xsl:choose>
-						<xsl:when test="string-length(dc:date.accessioned_dt[1]) &gt;= 11">
-							<xsl:value-of select="substring(dc:date.accessioned_dt[1], 3, 2)"/>
-							<xsl:value-of select="substring(dc:date.accessioned_dt[1], 6, 2)"/>
-							<xsl:value-of select="substring(dc:date.accessioned_dt[1], 9, 2)"/>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:text>      </xsl:text>
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				<xsl:variable name="realDate">
-					<xsl:choose>
-						<xsl:when test="string-length($date) = 6">
-							<xsl:value-of select="$date"/>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:text>      </xsl:text>
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				
-				<!-- position 6-14: use description.date (letters) or date.issued at the precision that is available -->
-				<xsl:variable name="publicationDate">
-					<xsl:choose>
-						<xsl:when test="string-length(dc:description.date) &gt; 3">
-							<xsl:value-of select="dc:description.date"/>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:value-of select="dc:date.issued"/>
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				
-				<!-- Date Precision coded as s, e or blank. -->
-				<xsl:variable name="datefields">
-					<xsl:choose>
-						<xsl:when test="string-length($publicationDate) &gt; 6">
-							<xsl:text>e</xsl:text>
-							<xsl:value-of select="substring($publicationDate, 1, 4)"/>
-							<xsl:value-of select="substring($publicationDate, 6, 2)"/>
-							<xsl:choose>
-								<xsl:when test="string-length($publicationDate) &gt; 9">
-									<xsl:value-of select="substring($publicationDate, 9, 2)"/>
-								</xsl:when>
-								<xsl:otherwise>uu</xsl:otherwise>
-							</xsl:choose>
-						</xsl:when>
-						<xsl:when test="string-length($publicationDate) &gt; 3">
-							<xsl:text>s</xsl:text>
-							<xsl:value-of select="substring($publicationDate, 1, 4)"/>
-							<xsl:text>    </xsl:text>
-						</xsl:when>
-						<xsl:otherwise>         </xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				
-				<!-- position 15-17: unknown -->
-				<xsl:variable name="place">
-					<xsl:text>xx </xsl:text>
-				</xsl:variable>
-				<!-- position 18-34 for type book:
-					 18-21: blank (illustrations)
-					 22: f (target audience: specialised)
-					 23: o (form of item: online resource)
-					 24-27: depending on type: [jmot2](nature of contents)
-					 28: blank (government publication)
-					 29: [1 ] (conference publication)
-					 30: blank (festschrift)
-					 31: blank (index)
-					 32: blank (undefined)
-					 33: [i ] (literary form)
-					 34: blank (biography)
-				-->
-				<xsl:variable name="illustrations">    </xsl:variable>
-				<xsl:variable name="targetAudience">f</xsl:variable>
-				<xsl:variable name="formOfItem">o</xsl:variable>
-				<xsl:variable name="natureOfContents">
-					<xsl:choose>
-						<xsl:when test="dc:type='bachelorThesis' or dc:type='masterThesis'
-									 or dc:type='doctoralThesis' or dc:type='magisterThesis'">m</xsl:when>
-						<xsl:when test="dc:type='patent'">j</xsl:when>
-						<xsl:when test="dc:type='review'">o</xsl:when>
-						<xsl:when test="dc:type='preprint' or dc:type='workingPaper'">2</xsl:when>
-						<xsl:otherwise> </xsl:otherwise>
-					</xsl:choose>
-					<xsl:text>   </xsl:text>
-				</xsl:variable>
-				<xsl:variable name="governmentPublication"> </xsl:variable>
-				<xsl:variable name="conferencePublication">
-					<xsl:choose>
-						<xsl:when test="dc:type='conferenceObject' or dc:contributor.meeting">1</xsl:when>
-						<xsl:otherwise> </xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				<xsl:variable name="festschrift"> </xsl:variable>
-				<xsl:variable name="index"> </xsl:variable>
-				<xsl:variable name="literaryForm">
-					<xsl:choose>
-						<!-- preliminary / DSpace field likely to change -->
-						<xsl:when test="dc:type.subtype='letter' or dc:type.subtype='letters'">i</xsl:when>
-						<xsl:otherwise> </xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				<xsl:variable name="biography"> </xsl:variable>
-				
-				<xsl:variable name="typespecific">
-					<xsl:value-of select="$illustrations"/> <!-- 18-21 -->
-					<xsl:value-of select="$targetAudience"/> <!-- 22 -->
-					<xsl:value-of select="$formOfItem"/> <!-- 23 -->
-					<xsl:value-of select="$natureOfContents"/> <!-- 24-27 -->
-					<xsl:value-of select="$governmentPublication"/> <!-- 28 -->
-					<xsl:value-of select="$conferencePublication"/> <!-- 29 -->
-					<xsl:value-of select="$festschrift"/> <!-- 30 -->
-					<xsl:value-of select="$index"/> <!-- 31 -->
-					<xsl:text> </xsl:text> <!-- 32: undefined -->
-					<xsl:value-of select="$literaryForm"/> <!-- 33 -->
-					<xsl:value-of select="$biography"/> <!-- 34 -->
-				</xsl:variable>
-				
-				<!-- position: 35-37 language code -->
-				<xsl:variable name="language">
-					<xsl:choose>
-						<xsl:when test="string-length(dc:language.iso[1]) = 3">
-							<xsl:call-template name="iso-639-2-cleaner">
-								<xsl:with-param name="languageCode" select="dc:language.iso[1]"/>
-							</xsl:call-template>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:text>  </xsl:text>
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				
-				<!-- position 38: modified record: blank (not modified) -->
-				<xsl:variable name="modified">
-					<xsl:text> </xsl:text>
-				</xsl:variable>
-				
-				<!-- position 39: cataloguing source: d (other) -->
-				<xsl:variable name="source">d</xsl:variable>
+			<!-- position 0-5: date -->
+			<xsl:variable name="date">
+				<xsl:choose>
+					<xsl:when test="string-length(dc:date.accessioned_dt[1]) &gt;= 11">
+						<xsl:value-of select="substring(dc:date.accessioned_dt[1], 3, 2)"/>
+						<xsl:value-of select="substring(dc:date.accessioned_dt[1], 6, 2)"/>
+						<xsl:value-of select="substring(dc:date.accessioned_dt[1], 9, 2)"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>      </xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			<xsl:variable name="realDate">
+				<xsl:choose>
+					<xsl:when test="string-length($date) = 6">
+						<xsl:value-of select="$date"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>      </xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			
+			<!-- position 6-14: use description.date (letters) or date.issued at the precision that is available -->
+			<xsl:variable name="publicationDate">
+				<xsl:choose>
+					<xsl:when test="string-length(dc:description.date) &gt; 3">
+						<xsl:value-of select="dc:description.date"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="dc:date.issued"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			
+			<!-- Date Precision coded as s, e or blank. -->
+			<xsl:variable name="datefields">
+				<xsl:choose>
+					<xsl:when test="string-length($publicationDate) &gt; 6">
+						<xsl:text>e</xsl:text>
+						<xsl:value-of select="substring($publicationDate, 1, 4)"/>
+						<xsl:value-of select="substring($publicationDate, 6, 2)"/>
+						<xsl:choose>
+							<xsl:when test="string-length($publicationDate) &gt; 9">
+								<xsl:value-of select="substring($publicationDate, 9, 2)"/>
+							</xsl:when>
+							<xsl:otherwise>uu</xsl:otherwise>
+						</xsl:choose>
+					</xsl:when>
+					<xsl:when test="string-length($publicationDate) &gt; 3">
+						<xsl:text>s</xsl:text>
+						<xsl:value-of select="substring($publicationDate, 1, 4)"/>
+						<xsl:text>    </xsl:text>
+					</xsl:when>
+					<xsl:otherwise>         </xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			
+			<!-- position 15-17: unknown -->
+			<xsl:variable name="place">
+				<xsl:text>xx </xsl:text>
+			</xsl:variable>
+			
+			<!-- position 18-34 for type book:
+				 18-21: blank (illustrations)
+				 22: f (target audience: specialised)
+				 23: o (form of item: online resource)
+				 24-27: depending on type: [jmot2](nature of contents)
+				 28: blank (government publication)
+				 29: [1 ] (conference publication)
+				 30: blank (festschrift)
+				 31: blank (index)
+				 32: blank (undefined)
+				 33: [i ] (literary form)
+				 34: blank (biography)
+			-->
+			<xsl:variable name="illustrations"><xsl:text>    </xsl:text></xsl:variable>
+			<xsl:variable name="targetAudience">f</xsl:variable>
+			<xsl:variable name="formOfItem">o</xsl:variable>
+			<xsl:variable name="natureOfContents">
+				<xsl:choose>
+					<xsl:when test="dc:type='bachelorThesis' or dc:type='masterThesis'
+								 or dc:type='doctoralThesis' or dc:type='magisterThesis'
+								 or dc:type='cumulativeThesis'">m</xsl:when>
+					<xsl:when test="dc:type='patent'">j</xsl:when>
+					<xsl:when test="dc:type='review'">o</xsl:when>
+					<xsl:when test="dc:type='preprint' or dc:type='workingPaper'">2</xsl:when>
+					<xsl:otherwise><xsl:text> </xsl:text></xsl:otherwise>
+				</xsl:choose>
+				<xsl:text>   </xsl:text>
+			</xsl:variable>
+			<xsl:variable name="governmentPublication"><xsl:text> </xsl:text></xsl:variable>
+			<xsl:variable name="conferencePublication">
+				<xsl:choose>
+					<xsl:when test="dc:type='conferenceObject' or dc:contributor.meeting">1</xsl:when>
+					<xsl:otherwise><xsl:text> </xsl:text></xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			<xsl:variable name="festschrift"><xsl:text> </xsl:text></xsl:variable>
+			<xsl:variable name="index"><xsl:text> </xsl:text></xsl:variable>
+			<xsl:variable name="literaryForm">
+				<xsl:choose>
+					<!-- preliminary / DSpace field likely to change -->
+					<xsl:when test="dc:type.subtype='letter' or dc:type.subtype='letters'">i</xsl:when>
+					<xsl:otherwise><xsl:text> </xsl:text></xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			<xsl:variable name="biography"><xsl:text> </xsl:text></xsl:variable>
+			
+			<xsl:variable name="typespecific">
+				<xsl:value-of select="$illustrations"/> <!-- 18-21 -->
+				<xsl:value-of select="$targetAudience"/> <!-- 22 -->
+				<xsl:value-of select="$formOfItem"/> <!-- 23 -->
+				<xsl:value-of select="$natureOfContents"/> <!-- 24-27 -->
+				<xsl:value-of select="$governmentPublication"/> <!-- 28 -->
+				<xsl:value-of select="$conferencePublication"/> <!-- 29 -->
+				<xsl:value-of select="$festschrift"/> <!-- 30 -->
+				<xsl:value-of select="$index"/> <!-- 31 -->
+				<xsl:text> </xsl:text> <!-- 32: undefined -->
+				<xsl:value-of select="$literaryForm"/> <!-- 33 -->
+				<xsl:value-of select="$biography"/> <!-- 34 -->
+			</xsl:variable>
+			
+			<!-- position: 35-37 language code -->
+			<xsl:variable name="language">
+				<xsl:choose>
+					<xsl:when test="string-length(dc:language.iso[1]) = 3">
+						<xsl:call-template name="iso-639-2-cleaner">
+							<xsl:with-param name="languageCode" select="dc:language.iso[1]"/>
+						</xsl:call-template>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>  </xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			
+			<!-- position 38: modified record: blank (not modified) -->
+			<xsl:variable name="modified">
+				<xsl:text> </xsl:text>
+			</xsl:variable>
+			
+			<!-- position 39: cataloguing source: d (other) -->
+			<xsl:variable name="source">d</xsl:variable>
 
+			<controlfield tag="008">
 				<xsl:value-of select="concat($date, $datefields, $place, $typespecific, $language, $modified, $source)"/>
 			</controlfield>
 
@@ -458,7 +465,7 @@
 			
 			
 			<!--
-				URI of part goes to 856 $u with note »Part« in $y.
+				URI of part goes to 856 $u with note »Part« in $3.
 			-->
 			<xsl:for-each select="dc:relation.haspart">
 				<datafield tag="856" ind1="4" ind2="2">
@@ -471,7 +478,7 @@
 
 
 			<!--
-				URI of related data goes to 856 $u with »Data« note in $y and ind2=2.
+				URI of related data goes to 856 $u with »Data« note in $3 and ind2=2.
 			-->
 			<xsl:for-each select="dc:relation.isbasedon">
 				<datafield tag="856" ind1="4" ind2="2">
@@ -484,7 +491,7 @@
 
 
 			<!--
-				URI of other version goes to 856 $u with »Other Version« note in $y and ind2=1.
+				URI of other version goes to 856 $u with »Other Version« note in $3 and ind2=1.
 			-->
 			<xsl:for-each select="dc:relation.hasversion">
 				<datafield tag="856" ind1="4" ind2="1">
@@ -497,14 +504,14 @@
 
 
 			<!--
-				URI of referencing item goes to 856 $u with »Other Version« note in $y and ind2=1.
+				URI of referencing item goes to 856 $u with »Referenced By« note in $3 and ind2=1.
 			-->
-			<xsl:for-each select="dc:relation.hasversion">
+			<xsl:for-each select="dc:relation.isreferencedby">
 				<datafield tag="856" ind1="4" ind2="1">
 					<subfield code="u">
 						<xsl:value-of select="."/>
 					</subfield>
-					<subfield code="3">Other Version</subfield>
+					<subfield code="3">Referenced by</subfield>
 				</datafield>
 			</xsl:for-each>
 
@@ -589,11 +596,13 @@
 			<!--
 				Abstract goes to 520 with i1 = 3.
 				We lose language information here.
+				Replace line breaks with pilcrow signs to transport the paragraph endings (line
+					breaks are forbidden by MARC).
 			-->
 			<xsl:for-each select="dc:description.abstract | dc:description.abstractger | dc:description.abstracteng">
 				<datafield tag="520" ind1="3" ind2=" ">
 					<subfield code="a">
-						<xsl:value-of select="."/>
+						<xsl:value-of select="translate(., '&#xa;', '&#xb6;')"/>
 					</subfield>
 				</datafield>
 			</xsl:for-each>
