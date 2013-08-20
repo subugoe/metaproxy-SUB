@@ -6,7 +6,7 @@
 	Also includes a provision to handle PicaMarc where datafield names can
 		contain a @ that is changed to Ä to give valid XML.
 
-	2010-2012
+	2010-2013
 	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 <xsl:stylesheet
@@ -36,6 +36,19 @@
 		<xsl:apply-templates select="@*|node()"/>
 	</xsl:element>
 </xsl:template>
+
+<xsl:template match="@ind1">
+	<xsl:attribute name="i1">
+		<xsl:value-of select="."/>
+	</xsl:attribute>
+</xsl:template>
+
+<xsl:template match="@ind2">
+	<xsl:attribute name="i2">
+		<xsl:value-of select="."/>
+	</xsl:attribute>
+</xsl:template>
+
 
 
 <xsl:template match="controlfield|datafield|subfield|marc:controlfield|marc:datafield|marc:subfield">
