@@ -17,7 +17,7 @@ index.dc.date = 1=dc.date.issued.year
 index.dc.language = 1=dc.language.iso
 index.dc.subject = 1=dc.subject.gokverbal
 index.dc.subject.bkl = 1=dc.subject.bk
-index.dc.subject.gok = 1=dc.subject.gokcode
+index.dc.subject.gok = 1=dc.subject.gok
 
 
 
