@@ -635,6 +635,21 @@
 
 
 			<!--
+				Add information about Uni Göttingen dissertations to 502 (Dissertation Note).
+				For ediss repository only.
+				TODO: convert type string to readable string for $b.
+			-->
+			<xsl:if test="dc:repo/text() = 'ediss'">
+				<datafield tag="502" ind1=" " ind2=" ">
+					<subfield code="b">
+						<xsl:value-of select="dc:type"/>
+					</subfield>
+					<subfield code="c">Georg-August Universität Göttingen</subfield>
+				</datafield>
+			</xsl:if>
+			
+			
+			<!--
 				Table of Contents goes to 505 (Formatted Contents Note).
 				ind1 = 0 for Complete Contents
 			-->
