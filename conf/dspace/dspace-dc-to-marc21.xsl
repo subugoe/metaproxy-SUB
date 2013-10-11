@@ -40,7 +40,7 @@
 					<xsl:when test="$type='contributionToPeriodial'">a</xsl:when>
 					<xsl:when test="$type='preprint'">a</xsl:when>
 					<xsl:when test="$type='review'">a</xsl:when>
-					<xsl:when test="$type='wrokingPaper'">a</xsl:when>
+					<xsl:when test="$type='workingPaper'">a</xsl:when>
 					<!-- collection -->
 					<xsl:when test="$type='collection'">c</xsl:when>
 					<!-- monograph -->
