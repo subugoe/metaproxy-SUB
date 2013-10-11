@@ -25,6 +25,7 @@
 
 			<xsl:variable name="type" select="dc:type[1]"/>
 
+			<!-- leader -->
 			<!-- position 5: record status: c (changed) - even if it could be new as we can’t tell the difference -->
 			<xsl:variable name="leader05">c</xsl:variable>
 			
@@ -53,6 +54,7 @@
 			</leader>
 
 
+			<!-- 008 -->
 			<!-- position 0-5: date -->
 			<xsl:variable name="date">
 				<xsl:choose>
