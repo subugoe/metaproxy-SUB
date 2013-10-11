@@ -531,6 +531,30 @@
 
 
 			<!--
+				File URIs go to 856 $u and the title in $3.
+				Indicator 2 is 0 or 2 depending on whether there is a single file or not.
+			-->
+			<xsl:for-each select="dc:relation.hasfileurl">
+				<xsl:variable name="position" select="position()"/>
+				<xsl:variable name="i2">
+					<xsl:choose>
+						<xsl:when test="count(../dc:relation.hasfileurl) = 1">0</xsl:when>
+						<xsl:otherwise>2</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+				
+				<datafield tag="856" ind1="4" ind2="{$i2}">
+					<subfield code="u">
+						<xsl:value-of select="."/>
+					</subfield>
+					<subfield code="3">
+						<xsl:value-of select="../dc:relation.hasfilename[$position]"/>
+					</subfield>
+				</datafield>
+			</xsl:for-each>
+
+
+			<!--
 				Series and location information for articles in 773.
 				Journal name in $t
 				Create volume:issue>start-end string for $q.
@@ -837,7 +861,7 @@
 
 			<!--
 				GOK (Göttinger Online Klassifikation) goes to 084 with $2 gok.
-				If we have identical numbers of subject.gokcode and subject.gokverbal,
+				If we have identical numbers of subject.gok and subject.gokverbal,
 				add the verbalistion to $9. (In analogy to GBV’s handling of BKL.)
 				Otherwise just map the codes to 084 and the verbalisations to 653.
 			-->
@@ -851,17 +875,17 @@
 									<xsl:value-of select="."/>
 								</subfield>
 								<xsl:choose>
-									<xsl:when test="contains(dc:subject.gokverbal, ' (PPN')">
+									<xsl:when test="contains(../dc:subject.gokverbal[$position], ' (PPN')">
 										<subfield code="9">
-											<xsl:value-of select="substring-before(dc:subject.gokverbal[position()=$position], ' (PPN')"/>
+											<xsl:value-of select="substring-before(../dc:subject.gokverbal[$position], ' (PPN')"/>
 										</subfield>
 										<subfield code="0">
-											<xsl:value-of select="substring-before(substring-after(dc:subject.gokverbal[position()=$position], ' (PPN'), ')')"/>
+											<xsl:value-of select="substring-before(substring-after(../dc:subject.gokverbal[$position], ' (PPN'), ')')"/>
 										</subfield>
 									</xsl:when>
 									<xsl:otherwise>
 										<subfield code="9">
-											<xsl:value-of select="dc:subject.gokverbal"/>		
+											<xsl:value-of select="../dc:subject.gokverbal[$position]"/>		
 										</subfield>			
 									</xsl:otherwise>
 								</xsl:choose>
