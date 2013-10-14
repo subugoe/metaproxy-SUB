@@ -1,5 +1,5 @@
 <doc>
-  <date name="SolrIndexer.lastIndexed">2013-10-11T07:07:58.459Z</date>
+  <date name="SolrIndexer.lastIndexed">2013-10-14T10:00:51.067Z</date>
   <arr name="all_ac">
     <str>Quast, Andres</str>
     <str>Pfurr, Norbert</str>
@@ -51,7 +51,13 @@ and also the software developments can be contributed to other virtual library p
   <arr name="dc.bibliographicCitation.firstPage">
     <str>293</str>
   </arr>
+  <arr name="dc.bibliographicCitation.firstPage.display">
+    <str>293</str>
+  </arr>
   <arr name="dc.bibliographicCitation.issue">
+    <str>3</str>
+  </arr>
+  <arr name="dc.bibliographicCitation.issue.display">
     <str>3</str>
   </arr>
   <arr name="dc.bibliographicCitation.issue.en">
@@ -60,10 +66,19 @@ and also the software developments can be contributed to other virtual library p
   <arr name="dc.bibliographicCitation.journal">
     <str>bibliothek : forschung und praxis</str>
   </arr>
+  <arr name="dc.bibliographicCitation.journal.display">
+    <str>Bibliothek : Forschung und Praxis</str>
+  </arr>
   <arr name="dc.bibliographicCitation.lastPage">
     <str>298</str>
   </arr>
+  <arr name="dc.bibliographicCitation.lastPage.display">
+    <str>298</str>
+  </arr>
   <arr name="dc.bibliographicCitation.volume">
+    <str>31</str>
+  </arr>
+  <arr name="dc.bibliographicCitation.volume.display">
     <str>31</str>
   </arr>
   <arr name="dc.bibliographicCitation.volume.en">
@@ -72,6 +87,10 @@ and also the software developments can be contributed to other virtual library p
   <arr name="dc.contributor.author">
     <str>quast, andres</str>
     <str>pfurr, norbert</str>
+  </arr>
+  <arr name="dc.contributor.author.display">
+    <str>Quast, Andres</str>
+    <str>Pfurr, Norbert</str>
   </arr>
   <arr name="dc.contributor.author.en">
     <str>Quast, Andres</str>
@@ -124,6 +143,26 @@ services comprising an email-alert and a disciplinary repository make the virtua
 students and other users interested in earth sciences and mining. experiences made by the geo-leo project
 and also the software developments can be contributed to other virtual library projects.</str>
   </arr>
+  <arr name="dc.description.abstract.display">
+    <str>Die Virtuelle Fachbibliothek GEO-LEO bietet Geo- und Montanwissenschaftlern eine integrierte Suche über Bibliothekskataloge,
+Literatur-Datenbanken und Volltextserver. Die Sondersammelgebietsbibliotheken in Freiberg und Göttingen
+machen damit ihre – im Auftrag der DFG erworbenen – Ressourcen für alle Wissenschaftler im deutschsprachigen
+Raum sichtbar und zugänglich. Viele weitere Services, wie die Publikationsplattform, erhöhen den Nutzwert
+für die Wissenschaftler und tragen zur Attraktivität des Portals bei. Die im Projekt erworbenen Erfahrungen und die
+dort entwickelte Software stehen anderen Suchportalen zur Verfügung.</str>
+    <str>La bibliothèque virtuelle GEO-LEO met à disposition des chercheurs des sciences de la terre et montanes une recherche
+intégrée dans des catalogues de bibliothèques, de bancs de données de littérature et des bancs de textes complets.
+Les bibliothèques à collections spécialisées de Freiberg et Göttingen font ainsi apparaître et accessibles à l’ensemble
+des chercheurs dans l’espace allemand des ressources acquises avec l’aide de la DFG . Beaucoup d’autres
+services comme la plate-forme de publications augmentent l’utilité aux chercheurs et contribuent à l’attractivité du portail.
+Les expériences faites avec le projet et le logiciel y développé se trouvent à la disposition d’autres portails.</str>
+    <str>GEO-LEO, the Virtual Library for earth sciences and mining, provides an integrated search within library catalogues,
+citation databases and fulltext repositories. With the portal the libraries at Freiberg and Göttingen (SUB) expose and
+make accessible the holdings of their special subject collections, funded by the German Research Foundation. Additional
+services comprising an email-alert and a disciplinary repository make the virtual library a valueable tool for scientist,
+students and other users interested in earth sciences and mining. Experiences made by the GEO-LEO project
+and also the software developments can be contributed to other virtual library projects.</str>
+  </arr>
   <arr name="dc.description.abstract.en">
     <str>Die Virtuelle Fachbibliothek GEO-LEO bietet Geo- und Montanwissenschaftlern eine integrierte Suche über Bibliothekskataloge,
 Literatur-Datenbanken und Volltextserver. Die Sondersammelgebietsbibliotheken in Freiberg und Göttingen
@@ -149,6 +188,9 @@ Les expériences faites avec le projet et le logiciel y développé se trouvent 
   <arr name="dc.format.mimetype">
     <str>application/pdf</str>
   </arr>
+  <arr name="dc.format.mimetype.display">
+    <str>application/pdf</str>
+  </arr>
   <arr name="dc.format.mimetype.en">
     <str>application/pdf</str>
   </arr>
@@ -156,11 +198,19 @@ Les expériences faites avec le projet et le logiciel y développé se trouvent 
     <str>bibliothek : forschung und praxis; vol. 1, no. 3</str>
     <str>quast, a. &amp; pfurr, n. (2007): aufbau und betrieb einer virtuellen fachbibliothek am beispiel des geo- und montanwissenschaftlichen portals geo-leo. - bibliothek, forschung und praxis, 31, 3: 293 - 298.</str>
   </arr>
+  <arr name="dc.identifier.citation.display">
+    <str>Bibliothek : Forschung und Praxis; Vol. 1, No. 3</str>
+    <str>Quast, A. &amp; Pfurr, N. (2007): Aufbau und Betrieb einer Virtuellen Fachbibliothek am Beispiel des Geo- und Montanwissenschaftlichen Portals GEO-LEO. - Bibliothek, Forschung und Praxis, 31, 3: 293 - 298.</str>
+  </arr>
   <arr name="dc.identifier.citation.en">
     <str>Bibliothek : Forschung und Praxis; Vol. 1, No. 3</str>
     <str>Quast, A. &amp; Pfurr, N. (2007): Aufbau und Betrieb einer Virtuellen Fachbibliothek am Beispiel des Geo- und Montanwissenschaftlichen Portals GEO-LEO. - Bibliothek, Forschung und Praxis, 31, 3: 293 - 298.</str>
   </arr>
   <arr name="dc.identifier.isbn">
+    <str>978-3-598-00311-0</str>
+    <str>3-598-00311-0</str>
+  </arr>
+  <arr name="dc.identifier.isbn.display">
     <str>978-3-598-00311-0</str>
     <str>3-598-00311-0</str>
   </arr>
@@ -171,7 +221,13 @@ Les expériences faites avec le projet et le logiciel y développé se trouvent 
   <arr name="dc.identifier.uri">
     <str>http://hdl.handle.net/11858/00-1735-0000-0001-3489-5</str>
   </arr>
+  <arr name="dc.identifier.uri.display">
+    <str>http://hdl.handle.net/11858/00-1735-0000-0001-3489-5</str>
+  </arr>
   <arr name="dc.language.iso">
+    <str>deu</str>
+  </arr>
+  <arr name="dc.language.iso.display">
     <str>deu</str>
   </arr>
   <arr name="dc.language.iso.en">
@@ -180,22 +236,37 @@ Les expériences faites avec le projet et le logiciel y développé se trouvent 
   <arr name="dc.publisher">
     <str>k.g. saur</str>
   </arr>
+  <arr name="dc.publisher.display">
+    <str>K.G. Saur</str>
+  </arr>
   <arr name="dc.publisher.en">
     <str>K.G. Saur</str>
   </arr>
-  <arr name="dc.relation.hasfilename">
+  <arr name="dc.relation.filedescription">
+    <str>none</str>
+  </arr>
+  <arr name="dc.relation.fileurl">
+    <str>http://e-docs.geo-leo.de/bitstream/handle/11858/00-1735-0000-0001-3489-5/bfp_quast_pfurr.pdf?sequence=1</str>
+  </arr>
+  <arr name="dc.relation.hasfilename.display">
     <str>bfp_quast_pfurr.pdf</str>
   </arr>
-  <arr name="dc.relation.hasfileurl">
+  <arr name="dc.relation.hasfileurl.display">
     <str>http://e-docs.geo-leo.de/bitstream/handle/11858/00-1735-0000-0001-3489-5/bfp_quast_pfurr.pdf?sequence=1</str>
   </arr>
   <arr name="dc.relation.ispartofseries">
     <str>bibliothek : forschung und praxis</str>
   </arr>
+  <arr name="dc.relation.ispartofseries.display">
+    <str>Bibliothek : Forschung und Praxis</str>
+  </arr>
   <arr name="dc.relation.ispartofseries.en">
     <str>Bibliothek : Forschung und Praxis</str>
   </arr>
   <arr name="dc.subject.bk">
+    <str>38.04</str>
+  </arr>
+  <arr name="dc.subject.bk.display">
     <str>38.04</str>
   </arr>
   <arr name="dc.subject.bk.en">
@@ -205,7 +276,14 @@ Les expériences faites avec le projet et le logiciel y développé se trouvent 
     <str>geowissenschaften</str>
     <str>virtuelle bibliothek</str>
   </arr>
+  <arr name="dc.subject.free.display">
+    <str>Geowissenschaften</str>
+    <str>Virtuelle Bibliothek</str>
+  </arr>
   <str name="dc.subject.gok">v 200</str>
+  <arr name="dc.subject.gok.display">
+    <str>V 200</str>
+  </arr>
   <arr name="dc.subject.gok.en">
     <str>V 200</str>
   </arr>
@@ -215,8 +293,14 @@ Les expériences faites avec le projet et le logiciel y développé se trouvent 
   <arr name="dc.subject.gokverbal.de">
     <str>Wissenschaftsorganisation und -Pflege {Geologische Wissenschaften}</str>
   </arr>
+  <arr name="dc.subject.gokverbal.display">
+    <str>Wissenschaftsorganisation und -Pflege {Geologische Wissenschaften}</str>
+  </arr>
   <arr name="dc.title">
     <str>aufbau und betrieb einer virtuellen fachbibliothek am beispiel des geo- und montanwissenschaftlichen portals geo-leo</str>
+  </arr>
+  <arr name="dc.title.display">
+    <str>Aufbau und Betrieb einer Virtuellen Fachbibliothek am Beispiel des Geo- und Montanwissenschaftlichen Portals GEO-LEO</str>
   </arr>
   <arr name="dc.title.en">
     <str>Aufbau und Betrieb einer Virtuellen Fachbibliothek am Beispiel des Geo- und Montanwissenschaftlichen Portals GEO-LEO</str>
@@ -224,6 +308,10 @@ Les expériences faites avec le projet et le logiciel y développé se trouvent 
   <arr name="dc.title.translated">
     <str>the geo-leo portal for earth sciences and mining as an example for development and operation of a specialized virtual library</str>
     <str>établissement et fonctionnement d’une bibliothèque spécialisée virtuelle: l’exemple du portail des sciences de la terre et montanes geo-leo</str>
+  </arr>
+  <arr name="dc.title.translated.display">
+    <str>The GEO-LEO portal for earth sciences and mining as an example for development and operation of a specialized virtual library</str>
+    <str>Établissement et fonctionnement d’une bibliothèque spécialisée virtuelle: l’exemple du portail des sciences de la terre et montanes GEO-LEO</str>
   </arr>
   <arr name="dc.title.translated.en">
     <str>The GEO-LEO portal for earth sciences and mining as an example for development and operation of a specialized virtual library</str>
@@ -236,6 +324,9 @@ Les expériences faites avec le projet et le logiciel y développé se trouvent 
   </arr>
   <str name="dc.title_sort">Aufbau und Betrieb einer Virtuellen Fachbibliothek am Beispiel des Geo- und Montanwissenschaftlichen Portals GEO-LEO</str>
   <arr name="dc.type">
+    <str>article</str>
+  </arr>
+  <arr name="dc.type.display">
     <str>article</str>
   </arr>
   <arr name="dc.type.en">

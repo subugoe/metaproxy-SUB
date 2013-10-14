@@ -1,0 +1,223 @@
+<doc>
+  <date name="SolrIndexer.lastIndexed">2013-10-14T09:57:23.172Z</date>
+  <arr name="all_ac">
+    <str>2010-10-28T05:44:48Z</str>
+    <str>2010-11-22T15:25:07Z</str>
+    <str>2010-10-28T05:44:48Z</str>
+    <str>2010-11-22T15:25:07Z</str>
+    <str>2006</str>
+    <str>Forum Humangeographie; 1</str>
+    <str>http://hdl.handle.net/11858/00-1735-0000-0001-337F-5</str>
+    <str>Ein Universitätsstudium bedeutet vielfach Selbststudium: eigenständiges Recherchieren und
+Aufbereiten von Informationen sowie die Vermittlung dieser Informationen und gegebenenfalls
+eigener Erkenntnisse in schriftlicher oder mündlicher Form. Der vorliegende Leitfaden
+bietet dabei eine Hilfestellung. Zum einen werden Tipps für ein effizientes und erfolgreiches
+Studium vorgestellt und zum anderen formale Anforderungen an gutes wissenschaftliches
+Arbeiten erläutert und begründet. Viele der vorgestellten Techniken und Methoden werden
+Sie auch bei Praktika, ehrenamtlichen Tätigkeiten oder im Berufsleben nutzen können.</str>
+    <str>56 S.</str>
+    <str>application/pdf</str>
+    <str>deu</str>
+    <str>Johann Wolfgang Goethe-Universität, Frankfurt am Main</str>
+    <str>http://e-docs.geo-leo.de/rights</str>
+    <str>Grundlagen wissenschaftlichen Arbeitens</str>
+    <str>ein verbindlicher Leitfaden und Ratgeber für Studierende der Geographie an der Johann Wolfgang Goethe-Universität Frankfurt am Main</str>
+    <str>report</str>
+    <str>515599638</str>
+    <str>publishedVersion</str>
+  </arr>
+  <arr name="dc.date.accessioned.year">
+    <int>2010</int>
+    <int>2010</int>
+  </arr>
+  <arr name="dc.date.accessioned_dt">
+    <date>2010-10-28T05:44:48Z</date>
+    <date>2010-11-22T15:25:07Z</date>
+  </arr>
+  <arr name="dc.date.available.year">
+    <int>2010</int>
+    <int>2010</int>
+  </arr>
+  <arr name="dc.date.available_dt">
+    <date>2010-10-28T05:44:48Z</date>
+    <date>2010-11-22T15:25:07Z</date>
+  </arr>
+  <arr name="dc.date.issued.year">
+    <int>2006</int>
+  </arr>
+  <arr name="dc.date.issued_dt">
+    <date>2006-01-01T00:00:00Z</date>
+  </arr>
+  <str name="dc.date.issued_dt_sort">2006-01-01T00:00:00Z</str>
+  <arr name="dc.description.abstract">
+    <str>ein universitätsstudium bedeutet vielfach selbststudium: eigenständiges recherchieren und
+aufbereiten von informationen sowie die vermittlung dieser informationen und gegebenenfalls
+eigener erkenntnisse in schriftlicher oder mündlicher form. der vorliegende leitfaden
+bietet dabei eine hilfestellung. zum einen werden tipps für ein effizientes und erfolgreiches
+studium vorgestellt und zum anderen formale anforderungen an gutes wissenschaftliches
+arbeiten erläutert und begründet. viele der vorgestellten techniken und methoden werden
+sie auch bei praktika, ehrenamtlichen tätigkeiten oder im berufsleben nutzen können.</str>
+  </arr>
+  <arr name="dc.description.abstract.de">
+    <str>Ein Universitätsstudium bedeutet vielfach Selbststudium: eigenständiges Recherchieren und
+Aufbereiten von Informationen sowie die Vermittlung dieser Informationen und gegebenenfalls
+eigener Erkenntnisse in schriftlicher oder mündlicher Form. Der vorliegende Leitfaden
+bietet dabei eine Hilfestellung. Zum einen werden Tipps für ein effizientes und erfolgreiches
+Studium vorgestellt und zum anderen formale Anforderungen an gutes wissenschaftliches
+Arbeiten erläutert und begründet. Viele der vorgestellten Techniken und Methoden werden
+Sie auch bei Praktika, ehrenamtlichen Tätigkeiten oder im Berufsleben nutzen können.</str>
+  </arr>
+  <arr name="dc.description.abstract.display">
+    <str>Ein Universitätsstudium bedeutet vielfach Selbststudium: eigenständiges Recherchieren und
+Aufbereiten von Informationen sowie die Vermittlung dieser Informationen und gegebenenfalls
+eigener Erkenntnisse in schriftlicher oder mündlicher Form. Der vorliegende Leitfaden
+bietet dabei eine Hilfestellung. Zum einen werden Tipps für ein effizientes und erfolgreiches
+Studium vorgestellt und zum anderen formale Anforderungen an gutes wissenschaftliches
+Arbeiten erläutert und begründet. Viele der vorgestellten Techniken und Methoden werden
+Sie auch bei Praktika, ehrenamtlichen Tätigkeiten oder im Berufsleben nutzen können.</str>
+  </arr>
+  <arr name="dc.format.extent">
+    <str>56 s.</str>
+  </arr>
+  <arr name="dc.format.extent.display">
+    <str>56 S.</str>
+  </arr>
+  <arr name="dc.format.extent.en">
+    <str>56 S.</str>
+  </arr>
+  <arr name="dc.format.mimetype">
+    <str>application/pdf</str>
+  </arr>
+  <arr name="dc.format.mimetype.display">
+    <str>application/pdf</str>
+  </arr>
+  <arr name="dc.format.mimetype.en">
+    <str>application/pdf</str>
+  </arr>
+  <arr name="dc.identifier.citation">
+    <str>forum humangeographie; 1</str>
+  </arr>
+  <arr name="dc.identifier.citation.display">
+    <str>Forum Humangeographie; 1</str>
+  </arr>
+  <arr name="dc.identifier.citation.en">
+    <str>Forum Humangeographie; 1</str>
+  </arr>
+  <arr name="dc.identifier.ppn">
+    <str>515599638</str>
+  </arr>
+  <arr name="dc.identifier.ppn.display">
+    <str>515599638</str>
+  </arr>
+  <arr name="dc.identifier.ppn.en">
+    <str>515599638</str>
+  </arr>
+  <arr name="dc.identifier.uri">
+    <str>http://hdl.handle.net/11858/00-1735-0000-0001-337f-5</str>
+  </arr>
+  <arr name="dc.identifier.uri.display">
+    <str>http://hdl.handle.net/11858/00-1735-0000-0001-337F-5</str>
+  </arr>
+  <arr name="dc.language.iso">
+    <str>deu</str>
+  </arr>
+  <arr name="dc.language.iso.display">
+    <str>deu</str>
+  </arr>
+  <arr name="dc.language.iso.en">
+    <str>deu</str>
+  </arr>
+  <arr name="dc.publisher">
+    <str>johann wolfgang goethe-universität, frankfurt am main</str>
+  </arr>
+  <arr name="dc.publisher.display">
+    <str>Johann Wolfgang Goethe-Universität, Frankfurt am Main</str>
+  </arr>
+  <arr name="dc.publisher.en">
+    <str>Johann Wolfgang Goethe-Universität, Frankfurt am Main</str>
+  </arr>
+  <arr name="dc.relation.filedescription">
+    <str/>
+    <str/>
+  </arr>
+  <arr name="dc.relation.fileurl">
+    <str>http://e-docs.geo-leo.de/bitstream/handle/11858/00-1735-0000-0001-337F-5/PDF32000 2008.pdf?sequence=3</str>
+    <str>http://e-docs.geo-leo.de/bitstream/handle/11858/00-1735-0000-0001-337F-5/1.pdf?sequence=4</str>
+  </arr>
+  <arr name="dc.relation.hasfilename.display">
+    <str>PDF32000 2008.pdf</str>
+    <str>1.pdf</str>
+  </arr>
+  <arr name="dc.relation.hasfileurl.display">
+    <str>http://e-docs.geo-leo.de/bitstream/handle/11858/00-1735-0000-0001-337F-5/PDF32000 2008.pdf?sequence=3</str>
+    <str>http://e-docs.geo-leo.de/bitstream/handle/11858/00-1735-0000-0001-337F-5/1.pdf?sequence=4</str>
+  </arr>
+  <arr name="dc.rights.uri">
+    <str>http://e-docs.geo-leo.de/rights</str>
+  </arr>
+  <arr name="dc.rights.uri.display">
+    <str>http://e-docs.geo-leo.de/rights</str>
+  </arr>
+  <arr name="dc.rights.uri.en">
+    <str>http://e-docs.geo-leo.de/rights</str>
+  </arr>
+  <arr name="dc.title">
+    <str>grundlagen wissenschaftlichen arbeitens</str>
+  </arr>
+  <arr name="dc.title.alternative">
+    <str>ein verbindlicher leitfaden und ratgeber für studierende der geographie an der johann wolfgang goethe-universität frankfurt am main</str>
+  </arr>
+  <arr name="dc.title.alternative.display">
+    <str>ein verbindlicher Leitfaden und Ratgeber für Studierende der Geographie an der Johann Wolfgang Goethe-Universität Frankfurt am Main</str>
+  </arr>
+  <arr name="dc.title.alternative.en">
+    <str>ein verbindlicher Leitfaden und Ratgeber für Studierende der Geographie an der Johann Wolfgang Goethe-Universität Frankfurt am Main</str>
+  </arr>
+  <arr name="dc.title.display">
+    <str>Grundlagen wissenschaftlichen Arbeitens</str>
+  </arr>
+  <arr name="dc.title.en">
+    <str>Grundlagen wissenschaftlichen Arbeitens</str>
+  </arr>
+  <arr name="dc.title_ac">
+    <str>Grundlagen wissenschaftlichen Arbeitens</str>
+  </arr>
+  <str name="dc.title_sort">Grundlagen wissenschaftlichen Arbeitens</str>
+  <arr name="dc.type">
+    <str>report</str>
+  </arr>
+  <arr name="dc.type.display">
+    <str>report</str>
+  </arr>
+  <arr name="dc.type.en">
+    <str>report</str>
+  </arr>
+  <arr name="dc.type.version">
+    <str>publishedversion</str>
+  </arr>
+  <arr name="dc.type.version.display">
+    <str>publishedVersion</str>
+  </arr>
+  <arr name="dc.type.version.en">
+    <str>publishedVersion</str>
+  </arr>
+  <str name="handle">11858/00-1735-0000-0001-337F-5</str>
+  <arr name="location">
+    <str>m29</str>
+    <str>m14</str>
+    <str>l107</str>
+  </arr>
+  <arr name="location.coll">
+    <str>107</str>
+  </arr>
+  <arr name="location.comm">
+    <str>29</str>
+    <str>14</str>
+  </arr>
+  <arr name="publication_grp">
+    <str>11858/00-1735-0000-0001-337F-5</str>
+  </arr>
+  <str name="repo">geo-leo</str>
+  <int name="search.resourceid">2934</int>
+  <int name="search.resourcetype">2</int>
+</doc>

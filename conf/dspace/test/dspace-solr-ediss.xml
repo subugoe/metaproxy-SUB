@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<doc>
+  <date name="SolrIndexer.lastIndexed">2013-10-11T06:50:20.825Z</date>
+  <arr name="author">
+    <str>Maraun, Mark PD Dr.</str>
+    <str>Erdmann, Georgia</str>
+    <str>Maraun, Mark PD Dr.</str>
+    <str>Scheu, Stefan Prof. Dr.</str>
+    <str>Kreft, Holger Prof. Dr.</str>
+    <str>Rohlfs, Marko PD Dr.</str>
+    <str>Hörandl, Elvira Prof.</str>
+  </arr>
+  <arr name="author_ac">
+    <str>Maraun, Mark PD Dr.</str>
+    <str>Erdmann, Georgia</str>
+    <str>Maraun, Mark PD Dr.</str>
+    <str>Scheu, Stefan Prof. Dr.</str>
+    <str>Kreft, Holger Prof. Dr.</str>
+    <str>Rohlfs, Marko PD Dr.</str>
+    <str>Hörandl, Elvira Prof.</str>
+  </arr>
+  <arr name="author_filter">
+    <str>maraun, mark pd dr.|||Maraun, Mark PD Dr.</str>
+    <str>erdmann, georgia|||Erdmann, Georgia</str>
+    <str>maraun, mark pd dr.|||Maraun, Mark PD Dr.</str>
+    <str>scheu, stefan prof. dr.|||Scheu, Stefan Prof. Dr.</str>
+    <str>kreft, holger prof. dr.|||Kreft, Holger Prof. Dr.</str>
+    <str>rohlfs, marko pd dr.|||Rohlfs, Marko PD Dr.</str>
+    <str>hörandl, elvira prof.|||Hörandl, Elvira Prof.</str>
+  </arr>
+  <arr name="dateIssued">
+    <str>2012-12-19</str>
+  </arr>
+  <arr name="dateIssued.year">
+    <int>2012</int>
+  </arr>
+  <str name="dateIssued.year_sort">2012</str>
+  <arr name="dateIssued_ac">
+    <str>2012-12-19</str>
+  </arr>
+  <arr name="dc.contributor.advisor">
+    <str>maraun, mark pd dr.</str>
+  </arr>
+  <arr name="dc.contributor.advisor.de">
+    <str>Maraun, Mark PD Dr.</str>
+  </arr>
+  <arr name="dc.contributor.author">
+    <str>erdmann, georgia</str>
+  </arr>
+  <arr name="dc.contributor.author.de">
+    <str>Erdmann, Georgia</str>
+  </arr>
+  <arr name="dc.contributor.coReferee">
+    <str>scheu, stefan prof. dr.</str>
+  </arr>
+  <arr name="dc.contributor.coReferee.de">
+    <str>Scheu, Stefan Prof. Dr.</str>
+  </arr>
+  <arr name="dc.contributor.referee">
+    <str>maraun, mark pd dr.</str>
+  </arr>
+  <arr name="dc.contributor.referee.de">
+    <str>Maraun, Mark PD Dr.</str>
+  </arr>
+  <arr name="dc.contributor.thirdReferee">
+    <str>kreft, holger prof. dr.</str>
+    <str>rohlfs, marko pd dr.</str>
+    <str>hörandl, elvira prof.</str>
+  </arr>
+  <arr name="dc.contributor.thirdReferee.de">
+    <str>Kreft, Holger Prof. Dr.</str>
+    <str>Rohlfs, Marko PD Dr.</str>
+    <str>Hörandl, Elvira Prof.</str>
+  </arr>
+  <arr name="dc.date.accessioned">
+    <str>2012-12-19t10:53:35z</str>
+    <str>2012-12-19t19:27:06z</str>
+    <str>2013-01-18t14:32:53z</str>
+  </arr>
+  <arr name="dc.date.accessioned.de">
+    <str>2012-12-19T10:53:35Z</str>
+    <str>2012-12-19T19:27:06Z</str>
+    <str>2013-01-18T14:32:53Z</str>
+  </arr>
+  <date name="dc.date.accessioned_dt">2012-12-19T10:53:35Z</date>
+  <arr name="dc.date.available">
+    <str>2013-01-30t23:51:04z</str>
+  </arr>
+  <arr name="dc.date.available.de">
+    <str>2013-01-30T23:51:04Z</str>
+  </arr>
+  <arr name="dc.date.examination">
+    <str>2012-03-26</str>
+  </arr>
+  <arr name="dc.date.examination.de">
+    <str>2012-03-26</str>
+  </arr>
+  <arr name="dc.date.issued">
+    <str>2012-12-19</str>
+  </arr>
+  <arr name="dc.date.issued.de">
+    <str>2012-12-19</str>
+  </arr>
+  <date name="dc.date.issued_dt">2012-12-19T00:00:00Z</date>
+  <arr name="dc.description.abstracteng">
+    <str>oribatid mites are predominantly soil-living organisms reaching densities of up to 400,000 individuals per square meter in forest soils, where they contribute to decomposition processes and nutrient cycling. in acidic forests they are the main decomposer taxon, together with collembolans. despite their outstanding importance for soil processes knowledge about their trophic ecology and factors structuring their communities is low.
+about ten percent of the 10,000 described species are thelytokous (i.e., they reproduce via female parthenogenesis); locally up to 80 % of all individuals in temperate forest soils are parthenogens. oribatid mites likely originated in cambrian or precambrian times and include old thelytokous species-rich groups indicating an ancient origin of asexuality as well as parthenogenetic radiations. sexual and parthenogenetic species coexist in forest soils and in agricultural soils; in temperate, tropical and arctic regions and also on the bark of dead and living trees. this makes oribatid mites a unique group for studying patterns of parthenogenetic reproduction and for studying factors influencing the relative frequency of sexual and parthenogenetic species (see chapter 1).
+the present thesis focuses on oribatid mite reproductive mode and ecology and is divided into two parts. the first part investigates the trophic ecology of oribatid mites in soil and on bark analysed with stable isotope measurements (chapter 2) and abiotic and biotic factors influencing oribatid mite density, diversity and community structure in soils of different forest types (chapter 3). in the second part oribatid mites were used as model organisms to investigate the distribution of sexual and parthenogenetic individuals in forest soils in two regions in germany and in different habitats worldwide in relation to food availability (chapter 4). further we investigated the effects of nutrient availability on oribatid mite density and the frequency of parthenogenetic individuals on tree trunks (chapter 5).
+in chapter 2 we used two stable isotopes (15n; 13c) for uncovering the trophic ecology of soil- and bark-living oribatid mites. the isotope 15n is usually used to detect the trophic level in food webs since it is enriched by about 3.4 delta units per trophic level, whereas 13c can be a marker for different food sources since different food source s can differ in their 13c signatures (e.g., lichens, c4 and c3 plants), but those signatures are not enriched per trophic levels. it could be shown that oribatid mites span over four trophic levels, which was surprising since usually oribatid mites are treated in food webs as a single functional group, i.e., decomposers. however, our data clearly show that oribatid mites are a trophically diverse group and should not be aggregated in food webs. additionally, 13c signatures separated lichen feeders as well as species that burrow inside leaves and needles as juveniles (endophagous taxa) from the other species.
+in chapter 3 we investigated the importance of regional versus local factors on oribatid mite community structure. therefore, we studied oribatid mites in four differently managed forest types (coniferous 70y old age class forests; 30y old and 70y old beech age class forests, unmanaged beech forests mature with trees ~120y old) (local effects) at three different sites in germany (swabian alb, hainich, schorfheide) (regional effects) in the framework of the dfg project “biodiversity exploratories”. we also measured environmental factors (litter mass, soil ph, c and n content of litter and fine roots, c content of soil) which might potentially explain oribatid mite density and community structure. oribatid mite density was positively correlated with litter mass supporting the hypothesis that the litter serves as a habitat and also as a food resource for many oribatid mite species. oribatid mite diversity was little affected by forest type indicating that in most forest types the number of niches for oribatid mites is similar. overall, differences of oribatid mite communities were more pronounced between the three regions than between the four forest types within a region indicating that regional factors (mainly ph, litter mass and c content of litter) are more important than local factors for oribatid mite community structure. overall, the predictability of density, diversity and community structure of oribatid mite communities in different regions indicates that oribatid mite communities are not randomly assembled.
+in chapter 4 we investigated the hypothesis that parthenogenetic species should dominate in habitats with a good food supply where resources are not a limiting factor. in contrast, in habitats where resources are in short supply or strongly structured sexual reproduction should dominate since mixis processes potentially allow a better use of underutilized resources (”structured resource theory of sexual reproduction” (srts); scheu and drossel 2007). our data show a strong positive relationship between parthenogenetic reproduction and density (which we used as an indirect measurement for resource availability) supporting the hypothesis that availability of food in ample supply triggers parthenogenesis and allows the long-term maintenance of parthenogenetic reproduction.
+in chapter 5 we experimentally investigated the hypothesis that increased resource availability increases the density of oribatid mites and also the prevalence of parthenogens. for this study we added nutrients in the form of cane sugar as a carbon source (c) and ammonium nitrate as a nitrogen source (n) on the tree trunks of beech trees (fagus sylvatica). oribatid mite density increased after c addition supporting the view that oribatid mites on the bark of trees are resource limited. however, the number of parthenogenetic individuals did not increase after resource addition (neither c or n) which was mainly due to the fact that the bark is a habitat where sexual taxa dominate (~95 %). migration of parthenogens from soil obviously was too low to affect community sex ratios.
+reference
+scheu, s., drossel, b. (2007) sexual reproduction prevails in a world of structured resources in short supply. proceedings of the royal society b – biological sciences 274, 1225-1231.</str>
+  </arr>
+  <arr name="dc.description.abstracteng.de">
+    <str>Oribatid mites are predominantly soil-living organisms reaching densities of up to 400,000 individuals per square meter in forest soils, where they contribute to decomposition processes and nutrient cycling. In acidic forests they are the main decomposer taxon, together with collembolans. Despite their outstanding importance for soil processes knowledge about their trophic ecology and factors structuring their communities is low.
+About ten percent of the 10,000 described species are thelytokous (i.e., they reproduce via female parthenogenesis); locally up to 80 % of all individuals in temperate forest soils are parthenogens. Oribatid mites likely originated in Cambrian or Precambrian times and include old thelytokous species-rich groups indicating an ancient origin of asexuality as well as parthenogenetic radiations. Sexual and parthenogenetic species coexist in forest soils and in agricultural soils; in temperate, tropical and arctic regions and also on the bark of dead and living trees. This makes oribatid mites a unique group for studying patterns of parthenogenetic reproduction and for studying factors influencing the relative frequency of sexual and parthenogenetic species (see Chapter 1).
+The present thesis focuses on oribatid mite reproductive mode and ecology and is divided into two parts. The first part investigates the trophic ecology of oribatid mites in soil and on bark analysed with stable isotope measurements (Chapter 2) and abiotic and biotic factors influencing oribatid mite density, diversity and community structure in soils of different forest types (Chapter 3). In the second part oribatid mites were used as model organisms to investigate the distribution of sexual and parthenogenetic individuals in forest soils in two regions in Germany and in different habitats worldwide in relation to food availability (Chapter 4). Further we investigated the effects of nutrient availability on oribatid mite density and the frequency of parthenogenetic individuals on tree trunks (Chapter 5).
+In Chapter 2 we used two stable isotopes (15N; 13C) for uncovering the trophic ecology of soil- and bark-living oribatid mites. The isotope 15N is usually used to detect the trophic level in food webs since it is enriched by about 3.4 delta units per trophic level, whereas 13C can be a marker for different food sources since different food source s can differ in their 13C signatures (e.g., lichens, C4 and C3 plants), but those signatures are not enriched per trophic levels. It could be shown that oribatid mites span over four trophic levels, which was surprising since usually oribatid mites are treated in food webs as a single functional group, i.e., decomposers. However, our data clearly show that oribatid mites are a trophically diverse group and should not be aggregated in food webs. Additionally, 13C signatures separated lichen feeders as well as species that burrow inside leaves and needles as juveniles (endophagous taxa) from the other species.
+In Chapter 3 we investigated the importance of regional versus local factors on oribatid mite community structure. Therefore, we studied oribatid mites in four differently managed forest types (coniferous 70y old age class forests; 30y old and 70y old beech age class forests, unmanaged beech forests mature with trees ~120y old) (local effects) at three different sites in Germany (Swabian Alb, Hainich, Schorfheide) (regional effects) in the framework of the DFG project “Biodiversity Exploratories”. We also measured environmental factors (litter mass, soil pH, C and N content of litter and fine roots, C content of soil) which might potentially explain oribatid mite density and community structure. Oribatid mite density was positively correlated with litter mass supporting the hypothesis that the litter serves as a habitat and also as a food resource for many oribatid mite species. Oribatid mite diversity was little affected by forest type indicating that in most forest types the number of niches for oribatid mites is similar. Overall, differences of oribatid mite communities were more pronounced between the three regions than between the four forest types within a region indicating that regional factors (mainly pH, litter mass and C content of litter) are more important than local factors for oribatid mite community structure. Overall, the predictability of density, diversity and community structure of oribatid mite communities in different regions indicates that oribatid mite communities are not randomly assembled.
+In Chapter 4 we investigated the hypothesis that parthenogenetic species should dominate in habitats with a good food supply where resources are not a limiting factor. In contrast, in habitats where resources are in short supply or strongly structured sexual reproduction should dominate since mixis processes potentially allow a better use of underutilized resources (”Structured Resource Theory of Sexual Reproduction” (SRTS); Scheu and Drossel 2007). Our data show a strong positive relationship between parthenogenetic reproduction and density (which we used as an indirect measurement for resource availability) supporting the hypothesis that availability of food in ample supply triggers parthenogenesis and allows the long-term maintenance of parthenogenetic reproduction.
+In Chapter 5 we experimentally investigated the hypothesis that increased resource availability increases the density of oribatid mites and also the prevalence of parthenogens. For this study we added nutrients in the form of cane sugar as a carbon source (C) and ammonium nitrate as a nitrogen source (N) on the tree trunks of beech trees (Fagus sylvatica). Oribatid mite density increased after C addition supporting the view that oribatid mites on the bark of trees are resource limited. However, the number of parthenogenetic individuals did not increase after resource addition (neither C or N) which was mainly due to the fact that the bark is a habitat where sexual taxa dominate (~95 %). Migration of parthenogens from soil obviously was too low to affect community sex ratios.
+Reference
+Scheu, S., Drossel, B. (2007) Sexual reproduction prevails in a world of structured resources in short supply. Proceedings of the Royal Society B – Biological Sciences 274, 1225-1231.</str>
+  </arr>
+  <arr name="dc.identifier.ppn">
+    <str>738531472</str>
+  </arr>
+  <arr name="dc.identifier.ppn.de">
+    <str>738531472</str>
+  </arr>
+  <arr name="dc.identifier.urn">
+    <str>urn:nbn:de:gbv:7-11858/00-1735-0000-000c-b7e7-7-8</str>
+  </arr>
+  <arr name="dc.identifier.urn.de">
+    <str>urn:nbn:de:gbv:7-11858/00-1735-0000-000C-B7E7-7-8</str>
+  </arr>
+  <arr name="dc.language.iso">
+    <str>eng</str>
+  </arr>
+  <arr name="dc.language.iso.de">
+    <str>eng</str>
+  </arr>
+  <arr name="dc.publisher">
+    <str>niedersächsische staats- und universitätsbibliothek göttingen</str>
+  </arr>
+  <arr name="dc.publisher.de">
+    <str>Niedersächsische Staats- und Universitätsbibliothek Göttingen</str>
+  </arr>
+  <arr name="dc.relation.hasfilename">
+    <str>Dissertation Georgia Erdmann.pdf</str>
+  </arr>
+  <arr name="dc.relation.hasfileurl">
+    <str>https://ediss.uni-goettingen.de/bitstream/handle/11858/00-1735-0000-000C-B7E7-7/Dissertation Georgia Erdmann.pdf?sequence=2</str>
+  </arr>
+  <arr name="dc.rights.uri">
+    <str>http://creativecommons.org/licenses/by-nc-nd/3.0/</str>
+  </arr>
+  <arr name="dc.rights.uri.de">
+    <str>http://creativecommons.org/licenses/by-nc-nd/3.0/</str>
+  </arr>
+  <arr name="dc.subject.ddc">
+    <str>333</str>
+    <str>577</str>
+  </arr>
+  <arr name="dc.subject.ddc.de">
+    <str>333</str>
+    <str>577</str>
+  </arr>
+  <arr name="dc.subject.eng">
+    <str>soil</str>
+    <str>oribatid mites</str>
+    <str>biodiversity</str>
+    <str>trophic structure</str>
+    <str>stable isotopes</str>
+    <str>forest management</str>
+    <str>parthenogenesis</str>
+    <str>asexuality</str>
+    <str>thelythoky</str>
+  </arr>
+  <arr name="dc.subject.eng.de">
+    <str>soil</str>
+    <str>oribatid mites</str>
+    <str>biodiversity</str>
+    <str>trophic structure</str>
+    <str>stable isotopes</str>
+    <str>forest management</str>
+    <str>parthenogenesis</str>
+    <str>asexuality</str>
+    <str>thelythoky</str>
+  </arr>
+  <arr name="dc.title">
+    <str>community structure, trophic ecology and reproductive mode of oribatid mites (oribatida, acari) in forest ecosystems</str>
+  </arr>
+  <arr name="dc.title.de">
+    <str>Community structure, trophic ecology and reproductive mode of oribatid mites (Oribatida, Acari) in forest ecosystems</str>
+  </arr>
+  <arr name="dc.title.translated">
+    <str>community structure, trophic ecology and reproductive mode of oribatid mites (oribatida, acari) in forest ecosystems</str>
+  </arr>
+  <arr name="dc.title.translated.de">
+    <str>Community structure, trophic ecology and reproductive mode of oribatid mites (Oribatida, Acari) in forest ecosystems</str>
+  </arr>
+  <str name="dc.title_sort">Community structure, trophic ecology and reproductive mode of oribatid mites (Oribatida, Acari) in forest ecosystems</str>
+  <arr name="dc.type">
+    <str>cumulativethesis</str>
+  </arr>
+  <arr name="dc.type.de">
+    <str>cumulativeThesis</str>
+  </arr>
+  <str name="handle">11858/00-1735-0000-000C-B7E7-7</str>
+  <arr name="location">
+    <str>m6</str>
+    <str>l16</str>
+  </arr>
+  <arr name="location.coll">
+    <str>16</str>
+  </arr>
+  <arr name="location.comm">
+    <str>6</str>
+  </arr>
+  <arr name="publication_grp">
+    <str>11858/00-1735-0000-000C-B7E7-7</str>
+  </arr>
+  <str name="repo">ediss</str>
+  <int name="search.resourceid">10070</int>
+  <int name="search.resourcetype">2</int>
+  <arr name="title">
+    <str>Community structure, trophic ecology and reproductive mode of oribatid mites (Oribatida, Acari) in forest ecosystems</str>
+  </arr>
+  <arr name="title_ac">
+    <str>Community</str>
+    <str>structure,</str>
+    <str>trophic</str>
+    <str>ecology</str>
+    <str>and</str>
+    <str>reproductive</str>
+    <str>mode</str>
+    <str>of</str>
+    <str>oribatid</str>
+    <str>mites</str>
+    <str>(Oribatida,</str>
+    <str>Acari)</str>
+    <str>in</str>
+    <str>forest</str>
+    <str>ecosystems</str>
+  </arr>
+</doc>
