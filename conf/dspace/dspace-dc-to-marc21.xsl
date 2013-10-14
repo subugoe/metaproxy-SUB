@@ -137,9 +137,10 @@
 			<xsl:variable name="formOfItem">o</xsl:variable>
 			<xsl:variable name="natureOfContents">
 				<xsl:choose>
-					<xsl:when test="dc:type='bachelorThesis' or dc:type='masterThesis'
-								 or dc:type='doctoralThesis' or dc:type='magisterThesis'
-								 or dc:type='cumulativeThesis'">m</xsl:when>
+					<xsl:when test="dc:type='doctoralThesis' or dc:type='cumulativeThesis'
+								 or dc:type='diplomaThesis' or dc:type='magisterThesis'
+								 or dc:type='masterThesis' or dc:type='bachelorThesis'
+								 or dc:type='habilitation'">m</xsl:when>
 					<xsl:when test="dc:type='patent'">j</xsl:when>
 					<xsl:when test="dc:type='review'">o</xsl:when>
 					<xsl:when test="dc:type='preprint' or dc:type='workingPaper'">2</xsl:when>
@@ -639,10 +640,21 @@
 				For ediss repository only.
 				TODO: convert type string to readable string for $b.
 			-->
-			<xsl:if test="dc:repo/text() = 'ediss'">
+			<xsl:if test="dc:relation.reponame/text() = 'ediss'">
 				<datafield tag="502" ind1=" " ind2=" ">
 					<subfield code="b">
-						<xsl:value-of select="dc:type"/>
+						<xsl:choose>
+							<xsl:when test="dc:type = 'doctoralThesis'">Dissertation</xsl:when>
+							<xsl:when test="dc:type = 'cumulativeThesis'">Kumulative Dissertation</xsl:when>
+							<xsl:when test="dc:type = 'diplomaThesis'">Diplomarbeit</xsl:when>
+							<xsl:when test="dc:type = 'magisterThesis'">Magisterarbeit</xsl:when>
+							<xsl:when test="dc:type = 'masterThesis'">Masterarbeit</xsl:when>
+							<xsl:when test="dc:type = 'bachelorThesis'">Bachelorarbeit</xsl:when>
+							<xsl:when test="dc:type = 'habilitation'">Habilitationsschrift</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="dc:type"/>
+							</xsl:otherwise>						
+						</xsl:choose>
 					</subfield>
 					<subfield code="c">Georg-August Universität Göttingen</subfield>
 				</datafield>
