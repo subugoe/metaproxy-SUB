@@ -623,13 +623,12 @@
 			<!--
 				Abstract goes to 520 with i1 = 3.
 				We lose language information here.
-				Replace line breaks with pilcrow signs to transport the paragraph endings (line
-					breaks are forbidden by MARC).
+				Replace line breaks (forbidden by MARC) with spaces.
 			-->
 			<xsl:for-each select="dc:description.abstract | dc:description.abstractger | dc:description.abstracteng">
 				<datafield tag="520" ind1="3" ind2=" ">
 					<subfield code="a">
-						<xsl:value-of select="translate(., '&#xa;', '&#xb6;')"/>
+						<xsl:value-of select="translate(., '&#xa;', ' ')"/>
 					</subfield>
 				</datafield>
 			</xsl:for-each>
