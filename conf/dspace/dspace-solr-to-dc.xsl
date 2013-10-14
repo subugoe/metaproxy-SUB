@@ -80,25 +80,15 @@
 				<xsl:when test="substring($originalName, 1, 3) = 'dc.'">
 					<xsl:choose>
 						<!-- Fields whose names end in '.en' or '.de' -->
-						<xsl:when test="substring($originalName, string-length($originalName) - 2, 3) = '.en'
-							or substring($originalName, string-length($originalName) - 2, 3) = '.de'">
-							<xsl:value-of select="substring($originalName, 4, string-length($originalName) - 6)"/>
+						<xsl:when test="substring($originalName, string-length($originalName) - 7, 8) = '.display'">
+							<xsl:value-of select="substring($originalName, 4, string-length($originalName) - 11)"/>
 						</xsl:when>
 						<!-- Special case for year. -->
 						<xsl:when test="$originalName = 'dc.date.issued.year'">
 							<xsl:text>date.issued</xsl:text>
 						</xsl:when>
-						<!-- Special cases for fields without a '.en' or '.de' version. -->
-						<xsl:when test="$originalName = 'dc.identifier.uri'
-											or $originalName = 'dc.relation.hasfilename'
-											or $originalName = 'dc.relation.hasfileurl'">
-							<xsl:value-of select="substring($originalName, 4)"/>
-						</xsl:when>
 					</xsl:choose>
 				</xsl:when>
-				<xsl:otherwise>
-					<xsl:value-of select="$originalName"/>
-				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 
