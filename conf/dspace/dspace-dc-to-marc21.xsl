@@ -86,7 +86,7 @@
 						<xsl:value-of select="dc:description.date"/>
 					</xsl:when>
 					<xsl:otherwise>
-						<xsl:value-of select="dc:date.issued"/>
+						<xsl:value-of select="dc:date.issued.year"/>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
