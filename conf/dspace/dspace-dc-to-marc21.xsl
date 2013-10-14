@@ -159,7 +159,7 @@
 			<xsl:variable name="literaryForm">
 				<xsl:choose>
 					<!-- preliminary / DSpace field likely to change -->
-					<xsl:when test="dc:type.subtype='letter' or dc:type.subtype='letters'">i</xsl:when>
+					<xsl:when test="dc:type='letter' or dc:type='letters'">i</xsl:when>
 					<xsl:otherwise><xsl:text> </xsl:text></xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
