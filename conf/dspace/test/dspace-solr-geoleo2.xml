@@ -217,7 +217,9 @@ Sie auch bei Praktika, ehrenamtlichen T√§tigkeiten oder im Berufsleben nutzen k√
   <arr name="publication_grp">
     <str>11858/00-1735-0000-0001-337F-5</str>
   </arr>
-  <str name="repo">geo-leo</str>
+  <arr name="repo">
+    <str>geo-leo</str>
+  </arr>
   <int name="search.resourceid">2934</int>
   <int name="search.resourcetype">2</int>
 </doc>
