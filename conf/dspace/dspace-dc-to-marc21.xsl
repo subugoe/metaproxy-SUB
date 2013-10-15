@@ -54,6 +54,10 @@
 			</leader>
 
 
+			<controlfield tag="001">
+				<xsl:value-of select="dc:identifier.handle[1]"/>
+			</controlfield>
+
 			<!-- 008 -->
 			<!-- position 0-5: date -->
 			<xsl:variable name="date">
