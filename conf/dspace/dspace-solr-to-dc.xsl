@@ -75,8 +75,8 @@
 		<xsl:param name="content"/>
 
 		<xsl:variable name="newName">
-			<!-- Only use fields whose names begin with 'dc.' -->
 			<xsl:choose>
+				<!-- Fields whose names begin with 'dc.' -->
 				<xsl:when test="substring($originalName, 1, 3) = 'dc.'">
 					<xsl:choose>
 						<!-- Fields whose names end in '.en' or '.de' -->
@@ -88,6 +88,10 @@
 							<xsl:text>date.issued</xsl:text>
 						</xsl:when>
 					</xsl:choose>
+				</xsl:when>
+				<!-- handle field -->
+				<xsl:when test="$originalName = 'handle'">
+					<xsl:text>identifier.handle</xsl:text>
 				</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
