@@ -79,7 +79,7 @@
 				<!-- Fields whose names begin with 'dc.' -->
 				<xsl:when test="substring($originalName, 1, 3) = 'dc.'">
 					<xsl:choose>
-						<!-- Fields whose names end in '.en' or '.de' -->
+						<!-- Fields whose names end in '.display' -->
 						<xsl:when test="substring($originalName, string-length($originalName) - 7, 8) = '.display'">
 							<xsl:value-of select="substring($originalName, 4, string-length($originalName) - 11)"/>
 						</xsl:when>
