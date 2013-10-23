@@ -28,14 +28,17 @@
 						<xsl:when test="@value = '1016'">
 							<xsl:text>metadata</xsl:text>
 						</xsl:when>
+						<xsl:when test="@value = '1010'">
+							<xsl:text></xsl:text>
+						</xsl:when>
 						<xsl:when test="@value = '12'">
-							<xsl:text>rec.identifier</xsl:text>
+							<xsl:text>handle</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '4'">
 							<xsl:text>dc.title</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '1004'">
-							<xsl:text>dc.contributor.author</xsl:text>
+							<xsl:text>dc.creator</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '31'">
 							<xsl:text>dc.date.issued.year</xsl:text>
@@ -43,14 +46,14 @@
 						<xsl:when test="@value = '8601'">
 							<xsl:text>dc.language.iso</xsl:text>
 						</xsl:when>
-						<xsl:when test="@value = '5040'">
-							<xsl:text>dc.subject.gokverbal</xsl:text>
+						<xsl:when test="@value = '21'">
+							<xsl:text>dc.subject</xsl:text>
 						</xsl:when>
-						<xsl:when test="@value = '5004'">
-							<xsl:text>dc.subject.bk</xsl:text>
+						<xsl:when test="@value = '8702'">
+							<xsl:text>dc.subject.gok</xsl:text>
 						</xsl:when>
-						<xsl:when test="@value = '5010'">
-							<xsl:text>dc.subject.gokcode</xsl:text>
+						<xsl:when test="@value = '13'">
+							<xsl:text>dc.subject.ddc</xsl:text>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:value-of select="@value"/>
