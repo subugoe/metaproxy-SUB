@@ -38,16 +38,16 @@
 							<xsl:text>dc.title</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '1004'">
-							<xsl:text>dc.creator</xsl:text>
+							<xsl:text>creator</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '31'">
 							<xsl:text>dc.date.issued.year</xsl:text>
 						</xsl:when>
-						<xsl:when test="@value = '8601'">
+						<xsl:when test="@value = '54'">
 							<xsl:text>dc.language.iso</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '21'">
-							<xsl:text>dc.subject</xsl:text>
+							<xsl:text>dc.subject.all</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '8702'">
 							<xsl:text>dc.subject.gok</xsl:text>

@@ -8,14 +8,14 @@ set.dc = info:srw/cql-context-set/1/dc-v1.1
 set.bib1 = 1.2.840.10003.3.1
 
 # Index info
-index.cql.serverChoice = metadata
+index.cql.serverChoice = 1=metadata
 index.cql.anywhere =
 index.rec.identifier = 1=handle
 index.dc.title = 1=dc.title
-index.dc.creator = 1=dc.creator
+index.dc.creator = 1=creator
 index.dc.date = 1=dc.date.issued.year
 index.dc.language = 1=dc.language.iso
-index.dc.subject = 1=dc.subject
+index.dc.subject = 1=dc.subject.all
 index.dc.subject.gok = 1=dc.subject.gok
 index.dc.subject.ddc = 1=dc.subject.ddc
 

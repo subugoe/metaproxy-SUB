@@ -474,7 +474,7 @@
 		</records>
 	</torus>
 
-	<fieldmap cql="cql.serverChoice">
+	<fieldmap cql="cql.serverChoice" ccl="term">
 		<title lang="en">All Metadata fields</title>
 	</fieldmap>
 	<fieldmap cql="cql.anywhere" ccl="fulltext">
