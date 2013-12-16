@@ -33,29 +33,18 @@
 
 	<!--
 		Match xml/mods tags.
-		Copy them and their children with an added mods namespace.
-		Add the zvdd-id as an attribute.
-		Strip leading and trailing whitespace from the contained text.
+		Copy them and
+		add the zvdd-id as recordInfo/recordIdentifier.
 	-->
-	<xsl:template match="xml/mods">
+	<xsl:template match="xml/mods:mods">
 		<mods:mods>
-			<xsl:attribute name="zvdd-id">
-				<xsl:value-of select="../../str[@name='pid']"/>
-			</xsl:attribute>
-			<xsl:copy-of select="namespace::*"/>
-			<xsl:apply-templates select="./*" mode="addMODSNS"/>
+			<mods:recordInfo>
+				<mods:recordIdentifier type="zvdd">
+					<xsl:value-of select="../../str[@name='pid']"/>
+				</mods:recordIdentifier>
+			</mods:recordInfo>
+			<xsl:copy-of select="*"/>
 		</mods:mods>
-	</xsl:template>
-
-	<xsl:template match="*" mode="addMODSNS">
-		<xsl:element name="mods:{local-name()}">
-			<xsl:copy-of select="@*"/>
-			<xsl:apply-templates select="node()|text()" mode="addMODSNS"/>
-		</xsl:element>
-	</xsl:template>
-
-	<xsl:template match="text()" mode="addMODSNS">
-		<xsl:value-of select="normalize-space(.)"/>
 	</xsl:template>
 
 </xsl:stylesheet>

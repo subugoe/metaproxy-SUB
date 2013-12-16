@@ -23,21 +23,18 @@
 	<!-- Turn Solr documents into <record> elements and process their children. -->
 	<xsl:template match="doc">
 		<record>
-			<xsl:apply-templates match="arr"/>
+			<xsl:apply-templates match="arr[@name='PPN']/str"/>
 		</record>
 	</xsl:template>
 
 
-	<!-- Remove generic elements. The specific fields we want are handled below. -->
-	<xsl:template match="arr"/>
-	<xsl:template match="str"/>
 
 
 	<!--
 		Take the PPN array, create the URL for each PPN, escaping the term in the process,
 		load the METS file from that address and insert both the URL and the METS.
 	-->
-	<xsl:template match="arr[@name='PPN']/str | str[@name='PPN']">
+	<xsl:template match="arr[@name='PPN']/str">
 		<xsl:variable name="METSURL">
 			<xsl:text>http://www.zvdd.de/dms/metsresolver/?PPN=</xsl:text>
 			<xsl:call-template name="url-encode">

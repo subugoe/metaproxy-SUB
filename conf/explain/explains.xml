@@ -47,4 +47,7 @@
   <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="zvdd">
     <xi:include href="zvdd.xml"/>
   </mp:database>
+  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="Default">
+    <xi:include href="zvdd.xml"/>
+  </mp:database>
 </mp:filter>

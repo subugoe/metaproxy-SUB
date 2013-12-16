@@ -24,16 +24,19 @@
 				<xsl:attribute name="value">
 					<xsl:choose>
 						<xsl:when test="@value = '4'">
-							<xsl:text>TITLE</xsl:text>
+							<xsl:text>title</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '1004'">
-							<xsl:text>CREATOR</xsl:text>
+							<xsl:text>creator</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '12'">
-							<xsl:text>PPN</xsl:text>
+							<xsl:text>ppn</xsl:text>
 						</xsl:when>
 						<xsl:when test="@value = '9999'">
-							<xsl:text>ISWORK</xsl:text>
+							<xsl:text>iswork</xsl:text>
+						</xsl:when>
+						<xsl:when test="@value = '9998'">
+							<xsl:text>docstrct</xsl:text>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:value-of select="@value"/>

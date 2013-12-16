@@ -28,7 +28,7 @@
 
 
 	<!--
-		Add AND ISWORK:1 to query.
+		Add AND (iswork:1 OR docstrct:Article) to query.
 	-->
 	<filter type="query_rewrite">
 		<xslt stylesheet="zvdd/zvdd-add-iswork.xsl"/>
@@ -41,18 +41,18 @@
 			* XML with element sets:
 				* marcxml
 				* turbomarc
+				* modsmarc (based on MODS data)
 				* dc
 				* mods
-				* mets (very expensive, loads METS records from external server)
+				* mets
 				* solr
 	-->
 	<filter type="record_transform">
 		<retrievalinfo  xmlns="http://indexdata.com/yaz" version="1.0">
 			<retrieval syntax="usmarc">
 				<backend name="">
-					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
-					<xslt stylesheet="zvdd/zvdd-mods-replace-id.xsl"/>
-					<xslt stylesheet="../xsl/MODS3-4_MARC21slim_XSLT1-0.xsl"/>
+					<xslt stylesheet="zvdd/zvdd-solr-to-mets.xsl"/>
+					<xslt stylesheet="zvdd/mods2marc.xsl"/>
 					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
 					<xslt stylesheet="../xsl/marcxml-cleaner.xsl"/>
 					<marc inputformat="xml" outputformat="marc" outputcharset="utf-8"/>
@@ -61,8 +61,16 @@
 
 			<retrieval syntax="xml" name="marcxml" identifier="info:srw/schema/1/marcxml-v1.1">
 				<backend name="">
+					<xslt stylesheet="zvdd/zvdd-solr-to-mets.xsl"/>
+					<xslt stylesheet="zvdd/mods2marc.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
+					<xslt stylesheet="../xsl/marcxml-cleaner.xsl"/>
+				</backend>
+			</retrieval>
+
+			<retrieval syntax="xml" name="modsmarc" identifier="info:srw/schema/1/marcxml-v1.1">
+				<backend name="">
 					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
-					<xslt stylesheet="zvdd/zvdd-mods-replace-id.xsl"/>
 					<xslt stylesheet="../xsl/MODS3-4_MARC21slim_XSLT1-0.xsl"/>
 					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
 					<xslt stylesheet="../xsl/marcxml-cleaner.xsl"/>
@@ -71,9 +79,8 @@
 
 			<retrieval syntax="xml" name="turbomarc">
 				<backend name="">
-					<xslt stylesheet="zvdd/zvdd-solr-to-mods.xsl"/>
-					<xslt stylesheet="zvdd/zvdd-mods-replace-id.xsl"/>
-					<xslt stylesheet="../xsl/MODS3-4_MARC21slim_XSLT1-0.xsl"/>
+					<xslt stylesheet="zvdd/zvdd-solr-to-mets.xsl"/>
+					<xslt stylesheet="zvdd/mods2marc.xsl"/>
 					<xslt stylesheet="../xsl/marcxml-sort.xsl"/>
 					<xslt stylesheet="../xsl/marcxml-cleaner.xsl"/>
 					<xslt stylesheet="../xsl/MarcXML2TurboMarc.xsl"/>

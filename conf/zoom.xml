@@ -408,6 +408,7 @@
 				<cclmap_au>1=creator s=pw t=r</cclmap_au>
 				<cclmap_id>1=pid</cclmap_id>
 				<cclmap_iswork>1=iswork</cclmap_iswork>
+				<cclmap_docstrct>1=docstrct</cclmap_docstrct>
 
 				<extraArgs>&amp;wt=xslt&amp;tr=xmlpassthrough.xsl</extraArgs>
 

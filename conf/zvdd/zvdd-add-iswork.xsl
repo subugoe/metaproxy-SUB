@@ -21,10 +21,16 @@
 		    	<xsl:value-of  select="@set"/>
 		    </xsl:attribute>
 			<operator type="and">
-				<apt>
-					<attr type="1" value="ISWORK"/>
-					<term type="general">1</term>
-				</apt>
+				<operator type="or">
+					<apt>
+						<attr type="1" value="iswork"/>
+						<term type="general">1</term>
+					</apt>
+					<apt>
+						<attr type="1" value="docstrct"/>
+						<term type="general">Article</term>
+					</apt>
+				</operator>
 				<xsl:apply-templates/>
 			</operator>
 		</rpn>

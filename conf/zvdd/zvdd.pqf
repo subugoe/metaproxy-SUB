@@ -12,8 +12,9 @@ index.cql.serverChoice =
 index.cql.all = 1=fulltext
 index.rec.id = 1=pid
 index.dc.title = 1=title
-index.dc.creator = 1=creator
+index.dc.creator = 1=creator 
 index.zvdd.iswork = 1=iswork
+index.zvdd.docstrct = 1=docstrct
 
 # Relation info
 relation.<  = 2=1

@@ -1,180 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Loaded on 2013-03-08 from
-	http://www.zvdd.de/zvdd2/select/?q=*%3A*&version=2.2&start=0&rows=10&indent=on&wt=xslt&tr=xmlpassthrough.xsl
+	Loaded on 2013-12-16 from
+	http://www.zvdd.de/zvdd2/select/?wt=xslt&tr=xmlpassthrough.xsl&q=ismets:1+OR+docstrct:article&rows=1
 -->
-
-<response>
-	<lst name="responseHeader">
-		<int name="status">0</int>
-		<int name="QTime">0</int>
-		<lst name="params">
-			<str name="indent">on</str>
-			<str name="start">0</str>
-			<str name="q">*:*</str>
-			<str name="rows">10</str>
-			<str name="version">2.2</str>
-		</lst>
-	</lst>
-	<result name="response" numFound="1" start="0">
-		<doc>
-			<str name="BYCREATOR">Waldseem&#xFC;ller</str>
-			<str name="BYTITLE">
-Cosmographiae.Introdvctio.Cvm.Qvisbvsdam.Geometriae.Ac.Astronomiae.Principiis.Ad.Eam.Rem.Necessariis
-</str>
-			<str name="CREATOR">Waldseem&#xFC;ller, Martin</str>
-			<str name="DATEINDEXED">20130209</str>
-			<str name="DATEMODIFIED">20130209</str>
-			<str name="DC">druckschriften.dl.ub.uni.freiburg.de</str>
-			<str name="DMDID">log dmd</str>
-			<str name="DOCSTRCT">monograph</str>
-			<str name="IDDOC">18024955</str>
-			<str name="LOCATION">http://dl.ub.uni-freiburg.de/diglit/ringmann1507</str>
-			<str name="PLACEPUBLISH">Saint-Di&#xE9;</str>
-			<str name="PPN">urn:nbn:de:bsz:25-digilib-75393</str>
-			<str name="STRUCTRUN">
-a:1:{i:0;a:8:{s:5:"IDDOC";i:18024955;s:3:"PPN";s:31:"urn:nbn:de:bsz:25-digilib-75393";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:100:"Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1507";s:5:"DMDID";s:3:"dmd";}}
-</str>
-			<str name="TITLE">
-Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis
-</str>
-			<str name="YEARPUBLISH">1507</str>
-			<str name="att_s">Waldseem&#xFC;ller, Martin</str>
-			<str name="bycreator">Waldseem&#xFC;ller, Martin</str>
-			<str name="bytitle">
-Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis
-</str>
-			<str name="creator">Waldseem&#xFC;ller, Martin</str>
-			<date name="dateindexed">2013-02-09T05:24:59Z</date>
-			<date name="datemodified">2013-02-09T05:24:59Z</date>
-			<arr name="dc">
-				<str>druckschriften.dl.ub.uni.freiburg.de</str>
-			</arr>
-			<str name="dmdid">dmd</str>
-			<str name="docstrct">Monograph</str>
-			<str name="dub_s">Ringmann, Matthias</str>
-			<str name="id">18024955</str>
-			<bool name="ismets">true</bool>
-			<bool name="iswork">true</bool>
-			<str name="location">http://dl.ub.uni-freiburg.de/diglit/ringmann1507</str>
-			<str name="logid">log</str>
-			<str name="mods">
-				<mods>
-					<titleInfo>
-						<title own="Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis"> Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis </title>
-					</titleInfo>
-					<name valueURI="http://d-nb.info/gnd/119353717" type="personal" authorityURI="http://d-nb.info/gnd/" authority="gnd">
-						<namePart type="family">Waldseem&#xFC;ller</namePart>
-						<namePart type="given">Martin</namePart>
-						<displayForm>Waldseem&#xFC;ller, Martin</displayForm>
-						<role>
-							<roleTerm type="code" authority="marcrelator">att</roleTerm>
-						</role>
-					</name>
-					<name valueURI="http://d-nb.info/gnd/120151448" type="personal" authorityURI="http://d-nb.info/gnd/" authority="gnd">
-						<namePart type="family">Ringmann</namePart>
-						<namePart type="given">Matthias</namePart>
-						<displayForm>Ringmann, Matthias</displayForm>
-						<role>
-							<roleTerm type="code" authority="marcrelator">dub</roleTerm>
-						</role>
-					</name>
-					<name valueURI="http://d-nb.info/gnd/118768247" type="personal" authorityURI="http://d-nb.info/gnd/" authority="gnd">
-						<namePart type="family">Vespucci</namePart>
-						<namePart type="given">Amerigo</namePart>
-						<displayForm>Vespucci, Amerigo</displayForm>
-						<role>
-							<roleTerm type="code" authority="marcrelator">oth</roleTerm>
-						</role>
-					</name>
-					<originInfo>
-						<place>
-							<placeTerm type="text">Saint-Di&#xE9;</placeTerm>
-						</place>
-						<dateIssued keyDate="yes" encoding="w3cdtf">1507</dateIssued>
-						<dateIssued>1507</dateIssued>
-					</originInfo>
-					<physicalDescription>
-						<digitalOrigin>reformatted digital</digitalOrigin>
-					</physicalDescription>
-					<language>
-						<languageTerm type="code" authority="iso639-2b">lat</languageTerm>
-					</language>
-					<relatedItem lang="ger" type="series">
-						<titleInfo>
-							<title>Drucke des Humanismus und der Reformationszeit</title>
-						</titleInfo>
-						<recordInfo>
-							<recordIdentifier source="UBFR">http://www.ub.uni-freiburg.de/go/humanismus/</recordIdentifier>
-						</recordInfo>
-					</relatedItem>
-					<relatedItem lang="eng" type="series">
-						<titleInfo>
-							<title>Drucke des Humanismus und der Reformationszeit</title>
-						</titleInfo>
-						<recordInfo>
-							<recordIdentifier source="UBFR">http://www.ub.uni-freiburg.de/go/humanismus/</recordIdentifier>
-						</recordInfo>
-					</relatedItem>
-					<relatedItem type="series">
-						<titleInfo>
-							<title>Druckschriften</title>
-						</titleInfo>
-						<recordInfo>
-							<recordIdentifier source="UBFR">druckschriften</recordIdentifier>
-						</recordInfo>
-					</relatedItem>
-					<relatedItem type="series">
-						<titleInfo>
-							<title> Digitalisierung wertvoller Best&#xE4;nde baden-w&#xFC;rttembergischer Bibliotheken </title>
-						</titleInfo>
-						<recordInfo>
-							<recordIdentifier source="UBFR">leo-bw</recordIdentifier>
-						</recordInfo>
-					</relatedItem>
-					<relatedItem type="series">
-						<titleInfo>
-							<title> Freiburger historische Best&#xE4;nde - digitalisiert : Drucke des Humanismus und der Reformationszeit </title>
-						</titleInfo>
-						<recordInfo>
-							<recordIdentifier source="UBFR">sammlung5</recordIdentifier>
-						</recordInfo>
-					</relatedItem>
-					<location>
-						<physicalLocation> Universit&#xE4;tsbibliothek Freiburg, UB Freiburg, T 2047,aa </physicalLocation>
-					</location>
-					<location>
-						<url access="object in context">http://dl.ub.uni-freiburg.de/diglit/ringmann1507</url>
-					</location>
-					<recordInfo>
-						<recordIdentifier source="swb-ppn">378149814</recordIdentifier>
-					</recordInfo>
-					<identifier type="urn">urn:nbn:de:bsz:25-digilib-75393</identifier>
-					<abstract lang="ger" html=""/>
-					<abstract lang="eng" html=""/>
-					<note lang="ger" displayLabel="Signatur" type="shelf number">UB Freiburg, T 2047,aa</note>
-					<note lang="eng" displayLabel="Shelf number" type="shelf number">UB Freiburg, T 2047,aa</note>
-					<note lang="ger" type="creation/production credits"/>
-					<note lang="eng" type="creation/production credits"/>
-					<identifier type="oai">oai:dl.ub.uni-freiburg.de:7539</identifier>
-					<extension>
-						<zvdd:zvddWrap xmlns:zvdd="namespace-deklarations-dummy">
-							<zvdd:collectionIdentifier>druckschriften.dl.ub.uni.freiburg.de</zvdd:collectionIdentifier>
-						</zvdd:zvddWrap>
-					</extension>
-				</mods>
-			</str>
-			<str name="oth_s">Vespucci, Amerigo</str>
-			<str name="pid">urn:nbn:de:bsz:25-digilib-75393</str>
-			<str name="placepublish">Saint-Di&#xE9;</str>
-			<str name="structrun">
-a:1:{i:0;a:8:{s:5:"IDDOC";i:18024955;s:3:"PPN";s:31:"urn:nbn:de:bsz:25-digilib-75393";s:5:"depth";i:0;s:8:"DOCSTRCT";s:9:"Monograph";s:5:"TITLE";s:100:"Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis";s:9:"CURRENTNO";b:0;s:11:"YEARPUBLISH";s:4:"1507";s:5:"DMDID";s:3:"dmd";}}
-</str>
-			<str name="swb-ppn_id_s">378149814</str>
-			<str name="title">
-Cosmographiae Introdvctio Cvm Qvisbvsdam Geometriae Ac Astronomiae Principiis Ad Eam Rem Necessariis
-</str>
-			<int name="yearpublish">1507</int>
-		</doc>
-	</result>
-</response>
+    <doc>
+      <arr name="BYCREATOR">
+        <str>Hogarth; Lorimer; Edgar</str>
+      </arr>
+      <arr name="BYTITLE">
+        <str>Naukratis, 1903</str>
+      </arr>
+      <arr name="CREATOR">
+        <str>Hogarth, David G.</str>
+        <str>Lorimer, Hilda L.</str>
+        <str>Edgar, Campbell Cowan</str>
+      </arr>
+      <arr name="DATEINDEXED">
+        <str>20130705</str>
+      </arr>
+      <arr name="DATEMODIFIED">
+        <str>20131212</str>
+      </arr>
+      <arr name="DC">
+        <str>druckschriften.ub.uni.heidelberg.de</str>
+      </arr>
+      <arr name="DMDID">
+        <str>dmd</str>
+        <str>log</str>
+      </arr>
+      <arr name="DOCSTRCT">
+        <str>Article</str>
+      </arr>
+      <arr name="IDDOC">
+        <str>urn:nbn:de:bsz:16-diglit-175310</str>
+      </arr>
+      <arr name="LOCATION">
+        <str>http://digi.ub.uni-heidelberg.de/diglit/naukratis1903</str>
+      </arr>
+      <arr name="PLACEPUBLISH">
+        <str>London</str>
+      </arr>
+      <arr name="PPN">
+        <str>urn:nbn:de:bsz:16-diglit-175310</str>
+      </arr>
+      <arr name="STRUCTRUN">
+        <str>[{"DMDID":"dmd","depth":0,"PPN":"urn:nbn:de:bsz:16-diglit-175310","IDDOC":"urn:nbn:de:bsz:16-diglit-175310","DOCSTRCT":"Article","TITLE":"Naukratis, 1903","YEARPUBLISH":"1905"}]</str>
+      </arr>
+      <arr name="TITLE">
+        <str>Naukratis, 1903</str>
+        <str> [Preface]   A. The Site   B. History   C. Topography   D. Inscriptions   E. Pottery   F. Actual State of the Site   G. Minor Antiquities   Farbkeil/Maßstab  </str>
+      </arr>
+      <arr name="YEARPUBLISH">
+        <str>1905</str>
+      </arr>
+      <str name="bycreator">Hogarth; Lorimer; Edgar</str>
+      <str name="bytitle">Naukratis, 1903</str>
+      <arr name="creator">
+        <str>Hogarth, David G.</str>
+        <str>Lorimer, Hilda L.</str>
+        <str>Edgar, Campbell Cowan</str>
+      </arr>
+      <date name="dateindexed">2013-07-05T00:00:00Z</date>
+      <date name="datemodified">2013-12-12T16:51:23Z</date>
+      <arr name="dc">
+        <str>druckschriften.ub.uni.heidelberg.de</str>
+      </arr>
+      <str name="dmdid">dmd</str>
+      <str name="docstrct">Article</str>
+      <arr name="facetcreator">
+        <str>Hogarth, David G.</str>
+        <str>Lorimer, Hilda L.</str>
+        <str>Edgar, Campbell Cowan</str>
+      </arr>
+      <arr name="id_cicognara_s">
+        <str>Cicognara Nr. 4314</str>
+      </arr>
+      <arr name="id_oai_s">
+        <str>oai:digi.ub.uni-heidelberg.de:17531</str>
+      </arr>
+      <arr name="id_urn_s">
+        <str>urn:nbn:de:bsz:16-diglit-175310</str>
+      </arr>
+      <bool name="isanchor">false</bool>
+      <bool name="ismets">true</bool>
+      <bool name="iswork">true</bool>
+      <arr name="location">
+        <str>http://digi.ub.uni-heidelberg.de/diglit/naukratis1903</str>
+      </arr>
+      <str name="logid">log</str>
+      <xml xmlns:mods="http://www.loc.gov/mods/v3" xmlns:zvdd="namespace-deklarations-dummy">
+        <mods:mods xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwork="http://www.ub.uni-heidelberg.de/__NO_SUCH_SCHEMA__" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/">
+          <mods:accessCondition>http://creativecommons.org/licenses/by-sa/3.0/</mods:accessCondition>
+          <mods:titleInfo>
+            <mods:title own="Naukratis, 1903">Naukratis, 1903</mods:title>
+          </mods:titleInfo>
+          <mods:name type="personal">
+            <mods:namePart type="family">Hogarth</mods:namePart>
+            <mods:namePart type="given">David G.</mods:namePart>
+            <mods:displayForm>Hogarth, David G.</mods:displayForm>
+            <mods:role>
+              <mods:roleTerm type="code" authority="marcrelator">aut</mods:roleTerm>
+            </mods:role>
+          </mods:name>
+          <mods:name type="personal">
+            <mods:namePart type="family">Lorimer</mods:namePart>
+            <mods:namePart type="given">Hilda L.</mods:namePart>
+            <mods:displayForm>Lorimer, Hilda L.</mods:displayForm>
+            <mods:role>
+              <mods:roleTerm type="code" authority="marcrelator">aut</mods:roleTerm>
+            </mods:role>
+          </mods:name>
+          <mods:name type="personal">
+            <mods:namePart type="family">Edgar</mods:namePart>
+            <mods:namePart type="given">Campbell Cowan</mods:namePart>
+            <mods:displayForm>Edgar, Campbell Cowan</mods:displayForm>
+            <mods:role>
+              <mods:roleTerm type="code" authority="marcrelator">aut</mods:roleTerm>
+            </mods:role>
+          </mods:name>
+          <mods:originInfo>
+            <mods:place>
+              <mods:placeTerm type="text">London</mods:placeTerm>
+            </mods:place>
+            <mods:dateIssued keyDate="yes" encoding="w3cdtf">1905</mods:dateIssued>
+            <mods:dateIssued>1905</mods:dateIssued>
+          </mods:originInfo>
+          <mods:originInfo>
+            <mods:edition>[Electronic ed.]</mods:edition>
+            <mods:publisher>Universitätsbibliothek Heidelberg</mods:publisher>
+          </mods:originInfo>
+          <mods:physicalDescription>
+            <mods:digitalOrigin>reformatted digital</mods:digitalOrigin>
+            <mods:extent>105-136</mods:extent>
+          </mods:physicalDescription>
+          <mods:language>
+            <mods:languageTerm type="code" authority="iso639-2b">eng</mods:languageTerm>
+          </mods:language>
+          <mods:relatedItem lang="ger" dwork_name="projekturl" type="series">
+            <mods:location>
+              <mods:url>http://archaeologie-digital.uni-hd.de</mods:url>
+            </mods:location>
+          </mods:relatedItem>
+          <mods:relatedItem lang="eng" dwork_name="projekturl" type="series">
+            <mods:location>
+              <mods:url>http://archaeologie-digital.uni-hd.de</mods:url>
+            </mods:location>
+          </mods:relatedItem>
+          <mods:relatedItem type="series">
+            <mods:titleInfo>
+              <mods:title>Druckschriften</mods:title>
+            </mods:titleInfo>
+            <mods:recordInfo>
+              <mods:recordIdentifier source="UBH">druckschriften</mods:recordIdentifier>
+            </mods:recordInfo>
+          </mods:relatedItem>
+          <mods:relatedItem type="series">
+            <mods:titleInfo>
+              <mods:title>Heidelberger historische Bestände — digital: Archäologische Literatur</mods:title>
+            </mods:titleInfo>
+            <mods:recordInfo>
+              <mods:recordIdentifier source="UBH">sammlung16</mods:recordIdentifier>
+            </mods:recordInfo>
+          </mods:relatedItem>
+          <mods:location>
+            <mods:physicalLocation>Universitätsbibliothek Heidelberg</mods:physicalLocation>
+            <mods:shelfLocator>D 8990</mods:shelfLocator>
+            <mods:url access="object in context">http://digi.ub.uni-heidelberg.de/diglit/naukratis1903</mods:url>
+          </mods:location>
+          <mods:note lang="ger" displayLabel="Signatur" type="shelf number">Universitätsbibliothek Heidelberg, D 8990</mods:note>
+          <mods:note lang="eng" displayLabel="Shelf number" type="shelf number">Universitätsbibliothek Heidelberg, D 8990</mods:note>
+          <mods:identifier type="urn">urn:nbn:de:bsz:16-diglit-175310</mods:identifier>
+          <mods:identifier type="cicognara">Cicognara Nr. 4314</mods:identifier>
+          <mods:abstract lang="ger" html="in: The Journal of Hellenic Studies 25 (1905), S. 105-136">in: The Journal of Hellenic Studies 25 (1905), S. 105-136
+</mods:abstract>
+          <mods:abstract lang="eng" html="">
+</mods:abstract>
+          <mods:note lang="ger" type="creation/production credits">
+</mods:note>
+          <mods:note lang="eng" type="creation/production credits">
+</mods:note>
+          <mods:classification displayLabel_ger="Archäologie; Topographie; Topographie, allgemein" authority="Rezeption der Antike" displayLabel_eng="archaeology; topography; topography, in general">07000</mods:classification>
+          <mods:classification displayLabel_ger="Archäologie; Topographie; Siedlungskunde" authority="Rezeption der Antike" displayLabel_eng="archaeology; topography; settlement and land use">07010</mods:classification>
+          <mods:classification displayLabel_ger="Archäologie; Plastik und Skulptur; Rundplastik" authority="Rezeption der Antike" displayLabel_eng="archaeology; plastic art and sculpture; freestanding sculpture">12004</mods:classification>
+          <mods:classification displayLabel_ger="Archäologie; Gefäße" authority="Rezeption der Antike" displayLabel_eng="archaeology; vessels">20</mods:classification>
+          <mods:classification displayLabel_ger="Archäologie; Geräte" authority="Rezeption der Antike" displayLabel_eng="archaeology; utensils">21</mods:classification>
+          <mods:subject valueURI="http://api.geonames.org/get?username=demo&amp;style=full&amp;lang=de&amp;geonameId=351274" authorityURI="http://www.geonames.org/" authority="geonames">
+            <mods:hierarchicalGeographic lang="ger">
+              <mods:continent>Afrika</mods:continent>
+              <mods:country>Ägypten</mods:country>
+              <mods:area>Naucratis</mods:area>
+            </mods:hierarchicalGeographic>
+            <mods:hierarchicalGeographic lang="eng">
+              <mods:continent>Africa</mods:continent>
+              <mods:country>Egypt</mods:country>
+              <mods:area>Naucratis</mods:area>
+            </mods:hierarchicalGeographic>
+            <mods:cartographics>
+              <mods:projection>WGS 84</mods:projection>
+              <mods:coordinates>30.9 30.58333</mods:coordinates>
+            </mods:cartographics>
+          </mods:subject>
+          <mods:identifier type="oai">oai:digi.ub.uni-heidelberg.de:17531</mods:identifier>
+          <mods:extension>
+            <zvdd:zvddWrap>
+              <zvdd:collectionIdentifier>druckschriften.ub.uni.heidelberg.de</zvdd:collectionIdentifier>
+            </zvdd:zvddWrap>
+          </mods:extension>
+        </mods:mods>
+      </xml>
+      <str name="pid">urn:nbn:de:bsz:16-diglit-175310</str>
+      <arr name="placepublish">
+        <str>London</str>
+      </arr>
+      <str name="structrun">[{"logid":"log","pid":"urn:nbn:de:bsz:16-diglit-175310","docstrct":"Article","title":"Naukratis, 1903","dmdid":"dmd","yearpublish":"1905"}]</str>
+      <arr name="title">
+        <str>Naukratis, 1903</str>
+        <str> [Preface]   A. The Site   B. History   C. Topography   D. Inscriptions   E. Pottery   F. Actual State of the Site   G. Minor Antiquities   Farbkeil/Maßstab  </str>
+      </arr>
+      <str name="uid">2f8b2d31-4b2e-4d53-83ad-17e9ff02a662</str>
+      <int name="yearpublish">1905</int>
+    </doc>
