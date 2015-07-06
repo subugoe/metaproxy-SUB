@@ -1,53 +1,54 @@
 <mp:filter xmlns:mp="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:e="http://explain.z3950.org/dtd/2.0/" type="sru_z3950">
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="ssgfi/math-digreg">
+  <mp:stylesheet>http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl</mp:stylesheet>
+  <mp:database name="ssgfi/math-digreg">
     <xi:include href="ssgfi_math-digreg.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="ssgfi/jfm">
+  <mp:database name="ssgfi/jfm">
     <xi:include href="ssgfi_jfm.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="ssgfi/math-guide">
+  <mp:database name="ssgfi/math-guide">
     <xi:include href="ssgfi_math-guide.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="ssgfi/geo-guide">
+  <mp:database name="ssgfi/geo-guide">
     <xi:include href="ssgfi_geo-guide.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="ssgfi/history-guide">
+  <mp:database name="ssgfi/history-guide">
     <xi:include href="ssgfi_history-guide.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="ssgfi/literature-guide">
+  <mp:database name="ssgfi/literature-guide">
     <xi:include href="ssgfi_literature-guide.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="ssgfi/forestry-guide">
+  <mp:database name="ssgfi/forestry-guide">
     <xi:include href="ssgfi_forestry-guide.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="harvest/geo-leo-artikel">
+  <mp:database name="harvest/geo-leo-artikel">
     <xi:include href="harvest_geo-leo-artikel.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="harvest/geo-leo-digitalisate">
+  <mp:database name="harvest/geo-leo-digitalisate">
     <xi:include href="harvest_geo-leo-digitalisate.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="harvest/math-arxiv">
+  <mp:database name="harvest/math-arxiv">
     <xi:include href="harvest_math-arxiv.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="harvest/digizeitschriften">
+  <mp:database name="harvest/digizeitschriften">
     <xi:include href="harvest_digizeitschriften.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="harvest/goescholar">
+  <mp:database name="harvest/goescholar">
     <xi:include href="harvest_goescholar.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="harvest/gdz">
+  <mp:database name="harvest/gdz">
     <xi:include href="harvest_gdz.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="dspace/geo-leo">
+  <mp:database name="dspace/geo-leo">
     <xi:include href="dspace_geo-leo.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="dspace/ediss">
+  <mp:database name="dspace/ediss">
     <xi:include href="dspace_ediss.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="zvdd">
+  <mp:database name="zvdd">
     <xi:include href="zvdd.xml"/>
   </mp:database>
-  <mp:database xslURL="http://sru.sub.uni-goettingen.de/metaproxy/xsl/sru-ui.xsl" name="Default">
+  <mp:database name="Default">
     <xi:include href="zvdd.xml"/>
   </mp:database>
 </mp:filter>

@@ -330,7 +330,7 @@
 			<!-- DSpace -->
 			<record>
 				<udb>dspace/geo-leo</udb>
-				<zurl>134.76.21.193:9010/solr/gldocs</zurl>
+				<zurl>e-docs.geo-leo.de:9010/solr/gldocs</zurl>
 				<sru>solr</sru>
 
 				<e:databaseInfo>

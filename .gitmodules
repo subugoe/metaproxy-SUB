@@ -1,9 +1,0 @@
-[submodule "yaz"]
-	path = yaz
-	url = git://git.indexdata.com/yaz.git
-[submodule "yazpp"]
-	path = yazpp
-	url = git://git.indexdata.com/yazpp.git
-[submodule "metaproxy"]
-	path = metaproxy
-	url = git://github.com/subugoe/metaproxy.git
