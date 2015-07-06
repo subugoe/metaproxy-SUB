@@ -2,6 +2,7 @@
 [Metaproxy](http://www.indexdata.com/metaproxy) configuration for SUB Göttingen.
 
 2012-2013 by Sven-S. Porst, [SUB Göttingen](http://www.sub.uni-goettingen.de/) <[porst@sub.uni-goettingen.de](mailto:porst@sub.uni-goettingen.de)>.
+2015 Hans-Werner Hilse
 
 
 ## subfolders
@@ -42,11 +43,3 @@
 	* iso-639-2-to-639-2b.xsl: language code conversion
 	* MODS3-4_MARC21slim_XSLT1-0.xsl, MODS3-4_DC_XSLT1-0.xsl, MARC21slimUtils.xsl, DC2MARC21slim.xsl: stylesheets from loc.gov
 	* explains-to-srufilter.xsl zoom-to-explains.xsl: Stylesheets used by »config/create-explains.py«
-
-
-
-## submodules
-[Index Data](http://www.indexdata.com/) libraries and code to build metaproxy:
-* yaz: [yaz library](http://www.indexdata.com/yaz)
-* yazpp: [yaz++ C++ API for yaz](http://www.indexdata.com/yazpp)
-* metaproxy [Metaproxy software](http://www.indexdata.com/metaproxy)
